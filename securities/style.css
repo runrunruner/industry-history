@@ -889,45 +889,18 @@ button.secondary { color: #4c535b; }
   }
 }
 
-
-/* Public site navigation */
 .back-to-top {
-  display: inline-block;
-  margin: 0 0 .35rem;
+  flex: 0 0 auto;
   color: var(--accent);
   font-size: .78rem;
   font-weight: 700;
-  line-height: 1.2;
   text-decoration: none;
+  white-space: nowrap;
 }
 .back-to-top:hover { text-decoration: underline; }
-
 @media (max-width: 700px) {
-  /* Mobile: avoid squeezing the title block beside navigation/actions. */
-  .site-header {
-    flex-direction: column;
-    align-items: stretch;
-    gap: .65rem;
-  }
-
-  .site-title-block {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .site-header h1,
-  .site-header p {
-    overflow-wrap: anywhere;
-    word-break: normal;
-  }
-
-  .header-actions {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
   .back-to-top {
-    width: auto;
-    margin-bottom: .4rem;
+    width: 100%;
+    margin-bottom: .2rem;
   }
 }

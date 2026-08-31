@@ -3,197 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="証券会社の設立・商号変更・合併・廃業を時系列でたどれる、検索・系列追跡対応の証券業界変遷図です。">
+  <meta name="description" content="企業・金融業界の設立、商号変更、合併、廃業などを時系列でたどる業界変遷図アーカイブです。">
   <meta name="theme-color" content="#1c4f7c">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:site_name" content="証券業界 変遷図">
-  <meta property="og:title" content="証券業界 変遷図">
-  <meta property="og:description" content="証券会社の設立・商号変更・合併・廃業を時系列でたどれる証券業界変遷図。会社検索、前身・後継・系列全体の追跡に対応しています。">
+  <meta property="og:site_name" content="業界変遷図アーカイブ">
+  <meta property="og:title" content="業界変遷図アーカイブ">
+  <meta property="og:description" content="企業・金融業界の歴史的な変遷を、時系列の図でたどるアーカイブです。">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="証券業界 変遷図">
-  <meta name="twitter:description" content="証券会社の設立・商号変更・合併・廃業を時系列でたどれる証券業界変遷図。">
-  <title>証券業界 変遷図</title>
-  <link rel="icon" href="../common/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+  <title>業界変遷図アーカイブ</title>
+  <link rel="icon" href="common/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="common/site.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="site-title-block">
-      <a class="back-to-top" href="../">← TOPへ</a>
-      <h1>証券業界 変遷図</h1>
-      <p>会社名を検索、または図中の会社名をクリックすると沿革と出典を確認できます。</p>
-    </div>
-    <div class="header-actions">
-      <button id="share-button" type="button" class="header-action-button">共有</button>
-      <button id="about-button" type="button" class="header-action-button">このサイトについて</button>
-      <button id="help-button" type="button" class="help-button">図の見方</button>
+    <div class="header-inner">
+      <p class="eyebrow">INDUSTRY HISTORY ARCHIVE</p>
+      <h1>業界変遷図アーカイブ</h1>
+      <p class="lead">
+        企業・金融業界の設立、商号変更、合併、廃業などを、
+        時系列の変遷図でたどるためのアーカイブです。
+      </p>
     </div>
   </header>
 
-  <main class="app-shell">
-    <section class="chart-section" aria-label="証券業界変遷図">
-      <div class="toolbar">
-        <div class="search-area">
-          <label class="sr-only" for="company-search">会社名を検索</label>
-          <div class="search-box">
-            <input
-              id="company-search"
-              type="search"
-              autocomplete="off"
-              placeholder="会社名を検索　例：野村證券"
-              aria-controls="search-suggestions"
-              aria-autocomplete="list"
-            >
-            <button id="search-button" type="button">検索</button>
-            <button id="clear-button" type="button" class="secondary">解除</button>
-          </div>
-          <div id="search-suggestions" class="suggestions" role="listbox" hidden></div>
-        </div>
-
-        <div class="zoom-controls" aria-label="表示倍率">
-          <button id="zoom-in" type="button" title="拡大" aria-label="拡大">＋</button>
-          <button id="zoom-out" type="button" title="縮小" aria-label="縮小">－</button>
-          <button id="fit-all" type="button" class="secondary">全体表示</button>
-        </div>
-      </div>
-
-      <div id="status" class="status" aria-live="polite">データを読み込んでいます…</div>
-
-      <div id="current-context" class="current-context" aria-live="polite" hidden>
-        <span class="context-kicker">現在の表示</span>
-        <strong id="context-company"></strong>
-        <span class="context-separator">›</span>
-        <span id="context-detail"></span>
-      </div>
-
-      <div id="svg-stage" class="svg-stage">
-        <div class="loading">変遷図を読み込んでいます…</div>
-      </div>
-
-      <p class="chart-help">
-        マウスホイールで拡大・縮小、ドラッグで移動できます。会社名をクリックすると詳細を表示します。
+  <main>
+    <section class="intro">
+      <h2>変遷図を見る</h2>
+      <p>
+        業界ごとに、企業の前身・後継・系列を検索しながら確認できます。
+        各イベントには、確認できる範囲で出典情報を付しています。
       </p>
     </section>
 
-    <aside id="detail-panel" class="detail-panel" aria-live="polite">
-      <div class="detail-empty">
-        <h2>会社の沿革</h2>
-        <p>検索結果または図中の会社名を選択してください。</p>
-      </div>
-    </aside>
+    <section class="industry-grid" aria-label="業界一覧">
+      <article class="industry-card is-live">
+        <div class="card-meta">公開中</div>
+        <h2>証券業界</h2>
+        <p>証券会社の設立、商号変更、合併、廃業を時系列でたどります。</p>
+        <a class="card-link" href="securities/">証券業界の変遷図を見る</a>
+      </article>
+
+      <article class="industry-card is-coming">
+        <div class="card-meta">準備中</div>
+        <h2>銀行業界</h2>
+        <p>銀行の変遷図を今後追加予定です。</p>
+        <span class="card-disabled" aria-disabled="true">公開準備中</span>
+      </article>
+    </section>
+
+    <section class="about">
+      <h2>このサイトについて</h2>
+      <p>
+        公開資料や各社・各行の沿革資料などをもとに、
+        業界内の企業・組織の変遷を整理し、可視化しています。
+        掲載内容の正確性・完全性・最新性を保証するものではありません。
+      </p>
+      <p>
+        本サイトは歴史的な変遷の整理・可視化を目的としたもので、
+        投資判断、金融商品の選択、その他の取引判断には使用しないでください。
+      </p>
+    </section>
   </main>
 
-  <button id="mobile-detail-jump" type="button" class="mobile-detail-jump" hidden>
-    沿革を見る
-  </button>
-
   <footer class="site-footer">
-    <div class="footer-main">
-      <span>証券業界 変遷図</span>
-      <span class="footer-separator">·</span>
-      <span id="last-updated">最終更新を確認中…</span>
-    </div>
-    <div class="footer-actions">
-      <button id="footer-help-button" type="button" class="footer-link-button">図の見方</button>
-      <button id="footer-about-button" type="button" class="footer-link-button">このサイトについて</button>
-      <button id="footer-share-button" type="button" class="footer-link-button">共有</button>
-    </div>
+    <p>業界変遷図アーカイブ</p>
   </footer>
-
-  <dialog id="about-dialog" class="help-dialog">
-    <div class="help-card">
-      <div class="help-header">
-        <div>
-          <h2>このサイトについて</h2>
-          <p>証券会社の設立・商号変更・合併・廃業を、時系列でたどるための変遷図です。</p>
-        </div>
-        <button id="about-close" type="button" class="icon-button" aria-label="閉じる">×</button>
-      </div>
-
-      <section class="help-section">
-        <h3>掲載内容について</h3>
-        <p class="help-copy">会社名・年月・沿革は、公開資料や各社の沿革資料等をもとに整理しています。図では検索、前身・後継の追跡、系列全体の表示、各イベントの出典確認ができます。</p>
-      </section>
-
-      <section class="help-section">
-        <h3>出典について</h3>
-        <p class="help-copy">各イベントの出典は、会社名を選択した際の沿革欄に表示します。URLは外部サイトへのリンクとして開き、書籍・社史・文献名などはテキストで表示します。</p>
-      </section>
-
-      <section class="help-section">
-        <h3>免責事項</h3>
-        <p class="help-copy">本サイトは証券会社の歴史的な変遷を整理・可視化することを目的としたもので、掲載内容の正確性・完全性・最新性を保証するものではありません。投資判断、金融商品の選択、その他の取引判断には使用しないでください。また、本サイトは掲載各社から公式な承認・監修を受けたものではありません。</p>
-      </section>
-
-      <section class="help-section">
-        <h3>プライバシー</h3>
-        <p class="help-copy">この公開版には、Cookie、アクセス解析、広告、外部JavaScriptライブラリを組み込んでいません。出典URLを開いた場合は、リンク先サイトのプライバシーポリシーが適用されます。</p>
-      </section>
-
-      <section class="help-section">
-        <h3>更新情報</h3>
-        <p class="help-copy"><span id="about-last-updated">最終更新を確認中…</span></p>
-      </section>
-    </div>
-  </dialog>
-
-  <dialog id="help-dialog" class="help-dialog">
-    <div class="help-card">
-      <div class="help-header">
-        <div>
-          <h2>図の見方</h2>
-          <p>会社の色と線は、沿革上の役割を表しています。</p>
-        </div>
-        <button id="help-close" type="button" class="icon-button" aria-label="閉じる">×</button>
-      </div>
-
-      <section class="help-section">
-        <h3>会社ボックスの色</h3>
-        <div class="legend-grid">
-          <div class="legend-item"><span class="legend-box legend-est"></span><span><strong>設立</strong><small>新たに設立された会社</small></span></div>
-          <div class="legend-item"><span class="legend-box legend-rename-source"></span><span><strong>商号変更前</strong><small>商号変更直前の会社名</small></span></div>
-          <div class="legend-item"><span class="legend-box legend-rename"></span><span><strong>商号変更後</strong><small>商号変更後の会社名</small></span></div>
-          <div class="legend-item"><span class="legend-box legend-merge-source"></span><span><strong>合併前</strong><small>合併直前の会社、吸収される会社</small></span></div>
-          <div class="legend-item"><span class="legend-box legend-merge"></span><span><strong>合併後</strong><small>合併後に存続する会社</small></span></div>
-          <div class="legend-item"><span class="legend-box legend-close"></span><span><strong>廃業</strong><small>廃業・終了した会社</small></span></div>
-          <div class="legend-item"><span class="legend-box legend-current"></span><span><strong>現存</strong><small>図の最終時点で存続している会社</small></span></div>
-          <div class="legend-item"><span class="legend-box legend-unknown"></span><span><strong>設立年月不明</strong><small>最初の確認時点より前から存在</small></span></div>
-          <div class="legend-item"><span class="legend-box legend-uncertain"></span><span><strong>破線の枠</strong><small>年は判明しているが月が不明</small></span></div>
-        </div>
-      </section>
-
-      <section class="help-section">
-        <h3>線と年月の読み方</h3>
-        <ul class="help-list">
-          <li><span class="legend-line solid-line"></span>実線は会社の存続・沿革のつながりを表します。</li>
-          <li><span class="legend-line dashed-line"></span>破線と「－」は、表示された最初のイベントより前から会社が存在していたことを表します。</li>
-          <li>商号変更月は、同じ年月の中で<strong>左側が変更前、右側が変更後</strong>です。</li>
-          <li>合併月は、同じ年月の中で<strong>左側が合併直前、右側が合併直後</strong>です。</li>
-          <li>合併前後で存続会社の名称が同じ場合、その会社名は重複させず1回だけ表示します。</li>
-          <li>イベントのない年月は省略し、間隔が空く箇所は「…」で示します。</li>
-        </ul>
-      </section>
-
-      <section class="help-section">
-        <h3>会社を選択したとき</h3>
-        <ul class="help-list">
-          <li><strong>この会社</strong>：選択した会社そのものに関係する箇所を表示します。</li>
-          <li><strong>前身</strong>：その会社へ至る前身会社・吸収会社をさかのぼります。</li>
-          <li><strong>後継</strong>：その会社から先の商号変更・合併先をたどります。</li>
-          <li><strong>系列全体</strong>：前身・後継・合併会社を含む同一系列全体を表示します。</li>
-        </ul>
-      </section>
-
-      <section class="help-section">
-        <h3>出典</h3>
-        <p class="help-copy">
-          各イベントの出典は右側の沿革欄に表示します。URLはクリック可能なリンク、文献名などは通常テキストとして表示します。
-        </p>
-      </section>
-    </div>
-  </dialog>
-
-  <script src="app.js"></script>
 </body>
 </html>
