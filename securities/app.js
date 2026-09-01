@@ -385,12 +385,16 @@
   function setViewBox(next) {
     if (!svg) return;
 
-    const minWidth = Math.max(initialViewBox.width / 16, 260);
+    // 全体図が横長になっても最大ズーム倍率が弱くならないよう、
+    // 初期図幅に依存しない固定下限を使用する。
+    // イベント表示時とほぼ同じ倍率まで通常ズーム可能。
+    const minWidth = isMobileLayout() ? 280 : 300;
+    const minHeight = isMobileLayout() ? 190 : 170;
     const maxWidth = initialViewBox.width * 1.15;
+
     let width = Math.min(maxWidth, Math.max(minWidth, next.width));
     let height = width * (next.height / next.width);
 
-    const minHeight = Math.max(initialViewBox.height / 16, 120);
     if (height < minHeight) {
       height = minHeight;
       width = height * (next.width / next.height);
@@ -710,7 +714,14 @@
   function focusModeReadable(companyName, mode) {
     if (!svg) return;
 
-    const anchor = chooseModeAnchor(companyName, mode);
+    let anchor = chooseModeAnchor(companyName, mode);
+
+    // 選択会社のアンカーが取れない場合も、
+    // 強調中の会社ボックスを起点にして「線だけ」の画面を避ける。
+    if (!anchor) {
+      anchor = Array.from(svg.querySelectorAll(".company-node.web-hit"))[0] || null;
+    }
+
     if (!anchor) return;
 
     const anchorCenter = safeElementCenter(anchor);
@@ -726,8 +737,18 @@
       return;
     }
 
-    const related = Array.from(svg.querySelectorAll(".company-node.web-hit"))
-      .filter(node => node !== anchor)
+    const allOtherHitNodes = Array.from(svg.querySelectorAll(".company-node.web-hit"))
+      .filter(node => node !== anchor);
+
+    // 同じ会社名の別時点より、別の関連会社を優先してカメラに入れる。
+    const distinctRelatedNodes = allOtherHitNodes
+      .filter(node => node.getAttribute("data-company") !== companyName);
+
+    const cameraCandidates = distinctRelatedNodes.length
+      ? distinctRelatedNodes
+      : allOtherHitNodes;
+
+    const related = cameraCandidates
       .map(node => {
         const center = safeElementCenter(node);
         if (!center) return null;
@@ -794,9 +815,9 @@
     for (const node of data.svg_nodes || []) {
       if (!names.has(node.company)) continue;
 
-      const ids = node.event_ids || [];
-      const eventMatches = !ids.length || ids.some(id => allowedEvents.has(id));
-      if (eventMatches) nodeIds.add(node.id);
+      // 関係会社として判定された会社名のボックスは必ず強調対象に含める。
+      // 従来はイベントID条件でボックスが落ち、線だけ残る場合があった。
+      nodeIds.add(node.id);
     }
 
     const lineIds = new Set();
