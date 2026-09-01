@@ -931,3 +931,21 @@ button.secondary { color: #4c535b; }
     margin-bottom: .4rem;
   }
 }
+
+
+.mode-button:disabled,
+.mode-button.is-disabled {
+  opacity: .38;
+  color: #7d8790;
+  background: #eef1f3;
+  border-color: #d8dde2;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.mode-button:disabled:hover,
+.mode-button.is-disabled:hover {
+  background: #eef1f3;
+  border-color: #d8dde2;
+  color: #7d8790;
+}

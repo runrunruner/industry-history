@@ -193,6 +193,44 @@
     return new Set([companyName]);
   }
 
+  function modeRelatedCount(companyName, mode) {
+    if (!companyName || mode === "self") return 0;
+    return Math.max(0, namesForMode(companyName, mode).size - 1);
+  }
+
+  function isModeAvailable(companyName, mode) {
+    if (!companyName) return mode === "self";
+    if (mode === "self") return true;
+
+    const company = companyMap.get(companyName);
+
+    // 現在も存続している会社には「現在から見た後継」は存在しない。
+    // 同じ会社名が過去にも使われていた場合の歴史的な後継関係を、
+    // 現在の会社の後継として誤表示しない。
+    if (mode === "successors" && company?.is_current) {
+      return false;
+    }
+
+    return modeRelatedCount(companyName, mode) > 0;
+  }
+
+  function modeUnavailableMessage(companyName, mode) {
+    if (mode === "predecessors") {
+      return `${companyName} には登録済みの前身会社がありません。`;
+    }
+    if (mode === "successors") {
+      const company = companyMap.get(companyName);
+      if (company?.is_current) {
+        return `${companyName} は現存しているため、後継会社はありません。`;
+      }
+      return `${companyName} には登録済みの後継会社がありません。`;
+    }
+    if (mode === "lineage") {
+      return `${companyName} は、ほかの会社を含む系列としては登録されていません。`;
+    }
+    return "";
+  }
+
   function eventFitsNameSet(event, names, mode, selectedName) {
     if (mode === "self") {
       return (companyMap.get(selectedName)?.event_ids || []).includes(event.id);
@@ -779,18 +817,36 @@
     let requestedWidth = isMobileLayout() ? 560 : 760;
 
     if (nearest) {
-      // 起点と最寄りの関係会社の中間へ少し寄せる。
-      centerX = (anchorCenter.x + nearest.center.x) / 2;
-      centerY = (anchorCenter.y + nearest.center.y) / 2;
-
       const horizontalDistance = Math.abs(nearest.dx);
-      requestedWidth = Math.max(
-        requestedWidth,
-        horizontalDistance + (isMobileLayout() ? 360 : 480)
-      );
+      const readableLimit = isMobileLayout() ? 720 : 1120;
+
+      if (horizontalDistance <= readableLimit) {
+        // 近い関係会社なら、両方の会社ボックスが見える位置へ寄せる。
+        centerX = (anchorCenter.x + nearest.center.x) / 2;
+        centerY = (anchorCenter.y + nearest.center.y) / 2;
+
+        requestedWidth = Math.max(
+          requestedWidth,
+          horizontalDistance + (isMobileLayout() ? 300 : 420)
+        );
+      } else {
+        // 関係会社が非常に遠い場合、中間へ移動すると線しか見えなくなる。
+        // 選択会社を必ず画面内に残し、関係が続く方向へ少しだけ寄せる。
+        const direction = Math.sign(nearest.dx) || 1;
+        centerX = anchorCenter.x + direction * (isMobileLayout() ? 90 : 150);
+
+        const verticalShift = Math.max(
+          -90,
+          Math.min(90, nearest.dy * 0.12)
+        );
+        centerY = anchorCenter.y + verticalShift;
+
+        requestedWidth = isMobileLayout() ? 700 : 1000;
+      }
     }
 
-    // 系列全体でも巨大な全系列をカメラに収めず、起点周辺を維持する。
+    // 系列全体でも巨大な全系列をカメラに収めず、
+    // 必ず選択会社の会社ボックスが読める範囲を維持する。
     setReadableCenteredView(centerX, centerY, requestedWidth);
   }
 
@@ -924,6 +980,12 @@
   function applyMode(doFocus = true) {
     if (!selectedCompanyName) return;
 
+    // 前身・後継・系列が実データ上存在しない場合は、
+    // 不自然な「線だけ表示」を避けて「この会社」へ戻す。
+    if (!isModeAvailable(selectedCompanyName, selectedMode)) {
+      selectedMode = "self";
+    }
+
     selectedEventId = null;
     highlightMode(selectedCompanyName, selectedMode);
 
@@ -939,6 +1001,13 @@
 
   function setMode(mode, doFocus = true, updateUrl = true) {
     if (!VALID_MODES.has(mode) || !selectedCompanyName) return;
+
+    if (!isModeAvailable(selectedCompanyName, mode)) {
+      setStatus(modeUnavailableMessage(selectedCompanyName, mode));
+      updateModeButtons();
+      return;
+    }
+
     selectedMode = mode;
     applyMode(doFocus);
     if (updateUrl) syncUrl("push");
@@ -1115,7 +1184,12 @@
     if (!company) return;
 
     selectedCompanyName = name;
-    selectedMode = VALID_MODES.has(mode) ? mode : "self";
+
+    const requestedMode = VALID_MODES.has(mode) ? mode : "self";
+    selectedMode = isModeAvailable(name, requestedMode)
+      ? requestedMode
+      : "self";
+
     selectedEventId = null;
 
     document.body.classList.add("has-selection");
@@ -1159,9 +1233,22 @@
 
   function updateModeButtons() {
     panel.querySelectorAll(".mode-button").forEach(button => {
-      const active = button.dataset.mode === selectedMode;
+      const mode = button.dataset.mode;
+      const available = isModeAvailable(selectedCompanyName, mode);
+      const active = available && mode === selectedMode;
+
+      button.disabled = !available;
+      button.classList.toggle("is-disabled", !available);
       button.classList.toggle("is-active", active);
+
+      button.setAttribute("aria-disabled", available ? "false" : "true");
       button.setAttribute("aria-pressed", active ? "true" : "false");
+
+      if (!available) {
+        button.title = modeUnavailableMessage(selectedCompanyName, mode);
+      } else {
+        button.removeAttribute("title");
+      }
     });
   }
 
@@ -1526,15 +1613,22 @@
     }
 
     if (companyName && companyMap.has(companyName)) {
+      const requestedMode = mode;
       selectCompany(companyName, true, mode, false);
+
+      let needsNormalize = requestedMode !== selectedMode;
 
       if (event) {
         focusEvent(event, null, false);
 
         if (eventParam !== event.id) {
           selectedEventId = event.id;
-          syncUrl("replace");
+          needsNormalize = true;
         }
+      }
+
+      if (needsNormalize) {
+        syncUrl("replace");
       }
 
       return;
