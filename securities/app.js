@@ -254,7 +254,19 @@
       bindPanZoom();
 
       setStatus(`${companyNames.length}社を読み込みました。会社名を検索できます。`);
+
+      const initialUrl = new URL(window.location.href);
+      const hasDeepLink =
+        initialUrl.searchParams.has("company") ||
+        initialUrl.searchParams.has("event");
+
       restoreStateFromUrl();
+
+      // 通常アクセス時だけ、全体俯瞰ではなく左上の導入部から始める。
+      // 共有URLで会社・イベントが指定されている場合は、その指定を優先する。
+      if (!hasDeepLink) {
+        requestAnimationFrame(() => focusInitialHistoryArea());
+      }
     } catch (error) {
       console.error(error);
       stage.innerHTML = `
@@ -584,6 +596,183 @@
     contextBar.hidden = false;
   }
 
+  function safeElementBox(el) {
+    try {
+      const b = el.getBBox();
+      if (!Number.isFinite(b.x) || !Number.isFinite(b.y)) return null;
+      return { x: b.x, y: b.y, width: b.width, height: b.height };
+    } catch {
+      return null;
+    }
+  }
+
+  function safeElementCenter(el) {
+    const box = safeElementBox(el);
+    if (!box) return null;
+    return {
+      x: box.x + box.width / 2,
+      y: box.y + box.height / 2
+    };
+  }
+
+  function nodeMonthValue(node) {
+    const month = Number(node.getAttribute("data-month") || 0);
+    return Number.isFinite(month) ? month : 0;
+  }
+
+  function setReadableCenteredView(centerX, centerY, requestedWidth) {
+    if (!svg || !initialViewBox) return;
+
+    const stageRect = stage.getBoundingClientRect();
+    const stageRatio = stageRect.width / Math.max(stageRect.height, 1);
+
+    const minWidth = isMobileLayout() ? 500 : 650;
+    const maxWidth = isMobileLayout() ? 760 : 1200;
+    const width = Math.min(maxWidth, Math.max(minWidth, requestedWidth));
+    const height = width / Math.max(stageRatio, 0.2);
+
+    // setViewBox() の通常ズーム下限とは切り離し、
+    // 系列表示でも会社名が読める倍率を維持する。
+    viewBox = {
+      x: centerX - width / 2,
+      y: centerY - height / 2,
+      width,
+      height
+    };
+
+    svg.setAttribute(
+      "viewBox",
+      `${viewBox.x} ${viewBox.y} ${viewBox.width} ${viewBox.height}`
+    );
+    scheduleTimelineUpdate();
+  }
+
+  function focusInitialHistoryArea() {
+    if (!svg) return;
+
+    const introNames = [
+      "黒川幸七商店",
+      "黒川商店",
+      "日興證券"
+    ];
+
+    // 同じ会社名が後年にも再登場するため、各社の「最初のノード」だけを使う。
+    const earliestNodes = [];
+
+    for (const name of introNames) {
+      const nodes = Array.from(svg.querySelectorAll(".company-node"))
+        .filter(node => node.getAttribute("data-company") === name)
+        .sort((a, b) => nodeMonthValue(a) - nodeMonthValue(b));
+
+      if (nodes.length) earliestNodes.push(nodes[0]);
+    }
+
+    if (!earliestNodes.length) return;
+
+    const centers = earliestNodes
+      .map(safeElementCenter)
+      .filter(Boolean);
+
+    if (!centers.length) return;
+
+    const minX = Math.min(...centers.map(point => point.x));
+    const maxX = Math.max(...centers.map(point => point.x));
+    const minY = Math.min(...centers.map(point => point.y));
+    const maxY = Math.max(...centers.map(point => point.y));
+
+    const centerX = (minX + maxX) / 2;
+    const centerY = (minY + maxY) / 2;
+
+    // PCでは3社周辺をまとめて見せ、スマホでは少し寄って始める。
+    const requestedWidth = isMobileLayout()
+      ? Math.max(650, maxX - minX + 180)
+      : Math.max(1050, maxX - minX + 300);
+
+    setReadableCenteredView(centerX, centerY, requestedWidth);
+    setStatus(
+      `${companyNames.length}社を読み込みました。図をドラッグして移動するか、会社名を検索できます。`
+    );
+  }
+
+  function chooseModeAnchor(companyName, mode) {
+    if (!svg) return null;
+
+    const primaryNodes = Array.from(svg.querySelectorAll(".company-node.web-hit"))
+      .filter(node => node.getAttribute("data-company") === companyName)
+      .sort((a, b) => nodeMonthValue(a) - nodeMonthValue(b));
+
+    if (!primaryNodes.length) return null;
+
+    if (mode === "predecessors") return primaryNodes[0];
+    return primaryNodes[primaryNodes.length - 1];
+  }
+
+  function focusModeReadable(companyName, mode) {
+    if (!svg) return;
+
+    const anchor = chooseModeAnchor(companyName, mode);
+    if (!anchor) return;
+
+    const anchorCenter = safeElementCenter(anchor);
+    if (!anchorCenter) return;
+
+    // self は選択会社そのものを大きく見せる。
+    if (mode === "self") {
+      setReadableCenteredView(
+        anchorCenter.x,
+        anchorCenter.y,
+        isMobileLayout() ? 520 : 700
+      );
+      return;
+    }
+
+    const related = Array.from(svg.querySelectorAll(".company-node.web-hit"))
+      .filter(node => node !== anchor)
+      .map(node => {
+        const center = safeElementCenter(node);
+        if (!center) return null;
+
+        const dx = center.x - anchorCenter.x;
+        const dy = center.y - anchorCenter.y;
+
+        // 前身なら左、後継なら右の近い会社を優先する。
+        let directionPenalty = 0;
+        if (mode === "predecessors" && dx > 120) directionPenalty = 1e9;
+        if (mode === "successors" && dx < -120) directionPenalty = 1e9;
+
+        return {
+          node,
+          center,
+          dx,
+          dy,
+          score: dx * dx + dy * dy + directionPenalty
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.score - b.score);
+
+    const nearest = related[0] || null;
+
+    let centerX = anchorCenter.x;
+    let centerY = anchorCenter.y;
+    let requestedWidth = isMobileLayout() ? 560 : 760;
+
+    if (nearest) {
+      // 起点と最寄りの関係会社の中間へ少し寄せる。
+      centerX = (anchorCenter.x + nearest.center.x) / 2;
+      centerY = (anchorCenter.y + nearest.center.y) / 2;
+
+      const horizontalDistance = Math.abs(nearest.dx);
+      requestedWidth = Math.max(
+        requestedWidth,
+        horizontalDistance + (isMobileLayout() ? 360 : 480)
+      );
+    }
+
+    // 系列全体でも巨大な全系列をカメラに収めず、起点周辺を維持する。
+    setReadableCenteredView(centerX, centerY, requestedWidth);
+  }
+
   function highlightMode(companyName, mode) {
     clearHighlight();
     if (!svg || !companyMap.has(companyName)) return [];
@@ -690,18 +879,18 @@
 
     if (mode === "predecessors") {
       return relatedCount
-        ? `${companyName} の前身・吸収会社 ${relatedCount}社をたどっています。`
+        ? `${companyName} の前身・吸収会社 ${relatedCount}社を強調しています。近い関係から表示し、ドラッグで続きを追えます。`
         : `${companyName} には登録済みの前身会社がありません。`;
     }
     if (mode === "successors") {
       return relatedCount
-        ? `${companyName} の後継会社 ${relatedCount}社をたどっています。`
+        ? `${companyName} の後継会社 ${relatedCount}社を強調しています。近い関係から表示し、ドラッグで続きを追えます。`
         : `${companyName} には登録済みの後継会社がありません。`;
     }
     if (mode === "lineage") {
-      return `${companyName} を含む系列 ${names.size}社を表示しています。`;
+      return `${companyName} を含む系列 ${names.size}社を強調しています。画面は選択会社周辺へ寄せています。`;
     }
-    return `${companyName} を強調表示しています。`;
+    return `${companyName} を強調しています。会社名を読める倍率で表示しています。`;
   }
 
   function clearActiveEventButton() {
@@ -715,8 +904,11 @@
     if (!selectedCompanyName) return;
 
     selectedEventId = null;
-    const focused = highlightMode(selectedCompanyName, selectedMode);
-    if (doFocus) focusElements(focused);
+    highlightMode(selectedCompanyName, selectedMode);
+
+    // 関係する会社・線はすべて強調するが、カメラは全体を無理に収めない。
+    // 選択会社と直近の関係が読める倍率を優先する。
+    if (doFocus) focusModeReadable(selectedCompanyName, selectedMode);
 
     updateModeButtons();
     clearActiveEventButton();
