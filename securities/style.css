@@ -892,15 +892,48 @@ button.secondary { color: #4c535b; }
 
 /* Public site navigation */
 .back-to-top {
-  display: inline-block;
-  margin: 0 0 .35rem;
-  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  min-height: 34px;
+  margin: 0 0 .55rem;
+  padding: .42rem .72rem;
+  color: #315c7a;
+  background: rgba(255, 255, 255, .92);
+  border: 1px solid #d4dde5;
+  border-radius: 999px;
+  box-shadow: 0 2px 7px rgba(31, 55, 73, .07);
   font-size: .78rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
+  letter-spacing: .015em;
+  text-decoration: none;
+  transition:
+    background-color .16s ease,
+    border-color .16s ease,
+    color .16s ease,
+    box-shadow .16s ease,
+    transform .16s ease;
+}
+
+.back-to-top:hover {
+  color: var(--accent);
+  background: #fff;
+  border-color: #aebfcd;
+  box-shadow: 0 4px 11px rgba(31, 55, 73, .11);
+  transform: translateY(-1px);
   text-decoration: none;
 }
-.back-to-top:hover { text-decoration: underline; }
+
+.back-to-top:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(31, 55, 73, .08);
+}
+
+.back-to-top:focus-visible {
+  outline: 3px solid rgba(47, 111, 159, .24);
+  outline-offset: 2px;
+}
 
 @media (max-width: 700px) {
   /* Mobile: avoid squeezing the title block beside navigation/actions. */
@@ -927,8 +960,8 @@ button.secondary { color: #4c535b; }
   }
 
   .back-to-top {
-    width: auto;
-    margin-bottom: .4rem;
+    width: max-content;
+    margin-bottom: .45rem;
   }
 }
 
