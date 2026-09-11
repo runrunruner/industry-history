@@ -1,8 +1,12 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "event_id_scheme": "stable-sha256-v1",
-  "generated_at": "2026-09-11T21:02:23+09:00",
+  "generated_at": "2026-09-12T01:32:06+09:00",
   "source_file": "input.xlsx",
+  "sheets": {
+    "events": "Sheet1",
+    "readings": "読み"
+  },
   "columns": {
     "A": "年月",
     "B": "証券名（前）",
@@ -9805,6 +9809,9 @@
   "companies": [
     {
       "name": "CSK-RB証券",
+      "reading": "しーえすけー・あーるびーしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-178"
       ],
@@ -9836,6 +9843,9 @@
     },
     {
       "name": "Jトラストグローバル証券",
+      "reading": "じぇいとらすとぐろーばるしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-106"
       ],
@@ -9860,6 +9870,9 @@
     },
     {
       "name": "LINE証券",
+      "reading": "らいんしょうけん",
+      "kana_group": "ラ",
+      "reading_registered": true,
       "track_ids": [
         "track-184"
       ],
@@ -9886,6 +9899,9 @@
     },
     {
       "name": "LINE証券設立準備",
+      "reading": "らいんしょうけんせつりつじゅんび",
+      "kana_group": "ラ",
+      "reading_registered": true,
       "track_ids": [
         "track-184"
       ],
@@ -9916,6 +9932,9 @@
     },
     {
       "name": "Meネット証券",
+      "reading": "みーねっとしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-172"
       ],
@@ -9943,6 +9962,9 @@
     },
     {
       "name": "NIS証券",
+      "reading": "えぬあいえすしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-85"
       ],
@@ -9972,6 +9994,9 @@
     },
     {
       "name": "SBIイー・トレード証券",
+      "reading": "えすびーあいいー・とれーどしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-57"
       ],
@@ -10000,6 +10025,9 @@
     },
     {
       "name": "SBIネオモバイル証券",
+      "reading": "えすびーあいねおもばいるしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-185"
       ],
@@ -10025,6 +10053,9 @@
     },
     {
       "name": "SBI証券",
+      "reading": "えすびーあいしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-57",
         "track-69"
@@ -10062,6 +10093,9 @@
     },
     {
       "name": "SMBCフレンド証券",
+      "reading": "えすえむびーしーふれんどしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-31"
       ],
@@ -10090,6 +10124,9 @@
     },
     {
       "name": "UFJつばさ証券",
+      "reading": "ゆーえふじぇいつばさしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-28"
       ],
@@ -10116,6 +10153,9 @@
     },
     {
       "name": "UFJキャピタルマーケッツ証券",
+      "reading": "ゆーえふじぇいきゃぴたるまーけっつしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-146"
       ],
@@ -10142,6 +10182,9 @@
     },
     {
       "name": "auカブコム証券",
+      "reading": "えーゆーかぶこむしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-162"
       ],
@@ -10167,6 +10210,9 @@
     },
     {
       "name": "あかつき証券",
+      "reading": "あかつきしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-4"
       ],
@@ -10194,6 +10240,9 @@
     },
     {
       "name": "あさひリテール証券",
+      "reading": "あさひりてーるしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-21"
       ],
@@ -10225,6 +10274,9 @@
     },
     {
       "name": "いちよし証券",
+      "reading": "いちよししょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-60"
       ],
@@ -10296,6 +10348,9 @@
     },
     {
       "name": "かざか証券",
+      "reading": "かざかしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-45"
       ],
@@ -10321,6 +10376,9 @@
     },
     {
       "name": "ごうぎん証券",
+      "reading": "ごうぎんしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-180"
       ],
@@ -10352,6 +10410,9 @@
     },
     {
       "name": "さくらフレンド証券",
+      "reading": "さくらふれんどしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-31"
       ],
@@ -10378,6 +10439,9 @@
     },
     {
       "name": "さくら証券",
+      "reading": "さくらしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-150"
       ],
@@ -10405,6 +10469,9 @@
     },
     {
       "name": "そしあす証券",
+      "reading": "そしあすしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-21"
       ],
@@ -10435,6 +10502,9 @@
     },
     {
       "name": "つばさ証券",
+      "reading": "つばさしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-28"
       ],
@@ -10463,6 +10533,9 @@
     },
     {
       "name": "とうほう証券",
+      "reading": "とうほうしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-181"
       ],
@@ -10494,6 +10567,9 @@
     },
     {
       "name": "のぞみ証券",
+      "reading": "のぞみしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-29"
       ],
@@ -10524,6 +10600,9 @@
     },
     {
       "name": "みずほインベスターズ証券",
+      "reading": "みずほいんべすたーずしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-1"
       ],
@@ -10555,6 +10634,9 @@
     },
     {
       "name": "みずほ証券",
+      "reading": "みずほしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-143"
       ],
@@ -10596,6 +10678,9 @@
     },
     {
       "name": "むさし証券",
+      "reading": "むさししょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-21"
       ],
@@ -10641,6 +10726,9 @@
     },
     {
       "name": "アイザワ証券",
+      "reading": "あいざわしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-40"
       ],
@@ -10670,6 +10758,9 @@
     },
     {
       "name": "アイザワ証券分割準備",
+      "reading": "あいざわしょうけんぶんかつじゅんび",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-186"
       ],
@@ -10699,6 +10790,9 @@
     },
     {
       "name": "イセキ証券",
+      "reading": "いせきしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-167"
       ],
@@ -10724,6 +10818,9 @@
     },
     {
       "name": "インターネット・トレーディング証券",
+      "reading": "いんたーねっと・とれーでぃんぐしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-171"
       ],
@@ -10751,6 +10848,9 @@
     },
     {
       "name": "イー・ウイング証券",
+      "reading": "いー・ういんぐしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-170"
       ],
@@ -10776,6 +10876,9 @@
     },
     {
       "name": "イー・サンワ",
+      "reading": "いー・さんわ",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-170"
       ],
@@ -10801,6 +10904,9 @@
     },
     {
       "name": "イー・トレード証券",
+      "reading": "いー・とれーどしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-57"
       ],
@@ -10829,6 +10935,9 @@
     },
     {
       "name": "ウィブル証券",
+      "reading": "うぃぶるしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-85"
       ],
@@ -10855,6 +10964,9 @@
     },
     {
       "name": "エイチ・アイ・エス協立証券",
+      "reading": "えいち・あい・えすきょうりつしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-106"
       ],
@@ -10880,6 +10992,9 @@
     },
     {
       "name": "エイチ・エス証券",
+      "reading": "えいち・えすしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-106"
       ],
@@ -10905,6 +11020,9 @@
     },
     {
       "name": "エイト証券",
+      "reading": "えいとしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-175"
       ],
@@ -10935,6 +11053,9 @@
     },
     {
       "name": "エース証券",
+      "reading": "えーすしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-14"
       ],
@@ -10962,6 +11083,9 @@
     },
     {
       "name": "オリックス証券",
+      "reading": "おりっくすしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-101"
       ],
@@ -10992,6 +11116,9 @@
     },
     {
       "name": "カブドットコム証券",
+      "reading": "かぶどっとこむしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-162"
       ],
@@ -11021,6 +11148,9 @@
     },
     {
       "name": "コスモ証券",
+      "reading": "こすもしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-2"
       ],
@@ -11059,6 +11189,9 @@
     },
     {
       "name": "シティグループ証券株式会社",
+      "reading": "してぃぐるーぷしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-160"
       ],
@@ -11083,6 +11216,9 @@
     },
     {
       "name": "ジェット証券",
+      "reading": "じぇっとしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-168"
       ],
@@ -11110,6 +11246,9 @@
     },
     {
       "name": "ジョインベスト証券",
+      "reading": "じょいんべすとしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-176"
       ],
@@ -11140,6 +11279,9 @@
     },
     {
       "name": "ジョインベスト証券設立準備",
+      "reading": "じょいんべすとしょうけんせつりつじゅんび",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-176"
       ],
@@ -11170,6 +11312,9 @@
     },
     {
       "name": "ジーク証券",
+      "reading": "じーくしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-94"
       ],
@@ -11195,6 +11340,9 @@
     },
     {
       "name": "セゾン証券",
+      "reading": "せぞんしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-153"
       ],
@@ -11223,6 +11371,9 @@
     },
     {
       "name": "ソニーバンク証券",
+      "reading": "そにーばんくしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-179"
       ],
@@ -11250,6 +11401,9 @@
     },
     {
       "name": "ソフトバンク・フロンティア証券",
+      "reading": "そふとばんく・ふろんてぃあしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-166"
       ],
@@ -11277,6 +11431,9 @@
     },
     {
       "name": "トヨタファイナンシャルサービス証券",
+      "reading": "とよたふぁいなんしゃるさーびすしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-173"
       ],
@@ -11304,6 +11461,9 @@
     },
     {
       "name": "ナショナル田林証券",
+      "reading": "なしょなるたばやししょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-78"
       ],
@@ -11330,6 +11490,9 @@
     },
     {
       "name": "ナショナル証券",
+      "reading": "なしょなるしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-78"
       ],
@@ -11359,6 +11522,9 @@
     },
     {
       "name": "フィデス証券",
+      "reading": "ふぃですしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-156"
       ],
@@ -11386,6 +11552,9 @@
     },
     {
       "name": "マディソン証券",
+      "reading": "までぃそんしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-85"
       ],
@@ -11415,6 +11584,9 @@
     },
     {
       "name": "マネックス",
+      "reading": "まねっくす",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-161"
       ],
@@ -11440,6 +11612,9 @@
     },
     {
       "name": "マネックス・ビーンズ証券",
+      "reading": "まねっくす・びーんずしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-161"
       ],
@@ -11466,6 +11641,9 @@
     },
     {
       "name": "マネックス証券",
+      "reading": "まねっくすしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-161"
       ],
@@ -11507,6 +11685,9 @@
     },
     {
       "name": "モルガン・スタンレーMUFG証券",
+      "reading": "もるがん・すたんれーえむゆーえふじーしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-155"
       ],
@@ -11531,6 +11712,9 @@
     },
     {
       "name": "モルガン・スタンレー・インターナショナル・リミテッド東京支店",
+      "reading": "もるがん・すたんれー・いんたーなしょなる・りみてっどとうきょうしてん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-136"
       ],
@@ -11556,6 +11740,9 @@
     },
     {
       "name": "モルガン・スタンレー・ジャパン・リミテッド",
+      "reading": "もるがん・すたんれー・じゃぱん・りみてっど",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-136",
         "track-169"
@@ -11585,6 +11772,9 @@
     },
     {
       "name": "モルガン・スタンレー・ディーン・ウィッター・ジャパン・リミテッド",
+      "reading": "もるがん・すたんれー・でぃーん・うぃったー・じゃぱん・りみてっど",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-169"
       ],
@@ -11613,6 +11803,9 @@
     },
     {
       "name": "モルガン・スタンレー証券",
+      "reading": "もるがん・すたんれーしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-155"
       ],
@@ -11638,6 +11831,9 @@
     },
     {
       "name": "モルガン・スタンレー証券準備",
+      "reading": "もるがん・すたんれーしょうけんじゅんび",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-155"
       ],
@@ -11663,6 +11859,9 @@
     },
     {
       "name": "ヤマゲン証券",
+      "reading": "やまげんしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-85"
       ],
@@ -11692,6 +11891,9 @@
     },
     {
       "name": "ユナイテッドワールド証券",
+      "reading": "ゆないてっどわーるどしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-175"
       ],
@@ -11722,6 +11924,9 @@
     },
     {
       "name": "ユニコム証券",
+      "reading": "ゆにこむしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-81"
       ],
@@ -11752,6 +11957,9 @@
     },
     {
       "name": "ユニバーサル証券",
+      "reading": "ゆにばーさるしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-86"
       ],
@@ -11778,6 +11986,9 @@
     },
     {
       "name": "ライブドア証券",
+      "reading": "らいぶどあしょうけん",
+      "kana_group": "ラ",
+      "reading_registered": true,
       "track_ids": [
         "track-45"
       ],
@@ -11803,6 +12014,9 @@
     },
     {
       "name": "リーディング証券",
+      "reading": "りーでぃんぐしょうけん",
+      "kana_group": "ラ",
+      "reading_registered": true,
       "track_ids": [
         "track-94"
       ],
@@ -11827,6 +12041,9 @@
     },
     {
       "name": "ワールド日栄フロンティア証券",
+      "reading": "わーるどにちえいふろんてぃあしょうけん",
+      "kana_group": "ワ",
+      "reading_registered": true,
       "track_ids": [
         "track-69"
       ],
@@ -11853,6 +12070,9 @@
     },
     {
       "name": "ワールド日栄証券",
+      "reading": "わーるどにちえいしょうけん",
+      "kana_group": "ワ",
+      "reading_registered": true,
       "track_ids": [
         "track-69"
       ],
@@ -11879,6 +12099,9 @@
     },
     {
       "name": "ワールド証券",
+      "reading": "わーるどしょうけん",
+      "kana_group": "ワ",
+      "reading_registered": true,
       "track_ids": [
         "track-69"
       ],
@@ -11905,6 +12128,9 @@
     },
     {
       "name": "一吉証券",
+      "reading": "いちよししょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-60"
       ],
@@ -11942,6 +12168,9 @@
     },
     {
       "name": "一成証券",
+      "reading": "いっせいしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-67"
       ],
@@ -11969,6 +12198,9 @@
     },
     {
       "name": "一色証券",
+      "reading": "いっしきしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-119"
       ],
@@ -11992,6 +12224,9 @@
     },
     {
       "name": "三和証券",
+      "reading": "さんわしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-146"
       ],
@@ -12017,6 +12252,9 @@
     },
     {
       "name": "三栄証券〈いちよし系〉",
+      "reading": "さんえいしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-60"
       ],
@@ -12049,6 +12287,9 @@
     },
     {
       "name": "三栄証券〈松屋系〉",
+      "reading": "さんえいしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-66"
       ],
@@ -12079,6 +12320,9 @@
     },
     {
       "name": "三菱UFJ eスマート証券",
+      "reading": "みつびしゆーえふじぇいいーすまーとしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-162"
       ],
@@ -12103,6 +12347,9 @@
     },
     {
       "name": "三菱UFJメリルリンチPB証券",
+      "reading": "みつびしゆーえふじぇいめりるりんちぴーびーしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-177"
       ],
@@ -12128,6 +12375,9 @@
     },
     {
       "name": "三菱UFJモルガン・スタンレーPB証券",
+      "reading": "みつびしゆーえふじぇいもるがん・すたんれーぴーびーしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-177"
       ],
@@ -12153,6 +12403,9 @@
     },
     {
       "name": "三菱UFJモルガン・スタンレー証券",
+      "reading": "みつびしゆーえふじぇいもるがん・すたんれーしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-28"
       ],
@@ -12182,6 +12435,9 @@
     },
     {
       "name": "三菱UFJ証券",
+      "reading": "みつびしゆーえふじぇいしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-28"
       ],
@@ -12210,6 +12466,9 @@
     },
     {
       "name": "三菱ダイヤモンド証券",
+      "reading": "みつびしだいやもんどしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-147"
       ],
@@ -12235,6 +12494,9 @@
     },
     {
       "name": "三菱信証券",
+      "reading": "みつびししんしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-145"
       ],
@@ -12262,6 +12524,9 @@
     },
     {
       "name": "三菱証券",
+      "reading": "みつびししょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-54"
       ],
@@ -12292,6 +12557,9 @@
     },
     {
       "name": "三重證券",
+      "reading": "みえしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-137"
       ],
@@ -12315,6 +12583,9 @@
     },
     {
       "name": "下館証券",
+      "reading": "しもだてしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-94"
       ],
@@ -12340,6 +12611,9 @@
     },
     {
       "name": "中央証券",
+      "reading": "ちゅうおうしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-27"
       ],
@@ -12370,6 +12644,9 @@
     },
     {
       "name": "中日証券",
+      "reading": "ちゅうにちしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-107"
       ],
@@ -12396,6 +12673,9 @@
     },
     {
       "name": "中泉証券",
+      "reading": "なかいずみしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-182"
       ],
@@ -12419,6 +12699,9 @@
     },
     {
       "name": "中澤証券",
+      "reading": "なかざわしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-73"
       ],
@@ -12448,6 +12731,9 @@
     },
     {
       "name": "丸ヤ証券",
+      "reading": "まるやしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-115"
       ],
@@ -12471,6 +12757,9 @@
     },
     {
       "name": "丸一証券",
+      "reading": "まるいちしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-153"
       ],
@@ -12494,6 +12783,9 @@
     },
     {
       "name": "丸万証券",
+      "reading": "まるまんしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-11"
       ],
@@ -12522,6 +12814,9 @@
     },
     {
       "name": "丸八証券",
+      "reading": "まるはちしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-46"
       ],
@@ -12555,6 +12850,9 @@
     },
     {
       "name": "丸宏商店",
+      "reading": "まるこうしょうてん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-44"
       ],
@@ -12584,6 +12882,9 @@
     },
     {
       "name": "丸宏大華証券",
+      "reading": "まるこうだいかしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-44"
       ],
@@ -12615,6 +12916,9 @@
     },
     {
       "name": "丸宏証券",
+      "reading": "まるこうしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-44"
       ],
@@ -12645,6 +12949,9 @@
     },
     {
       "name": "丸山証券",
+      "reading": "まるやましょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-102"
       ],
@@ -12668,6 +12975,9 @@
     },
     {
       "name": "丸徳証券",
+      "reading": "まるとくしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-108"
       ],
@@ -12694,6 +13004,9 @@
     },
     {
       "name": "丸栄証券",
+      "reading": "まるえいしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-129"
       ],
@@ -12717,6 +13030,9 @@
     },
     {
       "name": "丸水証券〈水戸系〉",
+      "reading": "まるみずしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-64"
       ],
@@ -12742,6 +13058,9 @@
     },
     {
       "name": "丸金証券",
+      "reading": "まるきんしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-80"
       ],
@@ -12771,6 +13090,9 @@
     },
     {
       "name": "久保田証券",
+      "reading": "くぼたしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-37"
       ],
@@ -12801,6 +13123,9 @@
     },
     {
       "name": "今井商店",
+      "reading": "いまいしょうてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-1"
       ],
@@ -12829,6 +13154,9 @@
     },
     {
       "name": "今村商店",
+      "reading": "いまむらしょうてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-1"
       ],
@@ -12856,6 +13184,9 @@
     },
     {
       "name": "伊勢証券",
+      "reading": "いせしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-97"
       ],
@@ -12885,6 +13216,9 @@
     },
     {
       "name": "伊藤商店",
+      "reading": "いとうしょうてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-14"
       ],
@@ -12910,6 +13244,9 @@
     },
     {
       "name": "伊藤銀證券",
+      "reading": "いとうぎんしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-14"
       ],
@@ -12935,6 +13272,9 @@
     },
     {
       "name": "伊豆證券",
+      "reading": "いずしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-95"
       ],
@@ -12964,6 +13304,9 @@
     },
     {
       "name": "住友キャピタル証券",
+      "reading": "すみともきゃぴたるしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-151"
       ],
@@ -12991,6 +13334,9 @@
     },
     {
       "name": "佐世保證券",
+      "reading": "させぼしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-91"
       ],
@@ -13020,6 +13366,9 @@
     },
     {
       "name": "偕成証券",
+      "reading": "かいせいしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-45"
       ],
@@ -13048,6 +13397,9 @@
     },
     {
       "name": "光亜証券",
+      "reading": "こうあしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-93"
       ],
@@ -13075,6 +13427,9 @@
     },
     {
       "name": "八千代證券",
+      "reading": "やちよしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-82"
       ],
@@ -13100,6 +13455,9 @@
     },
     {
       "name": "八幡山口証券",
+      "reading": "やはたやまぐちしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-79"
       ],
@@ -13136,6 +13494,9 @@
     },
     {
       "name": "八幡証券〈1948法人〉",
+      "reading": "やはたしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-84"
       ],
@@ -13165,6 +13526,9 @@
     },
     {
       "name": "八幡証券〈1967改称法人〉",
+      "reading": "やはたしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-79"
       ],
@@ -13202,6 +13566,9 @@
     },
     {
       "name": "公共証券",
+      "reading": "こうきょうしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-116"
       ],
@@ -13229,6 +13596,9 @@
     },
     {
       "name": "公共電話証券",
+      "reading": "こうきょうでんわしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-116"
       ],
@@ -13254,6 +13624,9 @@
     },
     {
       "name": "六鹿商店",
+      "reading": "ろくがしょうてん",
+      "kana_group": "ラ",
+      "reading_registered": true,
       "track_ids": [
         "track-35"
       ],
@@ -13281,6 +13654,9 @@
     },
     {
       "name": "六鹿証券",
+      "reading": "ろくがしょうけん",
+      "kana_group": "ラ",
+      "reading_registered": true,
       "track_ids": [
         "track-38"
       ],
@@ -13312,6 +13688,9 @@
     },
     {
       "name": "共同證券",
+      "reading": "きょうどうしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-36"
       ],
@@ -13337,6 +13716,9 @@
     },
     {
       "name": "内外徳田証券",
+      "reading": "ないがいとくだしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-73"
       ],
@@ -13380,6 +13762,9 @@
     },
     {
       "name": "内外証券",
+      "reading": "ないがいしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-73"
       ],
@@ -13409,6 +13794,9 @@
     },
     {
       "name": "内外証券〈旧〉",
+      "reading": "ないがいしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-73"
       ],
@@ -13438,6 +13826,9 @@
     },
     {
       "name": "内藤延次商店",
+      "reading": "ないとうのぶつぐしょうてん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-41"
       ],
@@ -13463,6 +13854,9 @@
     },
     {
       "name": "内藤証券",
+      "reading": "ないとうしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-41"
       ],
@@ -13495,6 +13889,9 @@
     },
     {
       "name": "加賀証券",
+      "reading": "かがしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-54"
       ],
@@ -13520,6 +13917,9 @@
     },
     {
       "name": "勧業債券月報社",
+      "reading": "かんぎょうさいけんげっぽうしゃ",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-15"
       ],
@@ -13548,6 +13948,9 @@
     },
     {
       "name": "勧角証券",
+      "reading": "かんかくしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-1"
       ],
@@ -13575,6 +13978,9 @@
     },
     {
       "name": "北陽証券",
+      "reading": "ほくようしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-128"
       ],
@@ -13598,6 +14004,9 @@
     },
     {
       "name": "千代田証券",
+      "reading": "ちよだしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-74"
       ],
@@ -13628,6 +14037,9 @@
     },
     {
       "name": "協同証券",
+      "reading": "きょうどうしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-75"
       ],
@@ -13657,6 +14069,9 @@
     },
     {
       "name": "協立証券",
+      "reading": "きょうりつしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-106"
       ],
@@ -13682,6 +14097,9 @@
     },
     {
       "name": "南旺証券",
+      "reading": "なんおうしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-67"
       ],
@@ -13707,6 +14125,9 @@
     },
     {
       "name": "原忠三郎商店",
+      "reading": "はらちゅうざぶろうしょうてん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-12"
       ],
@@ -13735,6 +14156,9 @@
     },
     {
       "name": "原忠証券",
+      "reading": "はらちゅうしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-12"
       ],
@@ -13762,6 +14186,9 @@
     },
     {
       "name": "叶証券",
+      "reading": "かのうしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-113"
       ],
@@ -13785,6 +14212,9 @@
     },
     {
       "name": "合同証券",
+      "reading": "ごうどうしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-106"
       ],
@@ -13809,6 +14239,9 @@
     },
     {
       "name": "吉川証券",
+      "reading": "よしかわしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-65"
       ],
@@ -13832,6 +14265,9 @@
     },
     {
       "name": "和光証券",
+      "reading": "わこうしょうけん",
+      "kana_group": "ワ",
+      "reading_registered": true,
       "track_ids": [
         "track-76"
       ],
@@ -13859,6 +14295,9 @@
     },
     {
       "name": "和歌山鈴木証券",
+      "reading": "わかやますずきしょうけん",
+      "kana_group": "ワ",
+      "reading_registered": true,
       "track_ids": [
         "track-123"
       ],
@@ -13884,6 +14323,9 @@
     },
     {
       "name": "国際証券",
+      "reading": "こくさいしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-82"
       ],
@@ -13911,6 +14353,9 @@
     },
     {
       "name": "多摩證券",
+      "reading": "たましょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-89"
       ],
@@ -13940,6 +14385,9 @@
     },
     {
       "name": "大七証券",
+      "reading": "だいしちしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-159"
       ],
@@ -13963,6 +14411,9 @@
     },
     {
       "name": "大中證券",
+      "reading": "だいちゅうしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-81"
       ],
@@ -13992,6 +14443,9 @@
     },
     {
       "name": "大井証券",
+      "reading": "おおいしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-76"
       ],
@@ -14019,6 +14473,9 @@
     },
     {
       "name": "大北証券",
+      "reading": "だいほくしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-88"
       ],
@@ -14049,6 +14506,9 @@
     },
     {
       "name": "大和証券",
+      "reading": "だいわしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-8"
       ],
@@ -14087,6 +14547,9 @@
     },
     {
       "name": "大和証券エスエムビーシー",
+      "reading": "だいわしょうけんえすえむびーしー",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-150"
       ],
@@ -14115,6 +14578,9 @@
     },
     {
       "name": "大和証券エスビーキャピタル・マーケッツ",
+      "reading": "だいわしょうけんえすびーきゃぴたる・まーけっつ",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-164"
       ],
@@ -14143,6 +14609,9 @@
     },
     {
       "name": "大和証券キャピタル・マーケッツ",
+      "reading": "だいわしょうけんきゃぴたる・まーけっつ",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-150"
       ],
@@ -14170,6 +14639,9 @@
     },
     {
       "name": "大和証券投資信託販売",
+      "reading": "だいわしょうけんとうししんたくはんばい",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-110"
       ],
@@ -14197,6 +14669,9 @@
     },
     {
       "name": "大商証券",
+      "reading": "だいしょうしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-17"
       ],
@@ -14224,6 +14699,9 @@
     },
     {
       "name": "大日證券",
+      "reading": "だいにちしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-96"
       ],
@@ -14250,6 +14728,9 @@
     },
     {
       "name": "大東証券",
+      "reading": "だいとうしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-34"
       ],
@@ -14277,6 +14758,9 @@
     },
     {
       "name": "大森商店",
+      "reading": "おおもりしょうてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-60"
       ],
@@ -14302,6 +14786,9 @@
     },
     {
       "name": "大沢証券",
+      "reading": "おおさわしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-57"
       ],
@@ -14327,6 +14814,9 @@
     },
     {
       "name": "大洋証券",
+      "reading": "たいようしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-137"
       ],
@@ -14355,6 +14845,9 @@
     },
     {
       "name": "大清",
+      "reading": "だいせい",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-14"
       ],
@@ -14382,6 +14875,9 @@
     },
     {
       "name": "大福証券",
+      "reading": "だいふくしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-140"
       ],
@@ -14405,6 +14901,9 @@
     },
     {
       "name": "大興證券",
+      "reading": "だいこうしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-117"
       ],
@@ -14428,6 +14927,9 @@
     },
     {
       "name": "大華証券",
+      "reading": "だいかしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-96"
       ],
@@ -14458,6 +14960,9 @@
     },
     {
       "name": "大華證券",
+      "reading": "だいかしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-96"
       ],
@@ -14488,6 +14993,9 @@
     },
     {
       "name": "大起証券",
+      "reading": "だいきしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-132"
       ],
@@ -14513,6 +15021,9 @@
     },
     {
       "name": "大阪商事",
+      "reading": "おおさかしょうじ",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-17"
       ],
@@ -14541,6 +15052,9 @@
     },
     {
       "name": "大阪屋證券",
+      "reading": "おおさかやしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-2"
       ],
@@ -14603,6 +15117,9 @@
     },
     {
       "name": "大阪野村銀行 証券部",
+      "reading": "おおさかのむらぎんこうしょうけんぶ",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-24"
       ],
@@ -14629,6 +15146,9 @@
     },
     {
       "name": "太平洋証券",
+      "reading": "たいへいようしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-39"
       ],
@@ -14656,6 +15176,9 @@
     },
     {
       "name": "富士証券",
+      "reading": "ふじしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-149"
       ],
@@ -14683,6 +15206,9 @@
     },
     {
       "name": "小山証券",
+      "reading": "おやましょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-114"
       ],
@@ -14706,6 +15232,9 @@
     },
     {
       "name": "小岸商会",
+      "reading": "こぎししょうかい",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-26"
       ],
@@ -14745,6 +15274,9 @@
     },
     {
       "name": "小島証券",
+      "reading": "こじましょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-142"
       ],
@@ -14770,6 +15302,9 @@
     },
     {
       "name": "小川三郎商店",
+      "reading": "おがわさぶろうしょうてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-28"
       ],
@@ -14795,6 +15330,9 @@
     },
     {
       "name": "小川桑太郎商店",
+      "reading": "おがわそうたろうしょうてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-55"
       ],
@@ -14818,6 +15356,9 @@
     },
     {
       "name": "小林株式店",
+      "reading": "こばやしかぶしきてん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-26"
       ],
@@ -14848,6 +15389,9 @@
     },
     {
       "name": "小林証券",
+      "reading": "こばやししょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-26"
       ],
@@ -14877,6 +15421,9 @@
     },
     {
       "name": "小柳正治商店",
+      "reading": "こやなぎしょうじしょうてん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-39"
       ],
@@ -14902,6 +15449,9 @@
     },
     {
       "name": "小柳證券",
+      "reading": "こやなぎしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-39"
       ],
@@ -14933,6 +15483,9 @@
     },
     {
       "name": "山一證券投資信託販売",
+      "reading": "やまいちしょうけんとうししんたくはんばい",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-141"
       ],
@@ -14956,6 +15509,9 @@
     },
     {
       "name": "山加証券",
+      "reading": "やまかしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-77"
       ],
@@ -14983,6 +15539,9 @@
     },
     {
       "name": "山卯証券",
+      "reading": "やまうしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-59"
       ],
@@ -15013,6 +15572,9 @@
     },
     {
       "name": "山口証券",
+      "reading": "やまぐちしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-79"
       ],
@@ -15049,6 +15611,9 @@
     },
     {
       "name": "山叶商会",
+      "reading": "やまかのうしょうかい",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-6"
       ],
@@ -15076,6 +15641,9 @@
     },
     {
       "name": "山叶証券",
+      "reading": "やまかのうしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-6"
       ],
@@ -15103,6 +15671,9 @@
     },
     {
       "name": "山大証券",
+      "reading": "やまだいしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-125"
       ],
@@ -15126,6 +15697,9 @@
     },
     {
       "name": "山崎種二商店",
+      "reading": "やまざきたねじしょうてん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-31"
       ],
@@ -15151,6 +15725,9 @@
     },
     {
       "name": "山崎証券",
+      "reading": "やまざきしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-31"
       ],
@@ -15176,6 +15753,9 @@
     },
     {
       "name": "山文商会",
+      "reading": "やまぶんしょうかい",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-21"
       ],
@@ -15205,6 +15785,9 @@
     },
     {
       "name": "山文証券",
+      "reading": "やまぶんしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-21"
       ],
@@ -15235,6 +15818,9 @@
     },
     {
       "name": "山梨証券",
+      "reading": "やまなししょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-112"
       ],
@@ -15264,6 +15850,9 @@
     },
     {
       "name": "山源証券",
+      "reading": "やまげんしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-85"
       ],
@@ -15293,6 +15882,9 @@
     },
     {
       "name": "山甲証券",
+      "reading": "やまこうしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-112"
       ],
@@ -15322,6 +15914,9 @@
     },
     {
       "name": "山種証券",
+      "reading": "やまたねしょうけん",
+      "kana_group": "ヤ",
+      "reading_registered": true,
       "track_ids": [
         "track-31"
       ],
@@ -15347,6 +15942,9 @@
     },
     {
       "name": "山陽証券",
+      "reading": "さんようしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-103"
       ],
@@ -15376,6 +15974,9 @@
     },
     {
       "name": "岩井コスモ証券",
+      "reading": "いわいこすもしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-2"
       ],
@@ -15405,6 +16006,9 @@
     },
     {
       "name": "岩井商店",
+      "reading": "いわいしょうてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-16"
       ],
@@ -15434,6 +16038,9 @@
     },
     {
       "name": "岩井証券",
+      "reading": "いわいしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-16"
       ],
@@ -15472,6 +16079,9 @@
     },
     {
       "name": "岩国証券",
+      "reading": "いわくにしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-79"
       ],
@@ -15501,6 +16111,9 @@
     },
     {
       "name": "岳麗証券",
+      "reading": "がくれいしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-122"
       ],
@@ -15524,6 +16137,9 @@
     },
     {
       "name": "川島屋商店",
+      "reading": "かわしまやしょうてん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-19"
       ],
@@ -15551,6 +16167,9 @@
     },
     {
       "name": "川島屋證券",
+      "reading": "かわしまやしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-49"
       ],
@@ -15579,6 +16198,9 @@
     },
     {
       "name": "帝国証券信託",
+      "reading": "ていこくしょうけんしんたく",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-18"
       ],
@@ -15609,6 +16231,9 @@
     },
     {
       "name": "常磐証券",
+      "reading": "ときわしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-33"
       ],
@@ -15638,6 +16263,9 @@
     },
     {
       "name": "幡豆証券",
+      "reading": "はずしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-124"
       ],
@@ -15661,6 +16289,9 @@
     },
     {
       "name": "平岡喜代松商店",
+      "reading": "ひらおかきよまつしょうてん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-52"
       ],
@@ -15688,6 +16319,9 @@
     },
     {
       "name": "平岡証券",
+      "reading": "ひらおかしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-52"
       ],
@@ -15717,6 +16351,9 @@
     },
     {
       "name": "平野証券",
+      "reading": "ひらのしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-111"
       ],
@@ -15743,6 +16380,9 @@
     },
     {
       "name": "御坊阪本証券",
+      "reading": "ごぼうさかもとしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-135"
       ],
@@ -15768,6 +16408,9 @@
     },
     {
       "name": "徳田商会",
+      "reading": "とくだしょうかい",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-47"
       ],
@@ -15794,6 +16437,9 @@
     },
     {
       "name": "徳田商店",
+      "reading": "とくだしょうてん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-5"
       ],
@@ -15818,6 +16464,9 @@
     },
     {
       "name": "徳田証券",
+      "reading": "とくだしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-47"
       ],
@@ -15847,6 +16496,9 @@
     },
     {
       "name": "扶桑証券",
+      "reading": "ふそうしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-139"
       ],
@@ -15870,6 +16522,9 @@
     },
     {
       "name": "持田証券",
+      "reading": "もちだしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-121"
       ],
@@ -15893,6 +16548,9 @@
     },
     {
       "name": "新光証券",
+      "reading": "しんこうしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-6"
       ],
@@ -15921,6 +16579,9 @@
     },
     {
       "name": "新日本証券",
+      "reading": "しんにほんしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-6"
       ],
@@ -15948,6 +16609,9 @@
     },
     {
       "name": "新生証券",
+      "reading": "しんせいしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-174"
       ],
@@ -15975,6 +16639,9 @@
     },
     {
       "name": "新田証券",
+      "reading": "にったしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-72"
       ],
@@ -16001,6 +16668,9 @@
     },
     {
       "name": "新西洋証券",
+      "reading": "しんせいようしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-154"
       ],
@@ -16024,6 +16694,9 @@
     },
     {
       "name": "日の出証券",
+      "reading": "ひのでしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-25"
       ],
@@ -16051,6 +16724,9 @@
     },
     {
       "name": "日出証券〈1953大阪屋合流〉",
+      "reading": "ひのでしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-99"
       ],
@@ -16077,6 +16753,9 @@
     },
     {
       "name": "日商岩井証券",
+      "reading": "にっしょういわいしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-156"
       ],
@@ -16102,6 +16781,9 @@
     },
     {
       "name": "日本アジア証券",
+      "reading": "にほんあじあしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-9"
       ],
@@ -16165,6 +16847,9 @@
     },
     {
       "name": "日本アジア証券〈丸金系〉",
+      "reading": "にほんあじあしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-80"
       ],
@@ -16195,6 +16880,9 @@
     },
     {
       "name": "日本オンライン証券",
+      "reading": "にほんおんらいんしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-162"
       ],
@@ -16220,6 +16908,9 @@
     },
     {
       "name": "日本グローバル証券",
+      "reading": "にほんぐろーばるしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-45"
       ],
@@ -16247,6 +16938,9 @@
     },
     {
       "name": "日本信託銀行",
+      "reading": "にほんしんたくぎんこう",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-22"
       ],
@@ -16275,6 +16969,9 @@
     },
     {
       "name": "日本勧業角丸証券",
+      "reading": "にほんかんぎょうかくまるしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-1"
       ],
@@ -16301,6 +16998,9 @@
     },
     {
       "name": "日本勧業証券",
+      "reading": "にほんかんぎょうしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-30"
       ],
@@ -16329,6 +17029,9 @@
     },
     {
       "name": "日本勧業銀行月報社",
+      "reading": "にほんかんぎょうぎんこうげっぽうしゃ",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-10"
       ],
@@ -16354,6 +17057,9 @@
     },
     {
       "name": "日本証券",
+      "reading": "にほんしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-157"
       ],
@@ -16377,6 +17083,9 @@
     },
     {
       "name": "日本證券投資",
+      "reading": "にほんしょうけんとうし",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-50"
       ],
@@ -16406,6 +17115,9 @@
     },
     {
       "name": "日栄証券",
+      "reading": "にちえいしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-163"
       ],
@@ -16429,6 +17141,9 @@
     },
     {
       "name": "日興コーディアル証券",
+      "reading": "にっこうこーでぃあるしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-23"
       ],
@@ -16454,6 +17169,9 @@
     },
     {
       "name": "日興シティグループ証券",
+      "reading": "にっこうしてぃぐるーぷしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-160"
       ],
@@ -16481,6 +17199,9 @@
     },
     {
       "name": "日興ソロモン・スミス・バーニー証券",
+      "reading": "にっこうそろもん・すみす・ばーにーしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-160"
       ],
@@ -16508,6 +17229,9 @@
     },
     {
       "name": "日興ビーンズ証券",
+      "reading": "にっこうびーんずしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-165"
       ],
@@ -16538,6 +17262,9 @@
     },
     {
       "name": "日興證券",
+      "reading": "にっこうしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-23"
       ],
@@ -16571,6 +17298,9 @@
     },
     {
       "name": "日興證券投資信託販売",
+      "reading": "にっこうしょうけんとうししんたくはんばい",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-109"
       ],
@@ -16598,6 +17328,9 @@
     },
     {
       "name": "明光ナショナル証券",
+      "reading": "めいこうなしょなるしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-78"
       ],
@@ -16624,6 +17357,9 @@
     },
     {
       "name": "明光丸ヤ証券",
+      "reading": "めいこうまるやしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-83"
       ],
@@ -16650,6 +17386,9 @@
     },
     {
       "name": "明光証券",
+      "reading": "めいこうしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-83"
       ],
@@ -16684,6 +17423,9 @@
     },
     {
       "name": "有賀証券",
+      "reading": "ありがしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-126"
       ],
@@ -16707,6 +17449,9 @@
     },
     {
       "name": "望月商店",
+      "reading": "もちづきしょうてん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-12"
       ],
@@ -16732,6 +17477,9 @@
     },
     {
       "name": "望月証券",
+      "reading": "もちづきしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-12"
       ],
@@ -16759,6 +17507,9 @@
     },
     {
       "name": "朝田証券",
+      "reading": "あさだしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-104"
       ],
@@ -16782,6 +17533,9 @@
     },
     {
       "name": "木徳証券",
+      "reading": "きとくしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-51"
       ],
@@ -16807,6 +17561,9 @@
     },
     {
       "name": "木村徳兵衛商店",
+      "reading": "きむらとくべえしょうてん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-51"
       ],
@@ -16832,6 +17589,9 @@
     },
     {
       "name": "東一証券",
+      "reading": "とういちしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-69"
       ],
@@ -16860,6 +17620,9 @@
     },
     {
       "name": "東京三菱ティーディーウォーターハウス証券",
+      "reading": "とうきょうみつびしてぃーでぃーうぉーたーはうすしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-172"
       ],
@@ -16885,6 +17648,9 @@
     },
     {
       "name": "東京三菱パーソナル証券",
+      "reading": "とうきょうみつびしぱーそなるしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-54"
       ],
@@ -16913,6 +17679,9 @@
     },
     {
       "name": "東京三菱証券",
+      "reading": "とうきょうみつびししょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-147"
       ],
@@ -16941,6 +17710,9 @@
     },
     {
       "name": "東京神栄証券",
+      "reading": "とうきょうしんえいしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-70"
       ],
@@ -16968,6 +17740,9 @@
     },
     {
       "name": "東京第一証券",
+      "reading": "とうきょうだいいちしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-69"
       ],
@@ -16993,6 +17768,9 @@
     },
     {
       "name": "東京証券",
+      "reading": "とうきょうしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-38"
       ],
@@ -17025,6 +17803,9 @@
     },
     {
       "name": "東光證券",
+      "reading": "とうこうしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-86"
       ],
@@ -17053,6 +17834,9 @@
     },
     {
       "name": "東和証券",
+      "reading": "とうわしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-71"
       ],
@@ -17078,6 +17862,9 @@
     },
     {
       "name": "東海インターナショナル証券",
+      "reading": "とうかいいんたーなしょなるしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-152"
       ],
@@ -17103,6 +17890,9 @@
     },
     {
       "name": "東海丸万証券",
+      "reading": "とうかいまるまんしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-11"
       ],
@@ -17136,6 +17926,9 @@
     },
     {
       "name": "東海商事",
+      "reading": "とうかいしょうじ",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-53"
       ],
@@ -17165,6 +17958,9 @@
     },
     {
       "name": "東海東京証券",
+      "reading": "とうかいとうきょうしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-11"
       ],
@@ -17199,6 +17995,9 @@
     },
     {
       "name": "東海証券",
+      "reading": "とうかいしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-53"
       ],
@@ -17226,6 +18025,9 @@
     },
     {
       "name": "東邦証券",
+      "reading": "とうほうしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-86"
       ],
@@ -17251,6 +18053,9 @@
     },
     {
       "name": "松屋証券",
+      "reading": "まつやしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-66"
       ],
@@ -17280,6 +18085,9 @@
     },
     {
       "name": "松永定一商店",
+      "reading": "まつながさだいちしょうてん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-56"
       ],
@@ -17303,6 +18111,9 @@
     },
     {
       "name": "松興證券",
+      "reading": "まつこうしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-138"
       ],
@@ -17326,6 +18137,9 @@
     },
     {
       "name": "株式会社大阪屋商店",
+      "reading": "おおさかやしょうてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-2"
       ],
@@ -17355,6 +18169,9 @@
     },
     {
       "name": "株式会社小岸商会",
+      "reading": "こぎししょうかい",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-26"
       ],
@@ -17384,6 +18201,9 @@
     },
     {
       "name": "株式会社小林株式店",
+      "reading": "こばやしかぶしきてん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-26"
       ],
@@ -17413,6 +18233,9 @@
     },
     {
       "name": "株式会社福山商店",
+      "reading": "ふくやましょうてん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-29"
       ],
@@ -17443,6 +18266,9 @@
     },
     {
       "name": "株式会社野村商店〈大阪屋系〉",
+      "reading": "のむらしょうてん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-2"
       ],
@@ -17473,6 +18299,9 @@
     },
     {
       "name": "森本証券",
+      "reading": "もりもとしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-98"
       ],
@@ -17502,6 +18331,9 @@
     },
     {
       "name": "武田安商店",
+      "reading": "たけだやすしょうてん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-11"
       ],
@@ -17529,6 +18361,9 @@
     },
     {
       "name": "武蔵証券",
+      "reading": "むさししょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-68"
       ],
@@ -17559,6 +18394,9 @@
     },
     {
       "name": "水戸証券",
+      "reading": "みとしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-26"
       ],
@@ -17609,6 +18447,9 @@
     },
     {
       "name": "水戸証券〈旧〉",
+      "reading": "みとしょうけん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-26"
       ],
@@ -17641,6 +18482,9 @@
     },
     {
       "name": "永徳屋證券",
+      "reading": "えいとくやしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-100"
       ],
@@ -17670,6 +18514,9 @@
     },
     {
       "name": "泉証券",
+      "reading": "いずみしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-59"
       ],
@@ -17698,6 +18545,9 @@
     },
     {
       "name": "港屋商店",
+      "reading": "みなとやしょうてん",
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-20"
       ],
@@ -17724,6 +18574,9 @@
     },
     {
       "name": "玉塚商店",
+      "reading": "たまずかしょうてん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-7"
       ],
@@ -17751,6 +18604,9 @@
     },
     {
       "name": "玉塚証券",
+      "reading": "たまずかしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-7"
       ],
@@ -17778,6 +18634,9 @@
     },
     {
       "name": "環証券",
+      "reading": "たまきしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-92"
       ],
@@ -17808,6 +18667,9 @@
     },
     {
       "name": "田丸屋田村新吉商店",
+      "reading": "たまるやたむらしんきちしょうてん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-45"
       ],
@@ -17833,6 +18695,9 @@
     },
     {
       "name": "田丸屋證券",
+      "reading": "たまるやしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-45"
       ],
@@ -17858,6 +18723,9 @@
     },
     {
       "name": "田口証券",
+      "reading": "たぐちしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-13"
       ],
@@ -17888,6 +18756,9 @@
     },
     {
       "name": "田口重一商店",
+      "reading": "たぐちじゅういちしょうてん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-13"
       ],
@@ -17915,6 +18786,9 @@
     },
     {
       "name": "田村証券",
+      "reading": "たむらしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-133"
       ],
@@ -17938,6 +18812,9 @@
     },
     {
       "name": "石崎商店〈藍澤系〉",
+      "reading": "いしざきしょうてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-63"
       ],
@@ -17963,6 +18840,9 @@
     },
     {
       "name": "石野証券",
+      "reading": "いしのしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-42"
       ],
@@ -17990,6 +18870,9 @@
     },
     {
       "name": "石野貞雄商店",
+      "reading": "いしのさだおしょうてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-42"
       ],
@@ -18015,6 +18898,9 @@
     },
     {
       "name": "神栄石野証券",
+      "reading": "しんえいいしのしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-42"
       ],
@@ -18042,6 +18928,9 @@
     },
     {
       "name": "神栄証券",
+      "reading": "しんえいしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-48"
       ],
@@ -18069,6 +18958,9 @@
     },
     {
       "name": "福山友三郎商店",
+      "reading": "ふくやまともさぶろうしょうてん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-29"
       ],
@@ -18098,6 +18990,9 @@
     },
     {
       "name": "福山証券",
+      "reading": "ふくやましょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-29"
       ],
@@ -18128,6 +19023,9 @@
     },
     {
       "name": "福島商店",
+      "reading": "ふくしましょうてん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-6"
       ],
@@ -18153,6 +19051,9 @@
     },
     {
       "name": "福島浪蔵商店",
+      "reading": "ふくしまなみぞうしょうてん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-6"
       ],
@@ -18178,6 +19079,9 @@
     },
     {
       "name": "福田粂商事",
+      "reading": "ふくだくめしょうじ",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-25"
       ],
@@ -18203,6 +19107,9 @@
     },
     {
       "name": "福田証券",
+      "reading": "ふくだしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-25"
       ],
@@ -18228,6 +19135,9 @@
     },
     {
       "name": "秦野証券",
+      "reading": "はだのしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-130"
       ],
@@ -18253,6 +19163,9 @@
     },
     {
       "name": "第一勧業証券",
+      "reading": "だいいちかんぎょうしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-148"
       ],
@@ -18280,6 +19193,9 @@
     },
     {
       "name": "第一証券〈戦前大阪系〉",
+      "reading": "だいいちしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-58"
       ],
@@ -18305,6 +19221,9 @@
     },
     {
       "name": "第一証券〈甲府〉",
+      "reading": "だいいちしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-28"
       ],
@@ -18346,6 +19265,9 @@
     },
     {
       "name": "興和証券",
+      "reading": "こうわしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-131"
       ],
@@ -18369,6 +19291,9 @@
     },
     {
       "name": "興銀証券",
+      "reading": "こうぎんしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-143"
       ],
@@ -18396,6 +19321,9 @@
     },
     {
       "name": "茜証券",
+      "reading": "あかねしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-101"
       ],
@@ -18421,6 +19349,9 @@
     },
     {
       "name": "茨城証券",
+      "reading": "いばらきしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-94"
       ],
@@ -18447,6 +19378,9 @@
     },
     {
       "name": "菱光証券",
+      "reading": "りょうこうしょうけん",
+      "kana_group": "ラ",
+      "reading_registered": true,
       "track_ids": [
         "track-54"
       ],
@@ -18472,6 +19406,9 @@
     },
     {
       "name": "藍澤商店",
+      "reading": "あいざわしょうてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-40"
       ],
@@ -18508,6 +19445,9 @@
     },
     {
       "name": "藍澤證券",
+      "reading": "あいざわしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-40"
       ],
@@ -18596,6 +19536,9 @@
     },
     {
       "name": "藤本ビルブローカー",
+      "reading": "ふじもとびるぶろーかー",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-8"
       ],
@@ -18623,6 +19566,9 @@
     },
     {
       "name": "藤本ビルブローカー証券",
+      "reading": "ふじもとびるぶろーかーしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-8"
       ],
@@ -18650,6 +19596,9 @@
     },
     {
       "name": "藤本ビルブローカー銀行",
+      "reading": "ふじもとびるぶろーかーぎんこう",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-8"
       ],
@@ -18678,6 +19627,9 @@
     },
     {
       "name": "藤本証券",
+      "reading": "ふじもとしょうけん",
+      "kana_group": "ハ",
+      "reading_registered": true,
       "track_ids": [
         "track-8"
       ],
@@ -18705,6 +19657,9 @@
     },
     {
       "name": "西脇証券",
+      "reading": "にしわきしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-90"
       ],
@@ -18734,6 +19689,9 @@
     },
     {
       "name": "角丸証券",
+      "reading": "かくまるしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-1"
       ],
@@ -18771,6 +19729,9 @@
     },
     {
       "name": "赤座株式店",
+      "reading": "あかざかぶしきてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-46"
       ],
@@ -18796,6 +19757,9 @@
     },
     {
       "name": "赤阪商店",
+      "reading": "あかさかしょうてん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-61"
       ],
@@ -18821,6 +19785,9 @@
     },
     {
       "name": "農中証券",
+      "reading": "のうちゅうしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-144"
       ],
@@ -18848,6 +19815,9 @@
     },
     {
       "name": "近畿証券",
+      "reading": "きんきしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-118"
       ],
@@ -18871,6 +19841,9 @@
     },
     {
       "name": "遠山證券",
+      "reading": "とおやましょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-43"
       ],
@@ -18898,6 +19871,9 @@
     },
     {
       "name": "都築証券",
+      "reading": "つづきしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-120"
       ],
@@ -18921,6 +19897,9 @@
     },
     {
       "name": "野島証券",
+      "reading": "のじましょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-127"
       ],
@@ -18944,6 +19923,9 @@
     },
     {
       "name": "野村サテライト",
+      "reading": "のむらさてらいと",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-176"
       ],
@@ -18970,6 +19952,9 @@
     },
     {
       "name": "野村ファンドネット証券",
+      "reading": "のむらふぁんどねっとしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-158"
       ],
@@ -19000,6 +19985,9 @@
     },
     {
       "name": "野村徳七商店〈大阪屋系〉",
+      "reading": "のむらとくしちしょうてん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-2"
       ],
@@ -19030,6 +20018,9 @@
     },
     {
       "name": "野村證券",
+      "reading": "のむらしょうけん",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-32"
       ],
@@ -19110,6 +20101,9 @@
     },
     {
       "name": "野村證券投資信託販売",
+      "reading": "のむらしょうけんとうししんたくはんばい",
+      "kana_group": "ナ",
+      "reading_registered": true,
       "track_ids": [
         "track-134"
       ],
@@ -19133,6 +20127,9 @@
     },
     {
       "name": "金万商店",
+      "reading": "かねまんしょうてん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-9"
       ],
@@ -19163,6 +20160,9 @@
     },
     {
       "name": "金万証券",
+      "reading": "かねまんしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-9"
       ],
@@ -19196,6 +20196,9 @@
     },
     {
       "name": "金泉証券",
+      "reading": "きんせんしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-69"
       ],
@@ -19221,6 +20224,9 @@
     },
     {
       "name": "鈴や証券",
+      "reading": "すずやしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-67"
       ],
@@ -19246,6 +20252,9 @@
     },
     {
       "name": "鈴一証券",
+      "reading": "すずいちしょうけん",
+      "kana_group": "サ",
+      "reading_registered": true,
       "track_ids": [
         "track-67"
       ],
@@ -19271,6 +20280,9 @@
     },
     {
       "name": "飯田證券",
+      "reading": "いいだしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-87"
       ],
@@ -19300,6 +20312,9 @@
     },
     {
       "name": "高山商店",
+      "reading": "たかやましょうてん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-38"
       ],
@@ -19325,6 +20340,9 @@
     },
     {
       "name": "高木両替店",
+      "reading": "たかぎりょうがえてん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-3"
       ],
@@ -19350,6 +20368,9 @@
     },
     {
       "name": "高木商店",
+      "reading": "たかぎしょうてん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-3"
       ],
@@ -19377,6 +20398,9 @@
     },
     {
       "name": "髙木証券",
+      "reading": "たかぎしょうけん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-3"
       ],
@@ -19404,6 +20428,9 @@
     },
     {
       "name": "髙清商店",
+      "reading": "たかせいしょうてん",
+      "kana_group": "タ",
+      "reading_registered": true,
       "track_ids": [
         "track-62"
       ],
@@ -19429,6 +20456,9 @@
     },
     {
       "name": "鯨井証券",
+      "reading": "くじらいしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-105"
       ],
@@ -19452,6 +20482,9 @@
     },
     {
       "name": "黒川商店",
+      "reading": "くろかわしょうてん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-4"
       ],
@@ -19477,6 +20510,9 @@
     },
     {
       "name": "黒川幸七商店",
+      "reading": "くろかわこうしちしょうてん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-4"
       ],
@@ -19504,6 +20540,9 @@
     },
     {
       "name": "黒川木徳証券",
+      "reading": "くろかわきとくしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-4"
       ],
@@ -19530,6 +20569,9 @@
     },
     {
       "name": "黒川証券",
+      "reading": "くろかわしょうけん",
+      "kana_group": "カ",
+      "reading_registered": true,
       "track_ids": [
         "track-4"
       ],
@@ -19555,6 +20597,9 @@
     },
     {
       "name": "ＳＭＢＣフレンド証券",
+      "reading": "えすえむびーしーふれんどしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-183"
       ],
@@ -19578,6 +20623,9 @@
     },
     {
       "name": "ＳＭＢＣ日興証券",
+      "reading": "えすえむびーしーにっこうしょうけん",
+      "kana_group": "ア",
+      "reading_registered": true,
       "track_ids": [
         "track-23"
       ],
