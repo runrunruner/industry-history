@@ -97,7 +97,73 @@
     }
   }
 
-  function makeSourceBlock(source) {
+  function sourceEntries(eventOrSource) {
+    if (eventOrSource && typeof eventOrSource === "object") {
+      const entries = [];
+
+      for (const line of splitSources(eventOrSource.note || "")) {
+        entries.push({ text: line, dedicatedUrl: false });
+      }
+
+      if (Array.isArray(eventOrSource.urls)) {
+        for (const value of eventOrSource.urls) {
+          const url = String(value || "").trim();
+          if (url) entries.push({ text: url, dedicatedUrl: true });
+        }
+      }
+
+      // schema v4以前のJSONもそのまま表示できるようにする。
+      if (!entries.length) {
+        return splitSources(eventOrSource.source || "")
+          .map(text => ({ text, dedicatedUrl: isHttpUrl(text) }));
+      }
+
+      return entries;
+    }
+
+    return splitSources(eventOrSource)
+      .map(text => ({ text, dedicatedUrl: isHttpUrl(text) }));
+  }
+
+  function appendLinkifiedText(container, text) {
+    // 旧データのE列に「補足文 + URL」が残っていても、URL部分だけリンク化する。
+    const re = /https?:\/\/[^\s]+/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = re.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        container.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
+      }
+
+      let urlText = match[0];
+      let trailing = "";
+      while (/[、。,.）)】\]]$/.test(urlText)) {
+        trailing = urlText.slice(-1) + trailing;
+        urlText = urlText.slice(0, -1);
+      }
+
+      if (isHttpUrl(urlText)) {
+        const a = document.createElement("a");
+        a.href = urlText;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        a.textContent = urlText;
+        container.appendChild(a);
+      } else {
+        container.appendChild(document.createTextNode(urlText));
+      }
+
+      if (trailing) container.appendChild(document.createTextNode(trailing));
+      lastIndex = match.index + match[0].length;
+    }
+
+    if (lastIndex < text.length) {
+      container.appendChild(document.createTextNode(text.slice(lastIndex)));
+    }
+  }
+
+  function makeSourceBlock(eventOrSource) {
     const wrapper = document.createElement("div");
     wrapper.className = "source-block";
 
@@ -106,7 +172,7 @@
     label.textContent = "出典";
     wrapper.appendChild(label);
 
-    const entries = splitSources(source);
+    const entries = sourceEntries(eventOrSource);
     if (!entries.length) {
       const none = document.createElement("span");
       none.className = "source-entry no-source";
@@ -119,16 +185,17 @@
       const row = document.createElement("span");
       row.className = "source-entry";
 
-      if (isHttpUrl(entry)) {
+      if (entry.dedicatedUrl && isHttpUrl(entry.text)) {
         const a = document.createElement("a");
-        a.href = entry;
+        a.href = entry.text;
         a.target = "_blank";
         a.rel = "noopener noreferrer";
-        a.textContent = entry;
+        a.textContent = entry.text;
         row.appendChild(a);
       } else {
-        row.textContent = entry;
+        appendLinkifiedText(row, entry.text);
       }
+
       wrapper.appendChild(row);
     }
     return wrapper;
@@ -1383,7 +1450,7 @@
       focusButton.addEventListener("click", () => focusEvent(event, focusButton, true));
 
       item.appendChild(focusButton);
-      item.appendChild(makeSourceBlock(event.source));
+      item.appendChild(makeSourceBlock(event));
       list.appendChild(item);
     }
 

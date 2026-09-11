@@ -1,0 +1,2095 @@
+{
+  "schema_version": 1,
+  "source_file": "input.xlsx",
+  "reading_sheet": "読み",
+  "companies": [
+    {
+      "name": "CSK-RB証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "Jトラストグローバル証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "LINE証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "LINE証券設立準備",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "Meネット証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "NIS証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "SBIイー・トレード証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "SBIネオモバイル証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "SBI証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "SMBCフレンド証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "UFJつばさ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "UFJキャピタルマーケッツ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "auカブコム証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "あかつき証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "あさひリテール証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "いちよし証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "かざか証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ごうぎん証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "さくらフレンド証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "さくら証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "そしあす証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "つばさ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "とうほう証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "のぞみ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "みずほインベスターズ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "みずほ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "むさし証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "アイザワ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "アイザワ証券分割準備",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "イセキ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "インターネット・トレーディング証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "イー・ウイング証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "イー・サンワ",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "イー・トレード証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ウィブル証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "エイチ・アイ・エス協立証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "エイチ・エス証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "エイト証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "エース証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "オリックス証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "カブドットコム証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "コスモ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "シティグループ証券株式会社",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ジェット証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ジョインベスト証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ジョインベスト証券設立準備",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ジーク証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "セゾン証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ソニーバンク証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ソフトバンク・フロンティア証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "トヨタファイナンシャルサービス証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ナショナル田林証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ナショナル証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "フィデス証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "マディソン証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "マネックス",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "マネックス・ビーンズ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "マネックス証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "モルガン・スタンレーMUFG証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "モルガン・スタンレー・インターナショナル・リミテッド東京支店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "モルガン・スタンレー・ジャパン・リミテッド",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "モルガン・スタンレー・ディーン・ウィッター・ジャパン・リミテッド",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "モルガン・スタンレー証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "モルガン・スタンレー証券準備",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ヤマゲン証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ユナイテッドワールド証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ユニコム証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ユニバーサル証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ライブドア証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "リーディング証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ワールド日栄フロンティア証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ワールド日栄証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ワールド証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "一吉証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "一成証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "一色証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "三和証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "三栄証券〈いちよし系〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "三栄証券〈松屋系〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "三菱UFJ eスマート証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "三菱UFJメリルリンチPB証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "三菱UFJモルガン・スタンレーPB証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "三菱UFJモルガン・スタンレー証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "三菱UFJ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "三菱ダイヤモンド証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "三菱信証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "三菱証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "三重證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "下館証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "中央証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "中日証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "中泉証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "中澤証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "丸ヤ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "丸一証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "丸万証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "丸八証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "丸宏商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "丸宏大華証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "丸宏証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "丸山証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "丸徳証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "丸栄証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "丸水証券〈水戸系〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "丸金証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "久保田証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "今井商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "今村商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "伊勢証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "伊藤商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "伊藤銀證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "伊豆證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "住友キャピタル証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "佐世保證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "偕成証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "光亜証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "八千代證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "八幡山口証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "八幡証券〈1948法人〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "八幡証券〈1967改称法人〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "公共証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "公共電話証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "六鹿商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "六鹿証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "共同證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "内外徳田証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "内外証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "内外証券〈旧〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "内藤延次商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "内藤証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "加賀証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "勧業債券月報社",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "勧角証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "北陽証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "千代田証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "協同証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "協立証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "南旺証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "原忠三郎商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "原忠証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "叶証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "合同証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "吉川証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "和光証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "和歌山鈴木証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "国際証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "多摩證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大七証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大中證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大井証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大北証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大和証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大和証券エスエムビーシー",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大和証券エスビーキャピタル・マーケッツ",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大和証券キャピタル・マーケッツ",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大和証券投資信託販売",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大商証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大日證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大東証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大森商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大沢証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大洋証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大清",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大福証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大興證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大華証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大華證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大起証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大阪商事",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大阪屋證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "大阪野村銀行 証券部",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "太平洋証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "富士証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "小山証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "小岸商会",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "小島証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "小川三郎商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "小川桑太郎商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "小林株式店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "小林証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "小柳正治商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "小柳證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山一證券投資信託販売",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山加証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山卯証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山口証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山叶商会",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山叶証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山大証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山崎種二商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山崎証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山文商会",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山文証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山梨証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山源証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山甲証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山種証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "山陽証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "岩井コスモ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "岩井商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "岩井証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "岩国証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "岳麗証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "川島屋商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "川島屋證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "帝国証券信託",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "常磐証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "幡豆証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "平岡喜代松商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "平岡証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "平野証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "御坊阪本証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "徳田商会",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "徳田商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "徳田証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "扶桑証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "持田証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "新光証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "新日本証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "新生証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "新田証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "新西洋証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日の出証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日出証券〈1953大阪屋合流〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日商岩井証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日本アジア証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日本アジア証券〈丸金系〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日本オンライン証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日本グローバル証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日本信託銀行",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日本勧業角丸証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日本勧業証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日本勧業銀行月報社",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日本証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日本證券投資",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日栄証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日興コーディアル証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日興シティグループ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日興ソロモン・スミス・バーニー証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日興ビーンズ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日興證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "日興證券投資信託販売",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "明光ナショナル証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "明光丸ヤ証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "明光証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "有賀証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "望月商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "望月証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "朝田証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "木徳証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "木村徳兵衛商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東一証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東京三菱ティーディーウォーターハウス証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東京三菱パーソナル証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東京三菱証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東京神栄証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東京第一証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東京証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東光證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東和証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東海インターナショナル証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東海丸万証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東海商事",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東海東京証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東海証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "東邦証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "松屋証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "松永定一商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "松興證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "株式会社大阪屋商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "株式会社小岸商会",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "株式会社小林株式店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "株式会社福山商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "株式会社野村商店〈大阪屋系〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "森本証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "武田安商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "武蔵証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "水戸証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "水戸証券〈旧〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "永徳屋證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "泉証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "港屋商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "玉塚商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "玉塚証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "環証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "田丸屋田村新吉商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "田丸屋證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "田口証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "田口重一商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "田村証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "石崎商店〈藍澤系〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "石野証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "石野貞雄商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "神栄石野証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "神栄証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "福山友三郎商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "福山証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "福島商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "福島浪蔵商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "福田粂商事",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "福田証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "秦野証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "第一勧業証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "第一証券〈戦前大阪系〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "第一証券〈甲府〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "興和証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "興銀証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "茜証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "茨城証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "菱光証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "藍澤商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "藍澤證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "藤本ビルブローカー",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "藤本ビルブローカー証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "藤本ビルブローカー銀行",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "藤本証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "西脇証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "角丸証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "赤座株式店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "赤阪商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "農中証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "近畿証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "遠山證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "都築証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "野島証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "野村サテライト",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "野村ファンドネット証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "野村徳七商店〈大阪屋系〉",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "野村證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "野村證券投資信託販売",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "金万商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "金万証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "金泉証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "鈴や証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "鈴一証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "飯田證券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "高山商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "高木両替店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "高木商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "髙木証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "髙清商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "鯨井証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "黒川商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "黒川幸七商店",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "黒川木徳証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "黒川証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ＳＭＢＣフレンド証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    },
+    {
+      "name": "ＳＭＢＣ日興証券",
+      "reading": "",
+      "kana_group": "その他",
+      "reading_registered": false
+    }
+  ]
+}

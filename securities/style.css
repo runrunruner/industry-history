@@ -982,3 +982,28 @@ button.secondary { color: #4c535b; }
   border-color: #d8dde2;
   color: #7d8790;
 }
+
+
+.header-nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.25rem;
+  padding: .45rem .72rem;
+  border: 1px solid #c7ccd2;
+  border-radius: 8px;
+  background: #fff;
+  color: #4b5965;
+  font-size: .82rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header-nav-link:hover {
+  background: #f4f6f8;
+}
+
+.header-nav-link:focus-visible {
+  outline: 3px solid rgba(28, 79, 124, .28);
+  outline-offset: 2px;
+}
