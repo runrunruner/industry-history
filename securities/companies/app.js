@@ -110,36 +110,14 @@ function uniqueEvents(events) {
   });
 }
 
-function companyTrackIds(name) {
-  const ids = new Set();
-  const company = historyCompanyMap.get(name);
-  for (const id of (company?.track_ids || [])) ids.add(id);
-
-  // company metadataに含まれない歴史上の社名でも、
-  // eventのbefore/afterから所属trackを復元できるようにする。
-  for (const event of (historyData?.events || [])) {
-    if (event.before === name && event.track_id) ids.add(event.track_id);
-    if (event.after === name) {
-      if (event.result_track_id) ids.add(event.result_track_id);
-      else if (event.track_id) ids.add(event.track_id);
-    }
-  }
-  return ids;
-}
-
 function eventsForCompany(name) {
   if (!historyData) return [];
-  const company = historyCompanyMap.get(name);
-  const trackIds = companyTrackIds(name);
-  const directIds = new Set(company?.event_ids || []);
 
-  const events = (historyData.events || []).filter(event => {
-    if (event.before === name || event.after === name) return true;
-    if (directIds.has(event.id)) return true;
-    if (trackIds.has(event.track_id)) return true;
-    if (trackIds.has(event.result_track_id)) return true;
-    return false;
-  });
+  // 会社一覧ページでは、選択した会社名が実際にB列（before）または
+  // C列（after）に登場するイベントだけを表示する。
+  const events = (historyData.events || []).filter(event =>
+    event.before === name || event.after === name
+  );
 
   return uniqueEvents(events).sort(eventSort);
 }
@@ -199,9 +177,9 @@ function renderCompanyDetail(name) {
 
   const events = eventsForCompany(name);
   if (!events.length) {
-    detail.appendChild(el("p", "detail-message", "この会社に関連する沿革イベントを取得できませんでした。"));
+    detail.appendChild(el("p", "detail-message", "この会社名が登場する沿革イベントを取得できませんでした。"));
   } else {
-    const intro = el("p", "detail-summary", `${events.length.toLocaleString("ja-JP")}件の沿革イベントを年代順に表示しています。`);
+    const intro = el("p", "detail-summary", `${events.length.toLocaleString("ja-JP")}件の、この会社名が登場する沿革イベントを年代順に表示しています。`);
     detail.appendChild(intro);
 
     const timeline = el("ol", "history-list");
@@ -298,6 +276,22 @@ function renderCompanyList(companies) {
   }
 }
 
+function setupBackToTop() {
+  const button = document.getElementById("back-to-top");
+  if (!button) return;
+
+  const updateVisibility = () => {
+    button.classList.toggle("is-visible", window.scrollY > 600);
+  };
+
+  button.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  window.addEventListener("scroll", updateVisibility, { passive: true });
+  updateVisibility();
+}
+
 async function init() {
   const groupsRoot = document.getElementById("company-groups");
   const countNode = document.getElementById("company-count");
@@ -323,4 +317,7 @@ async function init() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", init);
+document.addEventListener("DOMContentLoaded", () => {
+  setupBackToTop();
+  init();
+});
