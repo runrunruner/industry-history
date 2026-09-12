@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>証券会社一覧｜業界変遷図アーカイブ</title>
-  <meta name="description" content="証券業界の変遷図に登場する会社名を五十音別に一覧表示します。">
+  <meta name="description" content="証券業界の変遷図に登場する会社名を五十音別に一覧表示し、各社の沿革と出典を確認できます。">
   <link rel="canonical" href="https://runrunruner.github.io/industry-history/securities/companies/">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#1c4f7c">
@@ -12,7 +12,7 @@
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="業界変遷図アーカイブ">
   <meta property="og:title" content="証券会社一覧｜業界変遷図アーカイブ">
-  <meta property="og:description" content="証券業界の変遷図に登場する会社名を五十音別に一覧表示します。">
+  <meta property="og:description" content="証券業界の変遷図に登場する会社名を五十音別に一覧表示し、各社の沿革と出典を確認できます。">
   <meta property="og:url" content="https://runrunruner.github.io/industry-history/securities/companies/">
   <meta property="og:image" content="https://runrunruner.github.io/industry-history/common/og-share.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -27,27 +27,37 @@
         <a href="../../">TOP</a><span>›</span><a href="../">証券業界 変遷図</a><span>›</span><strong>会社一覧</strong>
       </div>
       <h1>証券会社一覧</h1>
-      <p>変遷図に登場する会社を、登録された読みをもとに五十音別で表示します。</p>
+      <p>会社名を選択すると、その会社につながる沿革イベントと出典を確認できます。</p>
     </div>
     <a class="diagram-link" href="../">変遷図を見る</a>
   </header>
 
   <main class="page-shell">
-    <section class="index-card" aria-labelledby="kana-heading">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">COMPANY INDEX</p>
-          <h2 id="kana-heading">五十音から探す</h2>
+    <div class="company-layout">
+      <section class="index-card" aria-labelledby="kana-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">COMPANY INDEX</p>
+            <h2 id="kana-heading">五十音から探す</h2>
+          </div>
+          <p id="company-count" class="company-count">読み込み中…</p>
         </div>
-        <p id="company-count" class="company-count">読み込み中…</p>
-      </div>
 
-      <nav id="kana-nav" class="kana-nav" aria-label="五十音索引"></nav>
-      <p id="reading-note" class="reading-note" hidden></p>
-      <div id="company-groups" class="company-groups" aria-live="polite">
-        <p class="loading">会社一覧を読み込んでいます…</p>
-      </div>
-    </section>
+        <nav id="kana-nav" class="kana-nav" aria-label="五十音索引"></nav>
+        <p id="reading-note" class="reading-note" hidden></p>
+        <div id="company-groups" class="company-groups" aria-live="polite">
+          <p class="loading">会社一覧を読み込んでいます…</p>
+        </div>
+      </section>
+
+      <aside id="company-detail" class="detail-card" aria-live="polite">
+        <div class="detail-empty">
+          <p class="eyebrow">COMPANY HISTORY</p>
+          <h2>会社の沿革</h2>
+          <p>左の一覧から会社名を選択してください。</p>
+        </div>
+      </aside>
+    </div>
   </main>
 
   <footer class="site-footer">
