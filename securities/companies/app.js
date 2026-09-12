@@ -11,10 +11,28 @@ let companyIndexData = null;
 let historyData = null;
 let historyCompanyMap = new Map();
 let selectedCompanyName = "";
+let allCompanies = [];
+let companyIndexMap = new Map();
+
+function readingMeta(company) {
+  let reading = String(company?.reading || "").trim();
+  let uncertain = Boolean(company?.reading_uncertain);
+
+  // v24で生成された旧JSONでも、読み末尾の " を推測フラグとして解釈する。
+  if (/["”＂]$/.test(reading)) {
+    uncertain = true;
+    reading = reading.slice(0, -1).trim();
+  }
+  return { reading, uncertain: Boolean(uncertain && reading) };
+}
+
+function normalizeForSearch(value) {
+  return String(value || "").normalize("NFKC").toLocaleLowerCase("ja").replace(/\s+/g, "").trim();
+}
 
 function compareCompanies(a, b) {
-  const ar = (a.reading || "").trim();
-  const br = (b.reading || "").trim();
+  const ar = readingMeta(a).reading;
+  const br = readingMeta(b).reading;
   if (ar && br) {
     const c = ar.localeCompare(br, "ja");
     if (c !== 0) return c;
@@ -25,6 +43,19 @@ function compareCompanies(a, b) {
   }
   return a.name.localeCompare(b.name, "ja");
 }
+
+function matchesCompanySearch(company, query) {
+  const q = normalizeForSearch(query);
+  if (!q) return true;
+  const name = normalizeForSearch(company.name);
+  const reading = normalizeForSearch(readingMeta(company).reading);
+  return name.includes(q) || reading.includes(q);
+}
+
+function displayCompanyName(company) {
+  return `${company.name}${readingMeta(company).uncertain ? "*" : ""}`;
+}
+
 
 function el(tag, className, text) {
   const node = document.createElement(tag);
@@ -167,7 +198,8 @@ function renderCompanyDetail(name) {
   const header = el("div", "detail-header");
   const headingWrap = el("div", "detail-heading-wrap");
   headingWrap.appendChild(el("p", "eyebrow", "COMPANY HISTORY"));
-  headingWrap.appendChild(el("h2", "detail-company-name", name));
+  const indexCompany = companyIndexMap.get(name);
+  headingWrap.appendChild(el("h2", "detail-company-name", indexCompany ? displayCompanyName(indexCompany) : name));
   header.appendChild(headingWrap);
 
   const isCurrent = Boolean(company?.is_current);
@@ -213,32 +245,57 @@ function renderCompanyDetail(name) {
   }
 }
 
-function renderCompanyList(companies) {
+function renderReadingNotes(companies) {
+  const root = document.getElementById("reading-notes");
+  const missing = companies.filter(company => !readingMeta(company).reading).length;
+  const uncertain = companies.filter(company => readingMeta(company).uncertain).length;
+
+  root.replaceChildren();
+  if (!missing && !uncertain) {
+    root.hidden = true;
+    return;
+  }
+
+  root.hidden = false;
+  if (uncertain) {
+    const p = el("p", "reading-note");
+    const mark = el("strong", "reading-asterisk", "*");
+    p.appendChild(mark);
+    p.appendChild(document.createTextNode(" が付いている会社名の読み仮名は、資料等で確認できず推測で入力しています。"));
+    root.appendChild(p);
+  }
+  if (missing) {
+    root.appendChild(el("p", "reading-note", `読み未登録の会社が ${missing.toLocaleString("ja-JP")} 社あります。未登録分は「その他」に表示されます。`));
+  }
+}
+
+function renderCompanyList(companies, query = "") {
   const groupsRoot = document.getElementById("company-groups");
   const navRoot = document.getElementById("kana-nav");
   const countNode = document.getElementById("company-count");
-  const noteNode = document.getElementById("reading-note");
+  const statusNode = document.getElementById("search-result-status");
 
   const grouped = Object.fromEntries(GROUP_ORDER.map(key => [key, []]));
-  let missingReadings = 0;
 
   for (const company of companies) {
-    const reading = (company.reading || "").trim();
+    const { reading } = readingMeta(company);
     let group = company.kana_group || "その他";
     if (!GROUP_ORDER.includes(group)) group = "その他";
-    if (!reading) missingReadings += 1;
+    // 旧JSONで読み末尾に推測記号が残っていても、kana_groupは既存値を利用できる。
+    // 読み未登録の場合のみ「その他」へ寄せる。
+    if (!reading) group = "その他";
     grouped[group].push(company);
   }
 
   for (const key of GROUP_ORDER) grouped[key].sort(compareCompanies);
 
-  countNode.textContent = `${companies.length.toLocaleString("ja-JP")}社名`;
-  if (missingReadings > 0) {
-    noteNode.hidden = false;
-    noteNode.textContent = `読み未登録の会社が ${missingReadings.toLocaleString("ja-JP")} 社あります。未登録分は「その他」に表示されます。`;
-  } else {
-    noteNode.hidden = true;
-  }
+  const trimmedQuery = String(query || "").trim();
+  countNode.textContent = trimmedQuery
+    ? `${companies.length.toLocaleString("ja-JP")} / ${allCompanies.length.toLocaleString("ja-JP")}社名`
+    : `${allCompanies.length.toLocaleString("ja-JP")}社名`;
+  statusNode.textContent = trimmedQuery
+    ? `「${trimmedQuery}」の検索結果：${companies.length.toLocaleString("ja-JP")}社名`
+    : "";
 
   navRoot.replaceChildren();
   for (const key of GROUP_ORDER) {
@@ -249,6 +306,14 @@ function renderCompanyList(companies) {
   }
 
   groupsRoot.replaceChildren();
+  if (!companies.length) {
+    const empty = el("div", "search-empty");
+    empty.appendChild(el("strong", "", "該当する会社名がありません。"));
+    empty.appendChild(el("p", "", "表記を短くする、または検索語を変えてお試しください。"));
+    groupsRoot.appendChild(empty);
+    return;
+  }
+
   for (const key of GROUP_ORDER) {
     if (!grouped[key].length) continue;
     const section = el("section", "company-group");
@@ -260,13 +325,21 @@ function renderCompanyList(companies) {
 
     const ul = el("ul", "company-list");
     for (const company of grouped[key]) {
+      const meta = readingMeta(company);
       const li = document.createElement("li");
       const button = el("button", "company-button");
       button.type = "button";
       button.dataset.company = company.name;
-      button.setAttribute("aria-label", `${company.name}の沿革を見る`);
-      button.appendChild(el("span", "company-name", company.name));
-      if (company.reading) button.appendChild(el("span", "company-reading", company.reading));
+      if (company.name === selectedCompanyName) button.classList.add("is-selected");
+      button.setAttribute("aria-label", `${company.name}の沿革を見る${meta.uncertain ? "。読み仮名は推測です" : ""}`);
+      const nameSpan = el("span", "company-name", company.name);
+      if (meta.uncertain) {
+        const marker = el("span", "reading-asterisk", "*");
+        marker.setAttribute("aria-label", "読み仮名は推測");
+        nameSpan.appendChild(marker);
+      }
+      button.appendChild(nameSpan);
+      if (meta.reading) button.appendChild(el("span", `company-reading${meta.uncertain ? " is-uncertain" : ""}`, meta.reading));
       button.addEventListener("click", () => renderCompanyDetail(company.name));
       li.appendChild(button);
       ul.appendChild(li);
@@ -275,6 +348,28 @@ function renderCompanyList(companies) {
     groupsRoot.appendChild(section);
   }
 }
+
+function setupCompanySearch() {
+  const input = document.getElementById("company-search");
+  const clear = document.getElementById("company-search-clear");
+  if (!input || !clear) return;
+
+  const apply = () => {
+    const query = input.value;
+    const filtered = allCompanies.filter(company => matchesCompanySearch(company, query));
+    clear.hidden = !query;
+    renderCompanyList(filtered, query);
+  };
+
+  input.addEventListener("input", apply);
+  input.addEventListener("search", apply);
+  clear.addEventListener("click", () => {
+    input.value = "";
+    apply();
+    input.focus();
+  });
+}
+
 
 function setupBackToTop() {
   const button = document.getElementById("back-to-top");
@@ -308,8 +403,11 @@ async function init() {
     historyData = await historyResponse.json();
     historyCompanyMap = new Map((historyData.companies || []).map(company => [company.name, company]));
 
-    const companies = Array.isArray(companyIndexData.companies) ? [...companyIndexData.companies] : [];
-    renderCompanyList(companies);
+    allCompanies = Array.isArray(companyIndexData.companies) ? [...companyIndexData.companies] : [];
+    companyIndexMap = new Map(allCompanies.map(company => [company.name, company]));
+    renderReadingNotes(allCompanies);
+    renderCompanyList(allCompanies);
+    setupCompanySearch();
   } catch (error) {
     console.error(error);
     countNode.textContent = "読み込みエラー";

@@ -44,9 +44,18 @@
             <p id="company-count" class="company-count">読み込み中…</p>
           </div>
 
+          <div class="company-search" role="search">
+            <label class="sr-only" for="company-search">会社名を検索</label>
+            <div class="company-search-row">
+              <input id="company-search" type="search" autocomplete="off" placeholder="会社名を検索　例：野村證券">
+              <button id="company-search-clear" type="button" class="search-clear" hidden>解除</button>
+            </div>
+            <p id="search-result-status" class="search-result-status" aria-live="polite"></p>
+          </div>
+
           <nav id="kana-nav" class="kana-nav" aria-label="五十音索引"></nav>
         </div>
-        <p id="reading-note" class="reading-note" hidden></p>
+        <div id="reading-notes" class="reading-notes" hidden></div>
         <div id="company-groups" class="company-groups" aria-live="polite">
           <p class="loading">会社一覧を読み込んでいます…</p>
         </div>
