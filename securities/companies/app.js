@@ -354,10 +354,67 @@ function renderCompanyRelations(name) {
   return wrapper;
 }
 
-function renderCompanyDetail(name) {
+
+function companyNameFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return String(params.get("company") || "").trim();
+}
+
+function updateCompanyUrl(name, { replace = false } = {}) {
+  const url = new URL(window.location.href);
+  const current = String(url.searchParams.get("company") || "").trim();
+  const next = String(name || "").trim();
+
+  if (next) url.searchParams.set("company", next);
+  else url.searchParams.delete("company");
+  // 五十音アンカーは共有URLには持ち越さず、会社選択URLを簡潔に保つ。
+  url.hash = "";
+
+  // 同じ会社を再選択した場合は履歴を無駄に増やさない。
+  if (current === next && !replace) return;
+
+  const state = { ...(history.state || {}), company: next || null };
+  if (replace) history.replaceState(state, "", url);
+  else history.pushState(state, "", url);
+}
+
+function renderEmptyCompanyDetail() {
+  selectedCompanyName = "";
+  document.querySelectorAll(".company-button.is-selected").forEach(node => node.classList.remove("is-selected"));
+
+  const detail = document.getElementById("company-detail");
+  if (!detail) return;
+  detail.replaceChildren();
+
+  const empty = el("div", "detail-empty");
+  empty.appendChild(el("p", "eyebrow", "COMPANY HISTORY"));
+  empty.appendChild(el("h2", "", "会社の沿革"));
+  empty.appendChild(el("p", "", "左の一覧から会社名を選択してください。"));
+  detail.appendChild(empty);
+}
+
+function applyCompanyFromUrl({ scrollMobile = false } = {}) {
+  const name = companyNameFromUrl();
+  if (!name) {
+    renderEmptyCompanyDetail();
+    return;
+  }
+
+  // URLに存在しない会社名が指定されていても、一覧ページ自体は壊さない。
+  if (!companyIndexMap.has(name) && !historyCompanyMap.has(name)) {
+    renderEmptyCompanyDetail();
+    return;
+  }
+
+  renderCompanyDetail(name, { updateUrl: false, scrollMobile });
+}
+
+function renderCompanyDetail(name, { updateUrl = true, replaceUrl = false, scrollMobile = true } = {}) {
   const detail = document.getElementById("company-detail");
   const company = historyCompanyMap.get(name);
   selectedCompanyName = name;
+
+  if (updateUrl) updateCompanyUrl(name, { replace: replaceUrl });
 
   document.querySelectorAll(".company-button.is-selected").forEach(node => node.classList.remove("is-selected"));
   document.querySelectorAll(".company-button").forEach(node => {
@@ -425,7 +482,7 @@ function renderCompanyDetail(name) {
   actions.appendChild(diagram);
   detail.appendChild(actions);
 
-  if (window.matchMedia("(max-width: 760px)").matches) {
+  if (scrollMobile && window.matchMedia("(max-width: 760px)").matches) {
     detail.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
@@ -666,6 +723,15 @@ async function init() {
     renderCompanyList(allCompanies);
     setupCompanySearch();
     setupStatusFilter();
+
+    // 直接URL（?company=会社名）で開いた場合は、その会社の詳細を初期表示する。
+    // 初回表示では履歴を増やさず、現在URLをそのまま基準にする。
+    applyCompanyFromUrl({ scrollMobile: true });
+
+    window.addEventListener("popstate", () => {
+      // ブラウザの「戻る／進む」では新しい履歴を作らず、URLの状態だけを復元する。
+      applyCompanyFromUrl({ scrollMobile: false });
+    });
   } catch (error) {
     console.error(error);
     countNode.textContent = "読み込みエラー";

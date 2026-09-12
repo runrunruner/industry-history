@@ -1,7 +1,7 @@
 {
   "schema_version": 8,
   "event_id_scheme": "stable-sha256-v1",
-  "generated_at": "2026-09-12T16:40:55+09:00",
+  "generated_at": "2026-09-12T17:22:46+09:00",
   "source_file": "input.xlsx",
   "sheets": {
     "events": "Sheet1",
@@ -20131,12 +20131,12 @@
     },
     {
       "name": "益田商店",
-      "reading": "",
-      "reading_uncertain": false,
+      "reading": "ますだしょうてん",
+      "reading_uncertain": true,
       "status_note": "",
       "is_terminal_unknown": false,
-      "kana_group": "その他",
-      "reading_registered": false,
+      "kana_group": "マ",
+      "reading_registered": true,
       "track_ids": [
         "track-57"
       ],
