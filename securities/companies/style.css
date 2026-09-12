@@ -128,6 +128,47 @@ button { font: inherit; }
 .section-heading h2 { margin: 0; font-size: 1.15rem; }
 .company-count { margin: 0; color: var(--muted); font-size: .82rem; }
 
+.company-status-filter {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  padding: .1rem 0 .8rem;
+}
+.status-filter-label {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: .72rem;
+  font-weight: 700;
+}
+.status-filter-buttons {
+  display: inline-flex;
+  gap: .28rem;
+  padding: .2rem;
+  border: 1px solid #d7dde2;
+  border-radius: 9px;
+  background: #f4f6f8;
+}
+.status-filter-button {
+  min-height: 2rem;
+  padding: .3rem .72rem;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #64717c;
+  font-size: .76rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.status-filter-button:hover {
+  background: #fff;
+  color: var(--accent);
+}
+.status-filter-button.is-active {
+  background: #fff;
+  color: var(--accent);
+  box-shadow: 0 1px 4px rgba(20, 30, 40, .10);
+}
+
 .kana-nav {
   display: flex;
   flex-wrap: wrap;
@@ -214,6 +255,18 @@ button { font: inherit; }
   color: #143d61;
 }
 .company-name { display: block; font-size: .88rem; font-weight: 600; }
+.company-list-status {
+  display: inline-flex;
+  align-items: center;
+  margin-top: .34rem;
+  padding: .08rem .38rem;
+  border-radius: 999px;
+  font-size: .58rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.company-list-status.is-current { background: #e9f4ed; color: #24633a; }
+.company-list-status.is-historical { background: #eef1f3; color: #68717a; }
 .company-reading {
   display: block;
   margin-top: .18rem;
@@ -549,5 +602,21 @@ button:focus-visible { outline: 3px solid rgba(28,79,124,.28); outline-offset: 2
 @media (max-width: 760px) {
   .site-header {
     box-shadow: 0 4px 12px rgba(20, 30, 40, .06);
+  }
+}
+
+
+/* STEP7: current / historical filter */
+@media (max-width: 760px) {
+  .company-status-filter {
+    gap: .45rem;
+    padding-bottom: .65rem;
+  }
+  .status-filter-label { font-size: .66rem; }
+  .status-filter-buttons { flex: 1 1 auto; }
+  .status-filter-button {
+    flex: 1 1 0;
+    padding-inline: .35rem;
+    font-size: .7rem;
   }
 }

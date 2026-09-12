@@ -53,6 +53,15 @@
             <p id="search-result-status" class="search-result-status" aria-live="polite"></p>
           </div>
 
+          <div class="company-status-filter" aria-label="会社の状態で絞り込み">
+            <span class="status-filter-label">表示</span>
+            <div class="status-filter-buttons" role="group" aria-label="会社の状態">
+              <button type="button" class="status-filter-button is-active" data-status-filter="all" aria-pressed="true">すべて</button>
+              <button type="button" class="status-filter-button" data-status-filter="current" aria-pressed="false">現存</button>
+              <button type="button" class="status-filter-button" data-status-filter="historical" aria-pressed="false">歴史上</button>
+            </div>
+          </div>
+
           <nav id="kana-nav" class="kana-nav" aria-label="五十音索引"></nav>
           <div id="reading-notes" class="reading-notes" hidden></div>
         </div>

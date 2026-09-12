@@ -13,6 +13,7 @@ let historyCompanyMap = new Map();
 let selectedCompanyName = "";
 let allCompanies = [];
 let companyIndexMap = new Map();
+let activeStatusFilter = "all";
 
 function readingMeta(company) {
   let reading = String(company?.reading || "").trim();
@@ -50,6 +51,23 @@ function matchesCompanySearch(company, query) {
   const name = normalizeForSearch(company.name);
   const reading = normalizeForSearch(readingMeta(company).reading);
   return name.includes(q) || reading.includes(q);
+}
+
+function isCurrentCompany(company) {
+  if (typeof company?.is_current === "boolean") return company.is_current;
+  return Boolean(historyCompanyMap.get(company?.name)?.is_current);
+}
+
+function matchesStatusFilter(company, filter = activeStatusFilter) {
+  if (filter === "current") return isCurrentCompany(company);
+  if (filter === "historical") return !isCurrentCompany(company);
+  return true;
+}
+
+function statusFilterLabel(filter = activeStatusFilter) {
+  if (filter === "current") return "現存";
+  if (filter === "historical") return "歴史上";
+  return "すべて";
 }
 
 function displayCompanyName(company) {
@@ -290,12 +308,22 @@ function renderCompanyList(companies, query = "") {
   for (const key of GROUP_ORDER) grouped[key].sort(compareCompanies);
 
   const trimmedQuery = String(query || "").trim();
-  countNode.textContent = trimmedQuery
+  const hasStatusFilter = activeStatusFilter !== "all";
+  const filteredLabel = statusFilterLabel();
+
+  countNode.textContent = (trimmedQuery || hasStatusFilter)
     ? `${companies.length.toLocaleString("ja-JP")} / ${allCompanies.length.toLocaleString("ja-JP")}社名`
     : `${allCompanies.length.toLocaleString("ja-JP")}社名`;
-  statusNode.textContent = trimmedQuery
-    ? `「${trimmedQuery}」の検索結果：${companies.length.toLocaleString("ja-JP")}社名`
-    : "";
+
+  if (trimmedQuery && hasStatusFilter) {
+    statusNode.textContent = `「${trimmedQuery}」×「${filteredLabel}」：${companies.length.toLocaleString("ja-JP")}社名`;
+  } else if (trimmedQuery) {
+    statusNode.textContent = `「${trimmedQuery}」の検索結果：${companies.length.toLocaleString("ja-JP")}社名`;
+  } else if (hasStatusFilter) {
+    statusNode.textContent = `「${filteredLabel}」：${companies.length.toLocaleString("ja-JP")}社名`;
+  } else {
+    statusNode.textContent = "";
+  }
 
   navRoot.replaceChildren();
   for (const key of GROUP_ORDER) {
@@ -339,6 +367,14 @@ function renderCompanyList(companies, query = "") {
         nameSpan.appendChild(marker);
       }
       button.appendChild(nameSpan);
+
+      const listStatus = el(
+        "span",
+        `company-list-status ${isCurrentCompany(company) ? "is-current" : "is-historical"}`,
+        isCurrentCompany(company) ? "現存" : "歴史上"
+      );
+      button.appendChild(listStatus);
+
       if (meta.reading) button.appendChild(el("span", `company-reading${meta.uncertain ? " is-uncertain" : ""}`, meta.reading));
       button.addEventListener("click", () => renderCompanyDetail(company.name));
       li.appendChild(button);
@@ -349,27 +385,51 @@ function renderCompanyList(companies, query = "") {
   }
 }
 
+function applyCompanyFilters() {
+  const input = document.getElementById("company-search");
+  const clear = document.getElementById("company-search-clear");
+  const query = input ? input.value : "";
+
+  const filtered = allCompanies.filter(company =>
+    matchesCompanySearch(company, query) && matchesStatusFilter(company)
+  );
+
+  if (clear) clear.hidden = !query;
+  renderCompanyList(filtered, query);
+}
+
 function setupCompanySearch() {
   const input = document.getElementById("company-search");
   const clear = document.getElementById("company-search-clear");
   if (!input || !clear) return;
 
-  const apply = () => {
-    const query = input.value;
-    const filtered = allCompanies.filter(company => matchesCompanySearch(company, query));
-    clear.hidden = !query;
-    renderCompanyList(filtered, query);
-  };
-
-  input.addEventListener("input", apply);
-  input.addEventListener("search", apply);
+  input.addEventListener("input", applyCompanyFilters);
+  input.addEventListener("search", applyCompanyFilters);
   clear.addEventListener("click", () => {
     input.value = "";
-    apply();
+    applyCompanyFilters();
     input.focus();
   });
 }
 
+function setupStatusFilter() {
+  const buttons = [...document.querySelectorAll(".status-filter-button[data-status-filter]")];
+  if (!buttons.length) return;
+
+  const setFilter = (filter) => {
+    activeStatusFilter = ["all", "current", "historical"].includes(filter) ? filter : "all";
+    for (const button of buttons) {
+      const active = button.dataset.statusFilter === activeStatusFilter;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
+    }
+    applyCompanyFilters();
+  };
+
+  for (const button of buttons) {
+    button.addEventListener("click", () => setFilter(button.dataset.statusFilter));
+  }
+}
 
 
 function setupStickyOffsets() {
@@ -435,6 +495,7 @@ async function init() {
     renderReadingNotes(allCompanies);
     renderCompanyList(allCompanies);
     setupCompanySearch();
+    setupStatusFilter();
   } catch (error) {
     console.error(error);
     countNode.textContent = "読み込みエラー";
