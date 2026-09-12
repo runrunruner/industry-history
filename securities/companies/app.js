@@ -14,6 +14,8 @@ let selectedCompanyName = "";
 let allCompanies = [];
 let companyIndexMap = new Map();
 let activeStatusFilter = "all";
+let forwardGraph = new Map();
+let reverseGraph = new Map();
 
 function readingMeta(company) {
   let reading = String(company?.reading || "").trim();
@@ -211,6 +213,147 @@ function renderSource(event) {
   return source;
 }
 
+
+function ensureRelationNode(name) {
+  const value = String(name || "").trim();
+  if (!value) return;
+  if (!forwardGraph.has(value)) forwardGraph.set(value, new Set());
+  if (!reverseGraph.has(value)) reverseGraph.set(value, new Set());
+}
+
+function buildCompanyRelationGraph() {
+  forwardGraph = new Map();
+  reverseGraph = new Map();
+
+  for (const company of allCompanies) ensureRelationNode(company.name);
+  for (const company of historyData?.companies || []) ensureRelationNode(company.name);
+
+  for (const event of historyData?.events || []) {
+    if (!["商号変更", "合併"].includes(String(event.type || "").trim())) continue;
+
+    const before = String(event.before || "").trim();
+    const after = String(event.after || "").trim();
+    if (!before || !after || before === after || before === "-" || before === "－" || after === "-" || after === "－") continue;
+
+    ensureRelationNode(before);
+    ensureRelationNode(after);
+    forwardGraph.get(before).add(after);
+    reverseGraph.get(after).add(before);
+  }
+}
+
+function relationCompany(name) {
+  return companyIndexMap.get(name) || historyCompanyMap.get(name) || { name };
+}
+
+function sortCompanyNames(names) {
+  return [...new Set(names)].sort((a, b) => compareCompanies(relationCompany(a), relationCompany(b)));
+}
+
+function directRelatedNames(name, graph) {
+  return sortCompanyNames([...(graph.get(name) || [])]);
+}
+
+function currentDestinationNames(name) {
+  const startCompany = relationCompany(name);
+  if (isTerminalUnknownCompany(startCompany)) return [];
+  if (isCurrentCompany(startCompany)) return [name];
+
+  const currentNames = new Set();
+  const visited = new Set([name]);
+  const queue = [name];
+
+  while (queue.length) {
+    const current = queue.shift();
+    for (const next of forwardGraph.get(current) || []) {
+      if (visited.has(next)) continue;
+      visited.add(next);
+      const nextCompany = relationCompany(next);
+      if (isCurrentCompany(nextCompany)) {
+        currentNames.add(next);
+        continue;
+      }
+      queue.push(next);
+    }
+  }
+
+  return sortCompanyNames(currentNames);
+}
+
+function createRelationCompanyButton(name, selectedName) {
+  const company = relationCompany(name);
+  const button = el("button", "relation-company-button");
+  button.type = "button";
+  button.dataset.company = name;
+  button.setAttribute("aria-label", `${name}の沿革を見る`);
+
+  const label = displayCompanyName(company);
+  button.appendChild(document.createTextNode(label));
+  if (name === selectedName) {
+    button.classList.add("is-self");
+    const currentMark = el("span", "relation-self-label", "現在選択中");
+    button.appendChild(currentMark);
+  }
+
+  button.addEventListener("click", () => {
+    if (name !== selectedName) renderCompanyDetail(name);
+  });
+  return button;
+}
+
+function appendRelationRow(section, label, names, options = {}) {
+  const row = el("div", "relation-row");
+  row.appendChild(el("dt", "relation-label", label));
+  const dd = el("dd", "relation-value");
+
+  if (names.length) {
+    const list = el("div", "relation-company-list");
+    for (const name of names) list.appendChild(createRelationCompanyButton(name, options.selectedName || ""));
+    dd.appendChild(list);
+  } else {
+    dd.appendChild(el("span", `relation-empty${options.emphasis ? " is-emphasis" : ""}`, options.emptyText || "登録なし"));
+  }
+
+  row.appendChild(dd);
+  section.appendChild(row);
+}
+
+function renderCompanyRelations(name) {
+  const company = relationCompany(name);
+  const terminalUnknown = isTerminalUnknownCompany(company);
+  const current = isCurrentCompany(company);
+  const predecessors = directRelatedNames(name, reverseGraph);
+  const successors = directRelatedNames(name, forwardGraph);
+  const currentDestinations = currentDestinationNames(name);
+
+  const wrapper = el("section", "detail-relations");
+  const titleRow = el("div", "relation-title-row");
+  titleRow.appendChild(el("h3", "relation-title", "系譜"));
+  titleRow.appendChild(el("span", "relation-caption", "商号変更・合併の登録イベントを基に表示"));
+  wrapper.appendChild(titleRow);
+
+  const dl = el("dl", "relation-list");
+  appendRelationRow(dl, "直接の前身", predecessors, {
+    selectedName: name,
+    emptyText: "登録なし"
+  });
+
+  appendRelationRow(dl, "直接の後継", successors, {
+    selectedName: name,
+    emptyText: terminalUnknown ? "未確認" : (current ? "現存会社のためなし" : "登録なし"),
+    emphasis: terminalUnknown
+  });
+
+  appendRelationRow(dl, "現在につながる会社", currentDestinations, {
+    selectedName: name,
+    emptyText: terminalUnknown ? "不明" : "確認できる現存先なし",
+    emphasis: terminalUnknown
+  });
+
+  wrapper.appendChild(dl);
+  return wrapper;
+}
+
 function renderCompanyDetail(name) {
   const detail = document.getElementById("company-detail");
   const company = historyCompanyMap.get(name);
@@ -239,6 +382,7 @@ function renderCompanyDetail(name) {
   );
   header.appendChild(badge);
   detail.appendChild(header);
+  detail.appendChild(renderCompanyRelations(name));
 
   const events = eventsForCompany(name);
   if (!events.length) {
@@ -517,6 +661,7 @@ async function init() {
 
     allCompanies = Array.isArray(companyIndexData.companies) ? [...companyIndexData.companies] : [];
     companyIndexMap = new Map(allCompanies.map(company => [company.name, company]));
+    buildCompanyRelationGraph();
     renderReadingNotes(allCompanies);
     renderCompanyList(allCompanies);
     setupCompanySearch();

@@ -306,6 +306,123 @@ button { font: inherit; }
 .status-badge.is-terminal-unknown { background: #fff2ea; color: #7b4c39; }
 .detail-summary { margin: .75rem 0 .9rem; }
 
+
+.detail-relations {
+  margin: .8rem 0 .95rem;
+  padding: .75rem .8rem;
+  border: 1px solid #dfe5ea;
+  border-radius: 9px;
+  background: #f8fafb;
+}
+
+.relation-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .75rem;
+  margin-bottom: .58rem;
+}
+
+.relation-title {
+  margin: 0;
+  color: #35424e;
+  font-size: .82rem;
+}
+
+.relation-caption {
+  color: #87919a;
+  font-size: .62rem;
+  line-height: 1.45;
+  text-align: right;
+}
+
+.relation-list {
+  margin: 0;
+}
+
+.relation-row {
+  display: grid;
+  grid-template-columns: 7.4rem minmax(0, 1fr);
+  gap: .6rem;
+  align-items: start;
+  padding: .48rem 0;
+  border-top: 1px solid #e7ebee;
+}
+
+.relation-row:first-child {
+  border-top: 0;
+}
+
+.relation-label {
+  margin: 0;
+  color: #66727d;
+  font-size: .7rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.relation-value {
+  min-width: 0;
+  margin: 0;
+}
+
+.relation-company-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .34rem;
+}
+
+.relation-company-button {
+  display: inline-flex;
+  align-items: center;
+  gap: .36rem;
+  max-width: 100%;
+  min-height: 1.8rem;
+  padding: .2rem .5rem;
+  border: 1px solid #c9d6e0;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--accent);
+  font-size: .7rem;
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: left;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.relation-company-button:hover {
+  background: var(--accent-soft);
+  border-color: #abc0d0;
+}
+
+.relation-company-button.is-self {
+  cursor: default;
+  color: #24633a;
+  border-color: #c6ddce;
+  background: #eef7f1;
+}
+
+.relation-self-label {
+  flex: 0 0 auto;
+  padding-left: .35rem;
+  border-left: 1px solid #bcd3c4;
+  color: #5f7c68;
+  font-size: .55rem;
+  font-weight: 700;
+}
+
+.relation-empty {
+  color: #8a949c;
+  font-size: .7rem;
+  line-height: 1.7;
+}
+
+.relation-empty.is-emphasis {
+  color: #8a563f;
+  font-weight: 700;
+}
+
 .history-list {
   position: relative;
   margin: 0;
@@ -633,4 +750,26 @@ button:focus-visible { outline: 3px solid rgba(28,79,124,.28); outline-offset: 2
   color: #684838;
   font-size: .78rem;
   line-height: 1.7;
+}
+
+
+@media (max-width: 760px) {
+  .relation-title-row {
+    display: block;
+  }
+
+  .relation-caption {
+    display: block;
+    margin-top: .2rem;
+    text-align: left;
+  }
+
+  .relation-row {
+    grid-template-columns: 1fr;
+    gap: .22rem;
+  }
+
+  .relation-company-button {
+    font-size: .72rem;
+  }
 }
