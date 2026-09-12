@@ -1354,7 +1354,12 @@
     title.textContent = company.name;
     titleRow.appendChild(title);
 
-    if (company.is_current) {
+    if (company.is_terminal_unknown) {
+      const badge = document.createElement("span");
+      badge.className = "terminal-unknown-badge";
+      badge.textContent = "終端不明";
+      titleRow.appendChild(badge);
+    } else if (company.is_current) {
       const badge = document.createElement("span");
       badge.className = "current-badge";
       badge.textContent = "現存";
@@ -1385,6 +1390,14 @@
 
     header.appendChild(titleRow);
     header.appendChild(meta);
+
+    if (company.is_terminal_unknown) {
+      const statusNote = document.createElement("p");
+      statusNote.className = "terminal-unknown-detail-note";
+      statusNote.textContent = "現在は存続していないことを確認していますが、消滅・合併・承継等の時期や経緯は確認できていません。";
+      header.appendChild(statusNote);
+    }
+
     renderModeControls(header);
 
     const actions = document.createElement("div");

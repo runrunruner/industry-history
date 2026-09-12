@@ -1,6 +1,6 @@
 {
-  "schema_version": 2,
-  "generated_at": "2026-09-12T14:01:52+09:00",
+  "schema_version": 3,
+  "generated_at": "2026-09-12T16:40:55+09:00",
   "source_file": "input.xlsx",
   "reading_sheet": "読み",
   "companies": [
@@ -10,6 +10,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -18,6 +20,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -26,6 +30,8 @@
       "reading_uncertain": false,
       "kana_group": "ラ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -34,6 +40,8 @@
       "reading_uncertain": false,
       "kana_group": "ラ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -42,6 +50,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -50,6 +60,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -58,6 +70,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -66,6 +80,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -74,6 +90,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -82,6 +100,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -90,6 +110,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -98,6 +120,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -106,6 +130,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -114,6 +140,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -122,6 +150,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -130,6 +160,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -138,6 +170,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -146,6 +180,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -154,6 +190,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -162,6 +200,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -170,6 +210,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -178,6 +220,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -186,6 +230,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -194,6 +240,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -202,6 +250,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -210,6 +260,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -218,6 +270,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -226,6 +280,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -234,6 +290,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -242,6 +300,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -250,6 +310,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -258,6 +320,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -266,6 +330,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -274,6 +340,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -282,6 +350,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -290,6 +360,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -298,6 +370,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -306,6 +380,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -314,6 +390,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -322,6 +400,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -330,6 +410,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -338,6 +420,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -346,6 +430,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -354,6 +440,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -362,6 +450,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -370,6 +460,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -378,6 +470,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -386,6 +480,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -394,6 +490,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -402,6 +500,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -410,6 +510,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -418,6 +520,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -426,6 +530,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -434,6 +540,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -442,6 +550,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -450,6 +560,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -458,6 +570,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -466,6 +580,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -474,6 +590,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -482,6 +600,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -490,6 +610,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -498,6 +620,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -506,6 +630,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -514,6 +640,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -522,6 +650,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -530,6 +660,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -538,6 +670,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -546,6 +680,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -554,6 +690,8 @@
       "reading_uncertain": false,
       "kana_group": "ラ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -562,6 +700,8 @@
       "reading_uncertain": false,
       "kana_group": "ラ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -570,6 +710,8 @@
       "reading_uncertain": false,
       "kana_group": "ワ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -578,6 +720,8 @@
       "reading_uncertain": false,
       "kana_group": "ワ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -586,6 +730,8 @@
       "reading_uncertain": false,
       "kana_group": "ワ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -594,6 +740,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -602,6 +750,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -610,6 +760,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -618,6 +770,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -626,6 +780,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -634,6 +790,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -642,6 +800,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -650,6 +810,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -658,6 +820,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -666,6 +830,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -674,6 +840,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -682,6 +850,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -690,6 +860,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -698,6 +870,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -706,6 +880,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -714,6 +890,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -722,6 +900,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -730,6 +910,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -738,6 +920,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -746,6 +930,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -754,6 +940,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -762,6 +950,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -770,6 +960,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -778,6 +970,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -786,6 +980,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -794,6 +990,8 @@
       "reading_uncertain": true,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -802,6 +1000,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -810,6 +1010,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -818,6 +1020,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -826,6 +1030,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -834,6 +1040,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -842,6 +1050,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -850,6 +1060,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -858,6 +1070,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -866,6 +1080,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -874,6 +1090,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -882,6 +1100,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -890,6 +1110,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -898,6 +1120,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -906,6 +1130,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -914,6 +1140,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -922,6 +1150,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -930,6 +1160,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -938,6 +1170,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -946,6 +1180,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -954,6 +1190,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -962,6 +1200,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -970,6 +1210,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -978,6 +1220,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -986,6 +1230,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -994,6 +1240,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1002,6 +1250,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1010,6 +1260,8 @@
       "reading_uncertain": false,
       "kana_group": "ラ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1018,6 +1270,8 @@
       "reading_uncertain": false,
       "kana_group": "ラ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1026,6 +1280,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1034,6 +1290,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1042,6 +1300,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1050,6 +1310,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1058,6 +1320,8 @@
       "reading_uncertain": true,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1066,6 +1330,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -1074,6 +1340,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1082,6 +1350,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1090,6 +1360,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1098,6 +1370,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1106,6 +1380,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1114,6 +1390,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1122,6 +1400,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1130,6 +1410,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1138,6 +1420,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1146,6 +1430,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1154,6 +1440,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1162,6 +1450,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1170,6 +1460,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1178,6 +1470,8 @@
       "reading_uncertain": false,
       "kana_group": "ワ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1186,6 +1480,8 @@
       "reading_uncertain": false,
       "kana_group": "ワ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1194,6 +1490,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1202,6 +1500,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1210,6 +1510,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1218,6 +1520,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1226,6 +1530,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1234,6 +1540,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1242,6 +1550,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -1250,6 +1560,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1258,6 +1570,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1266,6 +1580,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1274,6 +1590,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1282,6 +1600,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1290,6 +1610,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1298,6 +1620,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1306,6 +1630,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1314,6 +1640,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1322,6 +1650,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1330,6 +1660,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1338,6 +1670,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1346,6 +1680,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1354,6 +1690,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1362,6 +1700,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1370,6 +1710,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1378,6 +1720,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1386,6 +1730,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1394,6 +1740,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1402,7 +1750,9 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
-      "is_current": true
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
     },
     {
       "name": "太平洋証券",
@@ -1410,6 +1760,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1418,6 +1770,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1426,6 +1780,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1434,6 +1790,8 @@
       "reading_uncertain": true,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1442,6 +1800,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1450,6 +1810,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1458,6 +1820,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1466,6 +1830,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1474,6 +1840,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1482,6 +1850,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1490,6 +1860,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1498,6 +1870,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1506,6 +1880,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1514,6 +1890,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1522,6 +1900,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1530,6 +1910,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1538,6 +1920,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1546,6 +1930,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1554,6 +1940,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1562,6 +1950,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1570,6 +1960,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1578,6 +1970,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1586,6 +1980,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1594,6 +1990,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1602,6 +2000,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1610,6 +2010,8 @@
       "reading_uncertain": false,
       "kana_group": "ヤ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1618,6 +2020,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1626,6 +2030,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -1634,6 +2040,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1642,6 +2050,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1650,6 +2060,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1658,6 +2070,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1666,6 +2080,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1674,6 +2090,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1682,6 +2100,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1690,6 +2110,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1698,6 +2120,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1706,6 +2130,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1714,6 +2140,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1722,6 +2150,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1730,6 +2160,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1738,6 +2170,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1746,6 +2180,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1754,6 +2190,8 @@
       "reading_uncertain": true,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1762,6 +2200,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1770,6 +2210,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1778,7 +2220,9 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
-      "is_current": true
+      "status_note": "終端不明",
+      "is_terminal_unknown": true,
+      "is_current": false
     },
     {
       "name": "徳田証券",
@@ -1786,6 +2230,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1794,6 +2240,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1802,6 +2250,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1810,7 +2260,9 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
-      "is_current": true
+      "status_note": "終端不明",
+      "is_terminal_unknown": true,
+      "is_current": false
     },
     {
       "name": "新光証券",
@@ -1818,6 +2270,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1826,6 +2280,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1834,6 +2290,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1842,7 +2300,9 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
-      "is_current": true
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
     },
     {
       "name": "新西洋証券",
@@ -1850,6 +2310,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1858,6 +2320,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1866,6 +2330,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1874,6 +2340,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1882,6 +2350,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1890,6 +2360,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1898,6 +2370,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1906,6 +2380,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1914,6 +2390,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1922,6 +2400,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1930,6 +2410,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1938,6 +2420,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1946,6 +2430,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1954,6 +2440,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1962,6 +2450,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1970,6 +2460,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1978,6 +2470,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1986,6 +2480,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -1994,6 +2490,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2002,6 +2500,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2010,6 +2510,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2018,6 +2520,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2026,6 +2530,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2034,6 +2540,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2042,6 +2550,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2050,6 +2560,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2058,6 +2570,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2066,6 +2580,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2074,6 +2590,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2082,6 +2600,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2090,6 +2610,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2098,6 +2620,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2106,6 +2630,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2114,6 +2640,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2122,6 +2650,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2130,6 +2660,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2138,6 +2670,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2146,6 +2680,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2154,6 +2690,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2162,6 +2700,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -2170,6 +2710,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2178,6 +2720,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2186,6 +2730,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2194,6 +2740,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -2202,6 +2750,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2210,6 +2760,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2218,6 +2770,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2226,6 +2780,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2234,6 +2790,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2242,6 +2800,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2250,6 +2810,8 @@
       "reading_uncertain": true,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2258,6 +2820,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2266,6 +2830,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -2274,6 +2840,8 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2282,6 +2850,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2290,6 +2860,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2298,7 +2870,9 @@
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
-      "is_current": true
+      "status_note": "終端不明",
+      "is_terminal_unknown": true,
+      "is_current": false
     },
     {
       "name": "玉塚商店",
@@ -2306,6 +2880,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2314,6 +2890,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2322,6 +2900,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2330,6 +2910,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2338,6 +2920,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2346,6 +2930,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2354,6 +2940,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2362,6 +2950,18 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "益田商店",
+      "reading": "",
+      "reading_uncertain": false,
+      "kana_group": "その他",
+      "reading_registered": false,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2370,6 +2970,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2378,6 +2980,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2386,6 +2990,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2394,6 +3000,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2402,6 +3010,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2410,6 +3020,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2418,6 +3030,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2426,6 +3040,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2434,6 +3050,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2442,6 +3060,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2450,6 +3070,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2458,6 +3080,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2466,6 +3090,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2474,6 +3100,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2482,6 +3110,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2490,6 +3120,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2498,6 +3130,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2506,6 +3140,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2514,6 +3150,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2522,6 +3160,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2530,6 +3170,8 @@
       "reading_uncertain": false,
       "kana_group": "ラ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2538,6 +3180,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2546,6 +3190,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2554,6 +3200,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2562,6 +3210,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2570,6 +3220,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2578,6 +3230,8 @@
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2586,6 +3240,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2594,6 +3250,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2602,6 +3260,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2610,6 +3270,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2618,6 +3280,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2626,6 +3290,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2634,6 +3300,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2642,6 +3310,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2650,6 +3320,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2658,6 +3330,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2666,6 +3340,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2674,6 +3350,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2682,6 +3360,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2690,6 +3370,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     },
     {
@@ -2698,6 +3380,8 @@
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2706,6 +3390,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2714,6 +3400,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2722,6 +3410,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2730,6 +3420,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2738,6 +3430,8 @@
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2746,6 +3440,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2754,6 +3450,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2762,6 +3460,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2770,6 +3470,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2778,6 +3480,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2786,6 +3490,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2794,6 +3500,8 @@
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2802,6 +3510,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2810,6 +3520,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2818,6 +3530,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2826,6 +3540,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2834,6 +3550,8 @@
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2842,6 +3560,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": false
     },
     {
@@ -2850,6 +3570,8 @@
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
       "is_current": true
     }
   ]

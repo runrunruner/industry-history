@@ -53,7 +53,15 @@ function matchesCompanySearch(company, query) {
   return name.includes(q) || reading.includes(q);
 }
 
+function isTerminalUnknownCompany(company) {
+  if (typeof company?.is_terminal_unknown === "boolean") return company.is_terminal_unknown;
+  const historyCompany = historyCompanyMap.get(company?.name);
+  if (typeof historyCompany?.is_terminal_unknown === "boolean") return historyCompany.is_terminal_unknown;
+  return String(company?.status_note || historyCompany?.status_note || "").trim() === "終端不明";
+}
+
 function isCurrentCompany(company) {
+  if (isTerminalUnknownCompany(company)) return false;
   if (typeof company?.is_current === "boolean") return company.is_current;
   return Boolean(historyCompanyMap.get(company?.name)?.is_current);
 }
@@ -61,12 +69,14 @@ function isCurrentCompany(company) {
 function matchesStatusFilter(company, filter = activeStatusFilter) {
   if (filter === "current") return isCurrentCompany(company);
   if (filter === "historical") return !isCurrentCompany(company);
+  if (filter === "terminal-unknown") return isTerminalUnknownCompany(company);
   return true;
 }
 
 function statusFilterLabel(filter = activeStatusFilter) {
   if (filter === "current") return "現存";
   if (filter === "historical") return "歴史上";
+  if (filter === "terminal-unknown") return "終端不明";
   return "すべて";
 }
 
@@ -220,8 +230,13 @@ function renderCompanyDetail(name) {
   headingWrap.appendChild(el("h2", "detail-company-name", indexCompany ? displayCompanyName(indexCompany) : name));
   header.appendChild(headingWrap);
 
-  const isCurrent = Boolean(company?.is_current);
-  const badge = el("span", `status-badge ${isCurrent ? "is-current" : "is-historical"}`, isCurrent ? "現存" : "歴史上の社名");
+  const terminalUnknown = isTerminalUnknownCompany(indexCompany || company);
+  const isCurrent = !terminalUnknown && Boolean(company?.is_current);
+  const badge = el(
+    "span",
+    `status-badge ${terminalUnknown ? "is-terminal-unknown" : (isCurrent ? "is-current" : "is-historical")}`,
+    terminalUnknown ? "終端不明" : (isCurrent ? "現存" : "歴史上の社名")
+  );
   header.appendChild(badge);
   detail.appendChild(header);
 
@@ -231,6 +246,14 @@ function renderCompanyDetail(name) {
   } else {
     const intro = el("p", "detail-summary", `${events.length.toLocaleString("ja-JP")}件の、この会社名が登場する沿革イベントを年代順に表示しています。`);
     detail.appendChild(intro);
+
+    if (terminalUnknown) {
+      detail.appendChild(el(
+        "p",
+        "terminal-unknown-note",
+        "現在は存続していないことを確認していますが、消滅・合併・承継等の時期や経緯は確認できていません。"
+      ));
+    }
 
     const timeline = el("ol", "history-list");
     for (const event of events) {
@@ -368,10 +391,12 @@ function renderCompanyList(companies, query = "") {
       }
       button.appendChild(nameSpan);
 
+      const terminalUnknown = isTerminalUnknownCompany(company);
+      const current = isCurrentCompany(company);
       const listStatus = el(
         "span",
-        `company-list-status ${isCurrentCompany(company) ? "is-current" : "is-historical"}`,
-        isCurrentCompany(company) ? "現存" : "歴史上"
+        `company-list-status ${terminalUnknown ? "is-terminal-unknown" : (current ? "is-current" : "is-historical")}`,
+        terminalUnknown ? "終端不明" : (current ? "現存" : "歴史上")
       );
       button.appendChild(listStatus);
 
@@ -417,7 +442,7 @@ function setupStatusFilter() {
   if (!buttons.length) return;
 
   const setFilter = (filter) => {
-    activeStatusFilter = ["all", "current", "historical"].includes(filter) ? filter : "all";
+    activeStatusFilter = ["all", "current", "historical", "terminal-unknown"].includes(filter) ? filter : "all";
     for (const button of buttons) {
       const active = button.dataset.statusFilter === activeStatusFilter;
       button.classList.toggle("is-active", active);

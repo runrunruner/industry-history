@@ -267,6 +267,7 @@ button { font: inherit; }
 }
 .company-list-status.is-current { background: #e9f4ed; color: #24633a; }
 .company-list-status.is-historical { background: #eef1f3; color: #68717a; }
+.company-list-status.is-terminal-unknown { background: #fff2ea; color: #7b4c39; }
 .company-reading {
   display: block;
   margin-top: .18rem;
@@ -302,6 +303,7 @@ button { font: inherit; }
 }
 .status-badge.is-current { background: #e9f4ed; color: #24633a; }
 .status-badge.is-historical { background: #eef1f3; color: #68717a; }
+.status-badge.is-terminal-unknown { background: #fff2ea; color: #7b4c39; }
 .detail-summary { margin: .75rem 0 .9rem; }
 
 .history-list {
@@ -619,4 +621,16 @@ button:focus-visible { outline: 3px solid rgba(28,79,124,.28); outline-offset: 2
     padding-inline: .35rem;
     font-size: .7rem;
   }
+}
+
+
+.terminal-unknown-note {
+  margin: -.15rem 0 1rem;
+  padding: .65rem .75rem;
+  border-left: 3px solid #b8785b;
+  border-radius: 0 7px 7px 0;
+  background: #fff8f4;
+  color: #684838;
+  font-size: .78rem;
+  line-height: 1.7;
 }
