@@ -1,4 +1,6 @@
 :root {
+  --site-header-sticky-height: 0px;
+  --index-sticky-height: 0px;
   --bg: #f3f4f6;
   --paper: #fff;
   --ink: #17191c;
@@ -22,13 +24,18 @@ a { color: inherit; }
 button { font: inherit; }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   gap: 1.5rem;
   padding: 1.25rem 1.5rem 1.05rem;
-  background: var(--paper);
+  background: rgba(255, 255, 255, .985);
   border-bottom: 1px solid var(--line);
+  box-shadow: 0 5px 16px rgba(20, 30, 40, .05);
+  backdrop-filter: blur(10px);
 }
 
 .title-block { min-width: 0; }
@@ -85,8 +92,8 @@ button { font: inherit; }
 .index-card { padding: 0 1.15rem 1.15rem; }
 .detail-card {
   position: sticky;
-  top: 1rem;
-  max-height: calc(100vh - 2rem);
+  top: calc(var(--site-header-sticky-height) + 1rem);
+  max-height: calc(100vh - var(--site-header-sticky-height) - 2rem);
   overflow: auto;
   padding: 1.1rem;
   scroll-margin-top: .7rem;
@@ -94,7 +101,7 @@ button { font: inherit; }
 
 .index-sticky {
   position: sticky;
-  top: 0;
+  top: var(--site-header-sticky-height);
   z-index: 30;
   margin: 0 -1.15rem;
   padding: .95rem 1.15rem 0;
@@ -158,7 +165,7 @@ button { font: inherit; }
 }
 
 .company-groups { margin-top: 1rem; }
-.company-group { scroll-margin-top: 16rem; }
+.company-group { scroll-margin-top: calc(var(--site-header-sticky-height) + var(--index-sticky-height) + 1rem); }
 .company-group + .company-group { margin-top: 1.35rem; }
 .group-title {
   display: flex;
@@ -424,7 +431,7 @@ button:focus-visible { outline: 3px solid rgba(28,79,124,.28); outline-offset: 2
     min-width: 3.1rem;
     padding-inline: .4rem;
   }
-  .company-group { scroll-margin-top: 15rem; }
+  .company-group { scroll-margin-top: calc(var(--site-header-sticky-height) + var(--index-sticky-height) + .75rem); }
   .back-to-top { right: .75rem; bottom: .75rem; }
   .back-to-top span { display: none; }
 }
@@ -530,4 +537,17 @@ button:focus-visible { outline: 3px solid rgba(28,79,124,.28); outline-offset: 2
   .company-search input { min-height: 2.35rem; font-size: .8rem; }
   .search-clear { min-width: 3.7rem; padding-inline: .5rem; font-size: .78rem; }
   .search-result-status { margin-top: .25rem; }
+}
+
+
+/* STEP6: keep page header and company index controls visible together */
+.site-header,
+.index-sticky {
+  will-change: transform;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    box-shadow: 0 4px 12px rgba(20, 30, 40, .06);
+  }
 }

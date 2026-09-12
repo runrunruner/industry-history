@@ -371,6 +371,33 @@ function setupCompanySearch() {
 }
 
 
+
+function setupStickyOffsets() {
+  const root = document.documentElement;
+  const header = document.querySelector(".site-header");
+  const indexSticky = document.querySelector(".index-sticky");
+  if (!header || !indexSticky) return;
+
+  let frame = 0;
+  const update = () => {
+    if (frame) cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(() => {
+      root.style.setProperty("--site-header-sticky-height", `${Math.ceil(header.getBoundingClientRect().height)}px`);
+      root.style.setProperty("--index-sticky-height", `${Math.ceil(indexSticky.getBoundingClientRect().height)}px`);
+      frame = 0;
+    });
+  };
+
+  update();
+  window.addEventListener("resize", update, { passive: true });
+
+  if ("ResizeObserver" in window) {
+    const observer = new ResizeObserver(update);
+    observer.observe(header);
+    observer.observe(indexSticky);
+  }
+}
+
 function setupBackToTop() {
   const button = document.getElementById("back-to-top");
   if (!button) return;
@@ -416,6 +443,7 @@ async function init() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  setupStickyOffsets();
   setupBackToTop();
   init();
 });
