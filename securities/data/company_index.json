@@ -1,14 +1,144 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-09-12T17:22:46+09:00",
+  "generated_at": "2026-09-17T00:55:45+09:00",
   "source_file": "input.xlsx",
   "reading_sheet": "読み",
   "companies": [
+    {
+      "name": "AlpacaJapan",
+      "reading": "あるぱかじゃぱん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
     {
       "name": "CSK-RB証券",
       "reading": "しーえすけー・あーるびーしょうけん",
       "reading_uncertain": false,
       "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "EVOLUTION JAPAN証券",
+      "reading": "えぼりゅーしょんじゃぱんしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "FPG証券",
+      "reading": "えふぴーじーしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "FPLインシュアランス",
+      "reading": "えふぴーえるいんしゅあらんす",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "FPL証券",
+      "reading": "えふぴーえるしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "FXCMジャパン",
+      "reading": "",
+      "reading_uncertain": false,
+      "kana_group": "その他",
+      "reading_registered": false,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "FXCMジャパン証券",
+      "reading": "",
+      "reading_uncertain": false,
+      "kana_group": "その他",
+      "reading_registered": false,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "FXおきなわ",
+      "reading": "えふえっくすおきなわ",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "FXリアル",
+      "reading": "えふえっくすりある",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "IGマーケッツ証券",
+      "reading": "あいじーまーけっつしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "IG証券",
+      "reading": "あいじーしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "IVTインベストメント・バンキング",
+      "reading": "あいぶいてぃーいんべすとめんと・ばんきんぐ",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "IkkyoTechnology",
+      "reading": "いっきょうてくのろじー",
+      "reading_uncertain": false,
+      "kana_group": "ア",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -23,6 +153,16 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": true
+    },
+    {
+      "name": "KOBE証券",
+      "reading": "こうべしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
     },
     {
       "name": "LINE証券",
@@ -45,10 +185,70 @@
       "is_current": false
     },
     {
+      "name": "MCPアセット・マネジメント",
+      "reading": "えむしーぴーあせっと・まねじめんと",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "MCPアセット・マネジメント証券",
+      "reading": "えむしーぴーあせっと・まねじめんとしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "MCP投資顧問",
+      "reading": "えむしーぴーとうしこもん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "Meネット証券",
       "reading": "みーねっとしょうけん",
       "reading_uncertain": false,
       "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "My外貨",
+      "reading": "まいがいか",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "NAB証券",
+      "reading": "えぬえーびーしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "NAB証券準備",
+      "reading": "えぬえーびーしょうけんじゅんび",
+      "reading_uncertain": false,
+      "kana_group": "ア",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -65,6 +265,36 @@
       "is_current": false
     },
     {
+      "name": "OANDA Japan",
+      "reading": "おあんだじゃぱん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "OANDA証券",
+      "reading": "おあんだしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "ODL JAPAN",
+      "reading": "",
+      "reading_uncertain": false,
+      "kana_group": "その他",
+      "reading_registered": false,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "SBIイー・トレード証券",
       "reading": "えすびーあいいー・とれーどしょうけん",
       "reading_uncertain": false,
@@ -75,8 +305,48 @@
       "is_current": false
     },
     {
+      "name": "SBIネオトレード証券",
+      "reading": "えすびーあいねおとれーどしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "SBIネオモバイル証券",
       "reading": "えすびーあいねおもばいるしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "SBIフューチャーズ〈2018年設立〉",
+      "reading": "えすびーあいふゅーちゃーず",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "SBIプライム証券",
+      "reading": "えすびーあいぷらいむしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "SBIプライム証券準備",
+      "reading": "えすびーあいぷらいむしょうけんじゅんび",
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
@@ -93,6 +363,16 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": true
+    },
+    {
+      "name": "SJアドバイザーズ",
+      "reading": "えすじぇいあどばいざーず",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
     },
     {
       "name": "SMBCフレンド証券",
@@ -135,6 +415,16 @@
       "is_current": false
     },
     {
+      "name": "あい証券",
+      "reading": "あいしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "あかつき証券",
       "reading": "あかつきしょうけん",
       "reading_uncertain": false,
@@ -165,8 +455,38 @@
       "is_current": true
     },
     {
+      "name": "おきぎん証券",
+      "reading": "おきぎんしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "おきなわ証券",
+      "reading": "おきなわしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "かざか証券",
       "reading": "かざかしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "こうべ証券",
+      "reading": "こうべしょうけん",
       "reading_uncertain": false,
       "kana_group": "カ",
       "reading_registered": true,
@@ -205,6 +525,16 @@
       "is_current": false
     },
     {
+      "name": "ずかわ証券ウェルスマネジメント",
+      "reading": "ずかわしょうけんうぇるすまねじめんと",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "そしあす証券",
       "reading": "そしあすしょうけん",
       "reading_uncertain": false,
@@ -213,6 +543,16 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": false
+    },
+    {
+      "name": "だいとく投資ビレッジ",
+      "reading": "だいとくとうしびれっじ",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
     },
     {
       "name": "つばさ証券",
@@ -235,10 +575,50 @@
       "is_current": false
     },
     {
+      "name": "なかがわ証券アドバイザー",
+      "reading": "なかがわしょうけんあどばいざー",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "のぞみ証券",
       "reading": "のぞみしょうけん",
       "reading_uncertain": false,
       "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "ばんせい山丸証券",
+      "reading": "ばんせいやままるしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "ばんせい証券",
+      "reading": "ばんせいしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "みかど証券",
+      "reading": "みかどしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -275,6 +655,16 @@
       "is_current": true
     },
     {
+      "name": "よこはま証券",
+      "reading": "よこはましょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "アイザワ証券",
       "reading": "あいざわしょうけん",
       "reading_uncertain": false,
@@ -295,8 +685,138 @@
       "is_current": false
     },
     {
+      "name": "アイディーオー証券",
+      "reading": "あいでぃーおーしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "アイ・キャピタル・インベストメント",
+      "reading": "あい・きゃぴたる・いんべすとめんと",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "アイ・キャピタル・インベストメント・アドバイザーズ",
+      "reading": "あい・きゃぴたる・いんべすとめんと・あどばいざーず",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "アクサ・ウェルス・マネジメント",
+      "reading": "あくさ・うぇるす・まねじめんと",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "アクセス証券",
+      "reading": "あくせすしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "アストマックスFX",
+      "reading": "あすとまっくすえふえっくす",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "アモーヴァ証券",
+      "reading": "あもーゔぁしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "アルバコンサルティング〈旧法人〉",
+      "reading": "あるばこんさるてぃんぐ",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "アルバース証券",
+      "reading": "あるばーすしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "アンドゥリーム",
+      "reading": "あんどぅりーむ",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "アーク証券",
+      "reading": "あーくしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "イセキ証券",
       "reading": "いせきしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "インタラクティブ・ブローカーズ証券",
+      "reading": "いんたらくてぃぶ・ぶろーかーずしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "インターキャピタル投資顧問",
+      "reading": "いんたーきゃぴたるとうしこもん",
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
@@ -313,6 +833,16 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": false
+    },
+    {
+      "name": "インヴァスト証券",
+      "reading": "いんゔぁすとしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
     },
     {
       "name": "イー・ウイング証券",
@@ -345,8 +875,38 @@
       "is_current": false
     },
     {
+      "name": "イー・フォレックス",
+      "reading": "いー・ふぉれっくす",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "ウィブル証券",
       "reading": "うぃぶるしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "ウェルスナビ",
+      "reading": "うぇるすなび",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "ウェルズ・ファーゴ証券",
+      "reading": "うぇるず・ふぁーごしょうけん",
       "reading_uncertain": false,
       "kana_group": "ア",
       "reading_registered": true,
@@ -385,6 +945,56 @@
       "is_current": false
     },
     {
+      "name": "エスピーシー証券",
+      "reading": "えすぴーしーしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "エフエックス・オンライン・ジャパン",
+      "reading": "えふえっくす・おんらいん・じゃぱん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "エムアンドエヌホールディングス",
+      "reading": "えむあんどえぬほーるでぃんぐす",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "エムシーピー",
+      "reading": "えむしーぴー",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "エンサイドットコム証券",
+      "reading": "えんさいどっとこむしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "エース証券",
       "reading": "えーすしょうけん",
       "reading_uncertain": false,
@@ -415,10 +1025,60 @@
       "is_current": false
     },
     {
+      "name": "キャピタル・パートナーズ証券",
+      "reading": "きゃぴたるぱーとなーずしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "キングコモディティ証券",
+      "reading": "きんぐこもでぃてぃしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "コアパシフィック山一証券",
+      "reading": "こあぱしふぃっくやまいちしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "コスモ証券",
       "reading": "こすもしょうけん",
       "reading_uncertain": false,
       "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "サイバーエージェントFX",
+      "reading": "さいばーえーじぇんとえふえっくす",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "サンライズキャピタル証券",
+      "reading": "さんらいずきゃぴたるしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -433,6 +1093,16 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": true
+    },
+    {
+      "name": "シーエー・キャピタル",
+      "reading": "しーえー・きゃぴたる",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
     },
     {
       "name": "ジェット証券",
@@ -475,8 +1145,68 @@
       "is_current": false
     },
     {
+      "name": "スターアセット〈商品先物系〉",
+      "reading": "すたーあせっと",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "スターアセット証券",
+      "reading": "すたーあせっとしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "スターフューチャーズ証券",
+      "reading": "すたーふゅーちゃーずしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "スター為替",
+      "reading": "すたーかわせ",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "スター為替証券",
+      "reading": "すたーかわせしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "セゾン証券",
       "reading": "せぞんしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "センチュリー証券",
+      "reading": "せんちゅりーしょうけん",
       "reading_uncertain": false,
       "kana_group": "サ",
       "reading_registered": true,
@@ -505,8 +1235,68 @@
       "is_current": false
     },
     {
+      "name": "タイコム証券",
+      "reading": "たいこむしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "タイセイ",
+      "reading": "たいせい",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "タイセイ・コモディティ",
+      "reading": "たいせい・こもでぃてぃ",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "ダイユウ商事",
+      "reading": "だいゆうしょうじ",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "ディプロ〈商品先物系〉",
+      "reading": "でぃぷろ",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "トヨタファイナンシャルサービス証券",
       "reading": "とよたふぁいなんしゃるさーびすしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "トラディション・セキュリティーズ・ジャパン",
+      "reading": "とらでぃしょん・せきゅりてぃーず・じゃぱん",
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
@@ -535,8 +1325,88 @@
       "is_current": false
     },
     {
+      "name": "ネットウィング証券",
+      "reading": "ねっとうぃんぐしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "フィデス証券",
       "reading": "ふぃですしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "フィンテックグローバル証券",
+      "reading": "ふぃんてっくぐろーばるしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "フィンテックパートナーズ",
+      "reading": "ふぃんてっくぱーとなーず",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "フォレックス・キャピタル・マーケッツ・ジャパン",
+      "reading": "",
+      "reading_uncertain": false,
+      "kana_group": "その他",
+      "reading_registered": false,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "フォーランドフォレックス",
+      "reading": "ふぉーらんどふぉれっくす",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "プルデンシャル・ファイナンシャル・アドバイザーズ証券",
+      "reading": "ぷるでんしゃるふぁいなんしゃるあどばいざーずしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "プレステージ・アセット・マネジメント",
+      "reading": "ぷれすてーじ・あせっと・まねじめんと",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "プレステージ・アセット・マネジメント証券",
+      "reading": "ぷれすてーじ・あせっと・まねじめんとしょうけん",
       "reading_uncertain": false,
       "kana_group": "ハ",
       "reading_registered": true,
@@ -583,6 +1453,36 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": true
+    },
+    {
+      "name": "マーケットデータ・ジャパン",
+      "reading": "まーけっとでーた・じゃぱん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "ミツワ商品",
+      "reading": "みつわしょうひん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "モリアイ証券",
+      "reading": "もりあいしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
     },
     {
       "name": "モルガン・スタンレーMUFG証券",
@@ -685,6 +1585,26 @@
       "is_current": false
     },
     {
+      "name": "ユニマット山丸証券",
+      "reading": "ゆにまっとやままるしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "ライブスター証券",
+      "reading": "らいぶすたーしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ラ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "ライブドア証券",
       "reading": "らいぶどあしょうけん",
       "reading_uncertain": false,
@@ -703,6 +1623,16 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": true
+    },
+    {
+      "name": "ワコビア証券",
+      "reading": "わこびあしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ワ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
     },
     {
       "name": "ワールド日栄フロンティア証券",
@@ -735,6 +1665,16 @@
       "is_current": false
     },
     {
+      "name": "ヴァンテージ・キャピタル・マーケッツ・ジャパン",
+      "reading": "ゔぁんてーじ・きゃぴたる・まーけっつ・じゃぱん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "一吉証券",
       "reading": "いちよししょうけん",
       "reading_uncertain": false,
@@ -765,6 +1705,26 @@
       "is_current": false
     },
     {
+      "name": "七十七証券",
+      "reading": "しちじゅうしちしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "七十七証券設立準備",
+      "reading": "しちじゅうしちしょうけんせつりつじゅんび",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "三和証券",
       "reading": "さんわしょうけん",
       "reading_uncertain": false,
@@ -773,6 +1733,16 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": false
+    },
+    {
+      "name": "三晃証券",
+      "reading": "さんこうしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
     },
     {
       "name": "三栄証券〈いちよし系〉",
@@ -793,6 +1763,46 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": false
+    },
+    {
+      "name": "三津井商店",
+      "reading": "みついしょうてん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "三津井証券",
+      "reading": "みついしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "三津井証券ウェルスマネジメント",
+      "reading": "みついしょうけんうぇるすまねじめんと",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "三田証券",
+      "reading": "みたしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
     },
     {
       "name": "三菱UFJ eスマート証券",
@@ -875,6 +1885,16 @@
       "is_current": false
     },
     {
+      "name": "三貴商事",
+      "reading": "みきしょうじ",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "三重證券",
       "reading": "みえしょうけん",
       "reading_uncertain": false,
@@ -883,6 +1903,66 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": false
+    },
+    {
+      "name": "上光商店",
+      "reading": "じょうこうしょうてん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "上光証券",
+      "reading": "じょうこうしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "上田トラディション証券",
+      "reading": "うえだとらでぃしょんしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "上田八木短資",
+      "reading": "うえだやぎたんし",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "上田八木短資証券準備",
+      "reading": "うえだやぎたんししょうけんじゅんび",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "上田八木証券",
+      "reading": "うえだやぎしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
     },
     {
       "name": "下館証券",
@@ -899,6 +1979,26 @@
       "reading": "ふじしょうけん",
       "reading_uncertain": false,
       "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "両羽証券",
+      "reading": "りょううしょうけん",
+      "reading_uncertain": true,
+      "kana_group": "ラ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "中嘉証券",
+      "reading": "ちゅうかしょうけん",
+      "reading_uncertain": true,
+      "kana_group": "タ",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -975,6 +2075,56 @@
       "is_current": false
     },
     {
+      "name": "丸三吉田政四郎商店",
+      "reading": "まるさんよしだせいしろうしょうてん",
+      "reading_uncertain": true,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "丸三商店",
+      "reading": "まるさんしょうてん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "丸三多田岩吉商店",
+      "reading": "まるさんおおたいわきちしょうてん",
+      "reading_uncertain": true,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "丸三証券",
+      "reading": "まるさんしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "丸三長尾秀一商店",
+      "reading": "まるさんながおしゅういちしょうてん",
+      "reading_uncertain": true,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "丸八証券",
       "reading": "まるはちしょうけん",
       "reading_uncertain": false,
@@ -988,6 +2138,16 @@
       "name": "丸十証券",
       "reading": "まるじゅうしょうけん",
       "reading_uncertain": true,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "丸和証券〈証券ジャパン系〉",
+      "reading": "まるわしょうけん",
+      "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
       "status_note": "",
@@ -1057,6 +2217,26 @@
     {
       "name": "丸水証券〈水戸系〉",
       "reading": "まるみずしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "丸福証券",
+      "reading": "まるふくしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "丸起証券",
+      "reading": "まるきしょうけん",
       "reading_uncertain": false,
       "kana_group": "マ",
       "reading_registered": true,
@@ -1189,6 +2369,36 @@
       "reading": "こうあしょうけん",
       "reading_uncertain": false,
       "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "光陽トラスト",
+      "reading": "こうようとらすと",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "入や萬成証券",
+      "reading": "いりやばんせいしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "入サ証券",
+      "reading": "いりさしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -1365,6 +2575,46 @@
       "is_current": false
     },
     {
+      "name": "北洋証券",
+      "reading": "ほくようしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "北海道証券金融",
+      "reading": "ほっかいどうしょうけんきんゆう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "北辰商品",
+      "reading": "ほくしんしょうひん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "北辰物産",
+      "reading": "ほくしんぶっさん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "北陽証券",
       "reading": "ほくようしょうけん",
       "reading_uncertain": false,
@@ -1435,6 +2685,26 @@
       "is_current": false
     },
     {
+      "name": "双葉商事",
+      "reading": "ふたばしょうじ",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "反町新作商店",
+      "reading": "そりまちしんさくしょうてん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "叶証券",
       "reading": "かのうしょうけん",
       "reading_uncertain": false,
@@ -1485,6 +2755,16 @@
       "is_current": false
     },
     {
+      "name": "国際トレーディング",
+      "reading": "こくさいとれーでぃんぐ",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "国際証券",
       "reading": "こくさいしょうけん",
       "reading_uncertain": false,
@@ -1495,8 +2775,28 @@
       "is_current": false
     },
     {
+      "name": "外為オンライン",
+      "reading": "がいためおんらいん",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "多摩證券",
       "reading": "たましょうけん",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "多田商事",
+      "reading": "ただしょうじ",
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
@@ -1605,6 +2905,26 @@
       "is_current": false
     },
     {
+      "name": "大宝証券",
+      "reading": "たいほうしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "大成商品",
+      "reading": "たいせいしょうひん",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "大日證券",
       "reading": "だいにちしょうけん",
       "reading_uncertain": false,
@@ -1658,6 +2978,16 @@
       "name": "大清",
       "reading": "だいせい",
       "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "大盛証券",
+      "reading": "たいせいしょうけん",
+      "reading_uncertain": true,
       "kana_group": "タ",
       "reading_registered": true,
       "status_note": "",
@@ -1759,6 +3089,56 @@
       "reading": "たいへいようしょうけん",
       "reading_uncertain": false,
       "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "太陽機器〈岡三情報システム系〉",
+      "reading": "たいようきき",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "安藤商店",
+      "reading": "あんどうしょうてん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "終端不明",
+      "is_terminal_unknown": true,
+      "is_current": false
+    },
+    {
+      "name": "安藤証券",
+      "reading": "あんどうしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "室清証券",
+      "reading": "むろせいしょうけん",
+      "reading_uncertain": true,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "室蘭証券",
+      "reading": "むろらんしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -1875,6 +3255,26 @@
       "is_current": false
     },
     {
+      "name": "山丸商会",
+      "reading": "やままるしょうかい",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "山丸証券",
+      "reading": "やままるしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "山加証券",
       "reading": "やまかしょうけん",
       "reading_uncertain": false,
@@ -1955,6 +3355,26 @@
       "is_current": false
     },
     {
+      "name": "山形証券ウェルスマネジメント",
+      "reading": "やまがたしょうけんうぇるすまねじめんと",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "山形證券",
+      "reading": "やまがたしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "山文商会",
       "reading": "やまぶんしょうかい",
       "reading_uncertain": false,
@@ -2019,6 +3439,86 @@
       "reading": "さんようしょうけん",
       "reading_uncertain": false,
       "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "岡三にいがた証券",
+      "reading": "おかさんにいがたしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "岡三インフォメーションサービス",
+      "reading": "おかさんいんふぉめーしょんさーびす",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "岡三ビジネスサービス",
+      "reading": "おかさんびじねすさーびす",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "岡三ビジネス＆テクノロジー",
+      "reading": "おかさんびじねすあんどてくのろじー",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "岡三ビジネス＆テクノロジー証券",
+      "reading": "おかさんびじねすあんどてくのろじーしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "岡三情報システム",
+      "reading": "おかさんじょうほうしすてむ",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "岡安商事",
+      "reading": "おかやすしょうじ",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "岡徳証券",
+      "reading": "おかとくしょうけん",
+      "reading_uncertain": true,
+      "kana_group": "ア",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -2099,6 +3599,16 @@
       "reading": "ていこくしょうけんしんたく",
       "reading_uncertain": false,
       "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "帯広森商店",
+      "reading": "おびひろもりしょうてん",
+      "reading_uncertain": true,
+      "kana_group": "ア",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -2275,10 +3785,50 @@
       "is_current": false
     },
     {
+      "name": "新和証券",
+      "reading": "しんわしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "新日本証券",
       "reading": "しんにほんしょうけん",
       "reading_uncertain": false,
       "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "新林投資アドバイザー",
+      "reading": "しんばやしとうしあどばいざー",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "新林証券",
+      "reading": "しんばやししょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "新潟大塚証券",
+      "reading": "にいがたおおつかしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -2345,6 +3895,16 @@
       "is_current": false
     },
     {
+      "name": "日恵証券",
+      "reading": "にっけいしょうけん",
+      "reading_uncertain": true,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "日本アジア証券",
       "reading": "にほんあじあしょうけん",
       "reading_uncertain": false,
@@ -2357,6 +3917,26 @@
     {
       "name": "日本アジア証券〈丸金系〉",
       "reading": "にほんあじあしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "日本インスティテューショナル証券",
+      "reading": "にほんいんすてぃてゅーしょなるしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "日本インスティテューショナル証券設立準備",
+      "reading": "にほんいんすてぃてゅーしょなるしょうけんせつりつじゅんび",
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
@@ -2383,6 +3963,16 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": false
+    },
+    {
+      "name": "日本ユニコム",
+      "reading": "にほんゆにこむ",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
     },
     {
       "name": "日本信託銀行",
@@ -2425,6 +4015,16 @@
       "is_current": false
     },
     {
+      "name": "日本協栄証券",
+      "reading": "にほんきょうえいしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "日本証券",
       "reading": "にほんしょうけん",
       "reading_uncertain": false,
@@ -2433,6 +4033,16 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": false
+    },
+    {
+      "name": "日本証券金融",
+      "reading": "にほんしょうけんきんゆう",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
     },
     {
       "name": "日本證券投資",
@@ -2447,6 +4057,36 @@
     {
       "name": "日栄証券",
       "reading": "にちえいしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "日産センチュリー証券",
+      "reading": "にっさんせんちゅりーしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "日産証券",
+      "reading": "にっさんしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "日興アセットマネジメント",
+      "reading": "にっこうあせっとまねじめんと",
       "reading_uncertain": false,
       "kana_group": "ナ",
       "reading_registered": true,
@@ -2515,6 +4155,16 @@
       "is_current": false
     },
     {
+      "name": "明倫社",
+      "reading": "めいりんしゃ",
+      "reading_uncertain": true,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "明光ナショナル証券",
       "reading": "めいこうなしょなるしょうけん",
       "reading_uncertain": false,
@@ -2539,6 +4189,16 @@
       "reading": "めいこうしょうけん",
       "reading_uncertain": false,
       "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "更栄証券",
+      "reading": "こうえいしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "カ",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -2595,6 +4255,16 @@
       "is_current": false
     },
     {
+      "name": "木村又三郎商店",
+      "reading": "きむらまたさぶろうしょうてん",
+      "reading_uncertain": true,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "終端不明",
+      "is_terminal_unknown": true,
+      "is_current": false
+    },
+    {
       "name": "木村徳兵衛商店",
       "reading": "きむらとくべえしょうてん",
       "reading_uncertain": false,
@@ -2605,8 +4275,38 @@
       "is_current": false
     },
     {
+      "name": "木村証券",
+      "reading": "きむらしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "杉本証券",
+      "reading": "すぎもとしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "東一証券",
       "reading": "とういちしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "東京メディクス",
+      "reading": "とうきょうめでぃくす",
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
@@ -2667,6 +4367,16 @@
     {
       "name": "東京証券",
       "reading": "とうきょうしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "東京連合証券",
+      "reading": "とうきょうれんごうしょうけん",
       "reading_uncertain": false,
       "kana_group": "タ",
       "reading_registered": true,
@@ -2805,6 +4515,16 @@
       "is_current": false
     },
     {
+      "name": "楽天証券",
+      "reading": "",
+      "reading_uncertain": false,
+      "kana_group": "その他",
+      "reading_registered": false,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "武田安商店",
       "reading": "たけだやすしょうてん",
       "reading_uncertain": true,
@@ -2855,10 +4575,40 @@
       "is_current": false
     },
     {
+      "name": "江戸橋証券",
+      "reading": "えどばししょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "沖縄証券",
+      "reading": "おきなわしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "泉証券",
       "reading": "いずみしょうけん",
       "reading_uncertain": false,
       "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "渡部証券",
+      "reading": "わたなべしょうけん",
+      "reading_uncertain": true,
+      "kana_group": "ワ",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -2889,6 +4639,16 @@
       "reading": "たまずかしょうけん",
       "reading_uncertain": false,
       "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "琉球証券",
+      "reading": "りゅうきゅうしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ラ",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -2959,6 +4719,16 @@
       "reading": "ますだしょうてん",
       "reading_uncertain": true,
       "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "真清証券",
+      "reading": "しんせいしょうけん",
+      "reading_uncertain": true,
+      "kana_group": "サ",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -3065,6 +4835,16 @@
       "is_current": false
     },
     {
+      "name": "福王証券",
+      "reading": "ふくおうしょうけん",
+      "reading_uncertain": true,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "福田粂商事",
       "reading": "ふくだくめしょうじ",
       "reading_uncertain": false,
@@ -3093,6 +4873,26 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": false
+    },
+    {
+      "name": "立花証券",
+      "reading": "たちばなしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "竹松証券",
+      "reading": "たけまつしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
     },
     {
       "name": "第一勧業証券",
@@ -3165,10 +4965,40 @@
       "is_current": false
     },
     {
+      "name": "荘内証券",
+      "reading": "しょうないしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "菱光証券",
       "reading": "りょうこうしょうけん",
       "reading_uncertain": false,
       "kana_group": "ラ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "萬成プライムキャピタル証券",
+      "reading": "ばんせいぷらいむきゃぴたるしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "萬成証券",
+      "reading": "ばんせいしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -3189,6 +5019,26 @@
       "reading": "あいざわしょうけん",
       "reading_uncertain": false,
       "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "藤井新七商店",
+      "reading": "ふじいしんしちしょうてん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "藤井真次郎商店",
+      "reading": "ふじいしんじろうしょうてん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -3255,6 +5105,26 @@
       "is_current": false
     },
     {
+      "name": "証券ジャパン",
+      "reading": "しょうけんじゃぱん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "証券ジャパンウェルスマネジメント",
+      "reading": "しょうけんじゃぱんうぇるすまねじめんと",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
       "name": "赤座株式店",
       "reading": "あかざかぶしきてん",
       "reading_uncertain": false,
@@ -3305,10 +5175,40 @@
       "is_current": false
     },
     {
+      "name": "都商事",
+      "reading": "みやこしょうじ",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "都築証券",
       "reading": "つづきしょうけん",
       "reading_uncertain": false,
       "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "都興産",
+      "reading": "みやここうさん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "都証券",
+      "reading": "みやこしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "マ",
       "reading_registered": true,
       "status_note": "",
       "is_terminal_unknown": false,
@@ -3405,6 +5305,16 @@
       "is_current": false
     },
     {
+      "name": "金新証券",
+      "reading": "きんしんしょうけん",
+      "reading_uncertain": true,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
       "name": "金泉証券",
       "reading": "きんせんしょうけん",
       "reading_uncertain": false,
@@ -3433,6 +5343,56 @@
       "status_note": "",
       "is_terminal_unknown": false,
       "is_current": false
+    },
+    {
+      "name": "阪堺証券",
+      "reading": "はんかいしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "須々木証券",
+      "reading": "すずきしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "頭川株式店",
+      "reading": "ずかわかぶしきてん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "頭川証券",
+      "reading": "ずかわしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "飯塚中川証券",
+      "reading": "いいずかなかがわしょうけん",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
     },
     {
       "name": "飯田證券",
