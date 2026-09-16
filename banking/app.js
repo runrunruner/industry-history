@@ -1,8 +1,8 @@
 (() => {
   "use strict";
 
-  const SVG_URL = "assets/securities_history.svg";
-  const DATA_URL = "data/securities_history.json";
+  const SVG_URL = "assets/banking_history.svg";
+  const DATA_URL = "data/banking_history.json";
   const VALID_MODES = new Set(["self", "predecessors", "successors", "lineage"]);
 
   const stage = document.getElementById("svg-stage");
@@ -272,8 +272,8 @@
 
     const company = companyMap.get(companyName);
 
-    // 現在も存続している会社には「現在から見た後継」は存在しない。
-    // 同じ会社名が過去にも使われていた場合の歴史的な後継関係を、
+    // 現在も存続している銀行には「現在から見た後継」は存在しない。
+    // 同じ銀行名が過去にも使われていた場合の歴史的な後継関係を、
     // 現在の会社の後継として誤表示しない。
     if (mode === "successors" && company?.is_current) {
       return false;
@@ -284,17 +284,17 @@
 
   function modeUnavailableMessage(companyName, mode) {
     if (mode === "predecessors") {
-      return `${companyName} には登録済みの前身会社がありません。`;
+      return `${companyName} には登録済みの前身銀行がありません。`;
     }
     if (mode === "successors") {
       const company = companyMap.get(companyName);
       if (company?.is_current) {
-        return `${companyName} は現存しているため、後継会社はありません。`;
+        return `${companyName} は現存しているため、後継銀行はありません。`;
       }
-      return `${companyName} には登録済みの後継会社がありません。`;
+      return `${companyName} には登録済みの後継銀行がありません。`;
     }
     if (mode === "lineage") {
-      return `${companyName} は、ほかの会社を含む系列としては登録されていません。`;
+      return `${companyName} は、ほかの銀行を含む系列としては登録されていません。`;
     }
     return "";
   }
@@ -359,7 +359,7 @@
       bindSvgInteractions();
       bindPanZoom();
 
-      setStatus(`${companyNames.length}社を読み込みました。会社名を検索できます。`);
+      setStatus(`${companyNames.length}行名を読み込みました。銀行名を検索できます。`);
 
       const initialUrl = new URL(window.location.href);
       const hasDeepLink =
@@ -665,11 +665,11 @@
 
   function modeLabel(mode) {
     return {
-      self: "この会社",
+      self: "この銀行",
       predecessors: "前身",
       successors: "後継",
       lineage: "系列全体"
-    }[mode] || "この会社";
+    }[mode] || "この銀行";
   }
 
   function markPrimaryCompany() {
@@ -742,7 +742,7 @@
     const height = width / Math.max(stageRatio, 0.2);
 
     // setViewBox() の通常ズーム下限とは切り離し、
-    // 系列表示でも会社名が読める倍率を維持する。
+    // 系列表示でも銀行名が読める倍率を維持する。
     viewBox = {
       x: centerX - width / 2,
       y: centerY - height / 2,
@@ -761,12 +761,12 @@
     if (!svg) return;
 
     const introNames = [
-      "黒川幸七商店",
-      "黒川商店",
-      "日興證券"
+      "加島銀行",
+      "大阪野村銀行",
+      "野村銀行"
     ];
 
-    // 同じ会社名が後年にも再登場するため、各社の「最初のノード」だけを使う。
+    // 同じ銀行名が後年にも再登場するため、各社の「最初のノード」だけを使う。
     const earliestNodes = [];
 
     for (const name of introNames) {
@@ -800,7 +800,7 @@
 
     setReadableCenteredView(centerX, centerY, requestedWidth);
     setStatus(
-      `${companyNames.length}社を読み込みました。図をドラッグして移動するか、会社名を検索できます。`
+      `${companyNames.length}行名を読み込みました。図をドラッグして移動するか、銀行名を検索できます。`
     );
   }
 
@@ -822,8 +822,8 @@
 
     let anchor = chooseModeAnchor(companyName, mode);
 
-    // 選択会社のアンカーが取れない場合も、
-    // 強調中の会社ボックスを起点にして「線だけ」の画面を避ける。
+    // 選択銀行のアンカーが取れない場合も、
+    // 強調中の銀行ボックスを起点にして「線だけ」の画面を避ける。
     if (!anchor) {
       anchor = Array.from(svg.querySelectorAll(".company-node.web-hit"))[0] || null;
     }
@@ -833,7 +833,7 @@
     const anchorCenter = safeElementCenter(anchor);
     if (!anchorCenter) return;
 
-    // self は選択会社そのものを大きく見せる。
+    // self は選択銀行そのものを大きく見せる。
     if (mode === "self") {
       setReadableCenteredView(
         anchorCenter.x,
@@ -846,7 +846,7 @@
     const allOtherHitNodes = Array.from(svg.querySelectorAll(".company-node.web-hit"))
       .filter(node => node !== anchor);
 
-    // 同じ会社名の別時点より、別の関連会社を優先してカメラに入れる。
+    // 同じ銀行名の別時点より、別の関連銀行を優先してカメラに入れる。
     const distinctRelatedNodes = allOtherHitNodes
       .filter(node => node.getAttribute("data-company") !== companyName);
 
@@ -862,7 +862,7 @@
         const dx = center.x - anchorCenter.x;
         const dy = center.y - anchorCenter.y;
 
-        // 前身なら左、後継なら右の近い会社を優先する。
+        // 前身なら左、後継なら右の近い銀行を優先する。
         let directionPenalty = 0;
         if (mode === "predecessors" && dx > 120) directionPenalty = 1e9;
         if (mode === "successors" && dx < -120) directionPenalty = 1e9;
@@ -889,7 +889,7 @@
       const readableLimit = isMobileLayout() ? 720 : 1120;
 
       if (horizontalDistance <= readableLimit) {
-        // 近い関係会社なら、両方の会社ボックスが見える位置へ寄せる。
+        // 近い関係銀行なら、両方の銀行ボックスが見える位置へ寄せる。
         centerX = (anchorCenter.x + nearest.center.x) / 2;
         centerY = (anchorCenter.y + nearest.center.y) / 2;
 
@@ -898,8 +898,8 @@
           horizontalDistance + (isMobileLayout() ? 300 : 420)
         );
       } else {
-        // 関係会社が非常に遠い場合、中間へ移動すると線しか見えなくなる。
-        // 選択会社を必ず画面内に残し、関係が続く方向へ少しだけ寄せる。
+        // 関係銀行が非常に遠い場合、中間へ移動すると線しか見えなくなる。
+        // 選択銀行を必ず画面内に残し、関係が続く方向へ少しだけ寄せる。
         const direction = Math.sign(nearest.dx) || 1;
         centerX = anchorCenter.x + direction * (isMobileLayout() ? 90 : 150);
 
@@ -914,7 +914,7 @@
     }
 
     // 系列全体でも巨大な全系列をカメラに収めず、
-    // 必ず選択会社の会社ボックスが読める範囲を維持する。
+    // 必ず選択銀行の銀行ボックスが読める範囲を維持する。
     setReadableCenteredView(centerX, centerY, requestedWidth);
   }
 
@@ -939,7 +939,7 @@
     for (const node of data.svg_nodes || []) {
       if (!names.has(node.company)) continue;
 
-      // 関係会社として判定された会社名のボックスは必ず強調対象に含める。
+      // 関係銀行として判定された銀行名のボックスは必ず強調対象に含める。
       // 従来はイベントID条件でボックスが落ち、線だけ残る場合があった。
       nodeIds.add(node.id);
     }
@@ -1024,18 +1024,18 @@
 
     if (mode === "predecessors") {
       return relatedCount
-        ? `${companyName} の前身・吸収会社 ${relatedCount}社を強調しています。近い関係から表示し、ドラッグで続きを追えます。`
-        : `${companyName} には登録済みの前身会社がありません。`;
+        ? `${companyName} の前身・吸収銀行 ${relatedCount}行を強調しています。近い関係から表示し、ドラッグで続きを追えます。`
+        : `${companyName} には登録済みの前身銀行がありません。`;
     }
     if (mode === "successors") {
       return relatedCount
-        ? `${companyName} の後継会社 ${relatedCount}社を強調しています。近い関係から表示し、ドラッグで続きを追えます。`
-        : `${companyName} には登録済みの後継会社がありません。`;
+        ? `${companyName} の後継銀行 ${relatedCount}行を強調しています。近い関係から表示し、ドラッグで続きを追えます。`
+        : `${companyName} には登録済みの後継銀行がありません。`;
     }
     if (mode === "lineage") {
-      return `${companyName} を含む系列 ${names.size}社を強調しています。画面は選択会社周辺へ寄せています。`;
+      return `${companyName} を含む系列 ${names.size}行を強調しています。画面は選択銀行周辺へ寄せています。`;
     }
-    return `${companyName} を強調しています。会社名を読める倍率で表示しています。`;
+    return `${companyName} を強調しています。銀行名を読める倍率で表示しています。`;
   }
 
   function clearActiveEventButton() {
@@ -1049,7 +1049,7 @@
     if (!selectedCompanyName) return;
 
     // 前身・後継・系列が実データ上存在しない場合は、
-    // 不自然な「線だけ表示」を避けて「この会社」へ戻す。
+    // 不自然な「線だけ表示」を避けて「この銀行」へ戻す。
     if (!isModeAvailable(selectedCompanyName, selectedMode)) {
       selectedMode = "self";
     }
@@ -1057,8 +1057,8 @@
     selectedEventId = null;
     highlightMode(selectedCompanyName, selectedMode);
 
-    // 関係する会社・線はすべて強調するが、カメラは全体を無理に収めない。
-    // 選択会社と直近の関係が読める倍率を優先する。
+    // 関係する銀行・線はすべて強調するが、カメラは全体を無理に収めない。
+    // 選択銀行と直近の関係が読める倍率を優先する。
     if (doFocus) focusModeReadable(selectedCompanyName, selectedMode);
 
     updateModeButtons();
@@ -1172,7 +1172,7 @@
 
     if (!box) return;
 
-    // 「年月列」ではなく、選択したイベントに属する会社ボックス群そのものの中心を
+    // 「年月列」ではなく、選択したイベントに属する銀行ボックス群そのものの中心を
     // 画面中央へ置く。商号変更・合併など複数ボックスのイベントも全体が中央になる。
     const centerX = box.x + box.width / 2;
     const centerY = box.y + box.height / 2;
@@ -1209,7 +1209,7 @@
     const directNodes = eventDirectNodes(event);
 
     // 周囲の会社・沿革線は通常表示のまま残す。
-    // クリックしたイベントに直接関係する会社ボックスだけを強調する。
+    // クリックしたイベントに直接関係する銀行ボックスだけを強調する。
     directNodes.forEach(node => {
       node.classList.add("web-hit");
 
@@ -1219,7 +1219,7 @@
     });
 
     // 沿革線は強調せず、倍率計算にも使わない。
-    // イベント月を横方向の中央に置き、会社ボックスだけでズームする。
+    // イベント月を横方向の中央に置き、銀行ボックスだけでズームする。
     if (directNodes.length) {
       focusEventAtMonth(event, directNodes);
     }
@@ -1279,7 +1279,7 @@
     controls.setAttribute("aria-label", "系列表示");
 
     const options = [
-      ["self", "この会社"],
+      ["self", "この銀行"],
       ["predecessors", "前身"],
       ["successors", "後継"],
       ["lineage", "系列全体"]
@@ -1513,7 +1513,7 @@
     title.textContent = `「${query}」の検索結果`;
     const meta = document.createElement("p");
     meta.className = "detail-meta";
-    meta.textContent = `${matches.length}社が該当しました。会社名を選択してください。`;
+    meta.textContent = `${matches.length}行名が該当しました。銀行名を選択してください。`;
     header.append(title, meta);
     panel.appendChild(header);
 
@@ -1531,7 +1531,7 @@
     });
 
     panel.appendChild(ul);
-    setStatus(`「${query}」に ${matches.length}社が該当しました。`);
+    setStatus(`「${query}」に ${matches.length}行名が該当しました。`);
     syncUrl("push");
   }
 
@@ -1567,11 +1567,11 @@
       clearHighlight();
       hideSuggestions();
       syncUrl("push");
-      setStatus(`「${query}」に一致する会社はありません。`);
+      setStatus(`「${query}」に一致する銀行はありません。`);
       panel.innerHTML = `
         <div class="detail-empty">
           <h2>検索結果なし</h2>
-          <p>別の会社名や短い語句で検索してください。</p>
+          <p>別の銀行名や短い語句で検索してください。</p>
         </div>`;
     }
   }
@@ -1734,11 +1734,11 @@
 
     panel.innerHTML = `
       <div class="detail-empty">
-        <h2>会社の沿革</h2>
-        <p>検索結果または図中の会社名を選択してください。</p>
+        <h2>銀行の沿革</h2>
+        <p>検索結果または図中の銀行名を選択してください。</p>
       </div>`;
 
-    setStatus(`${companyNames.length}社を読み込みました。会社名を検索できます。`);
+    setStatus(`${companyNames.length}行名を読み込みました。銀行名を検索できます。`);
 
     if (updateUrl) syncUrl(historyMode);
   }
@@ -1765,14 +1765,14 @@
   async function shareCurrentView() {
     const url = window.location.href;
     const title = selectedCompanyName
-      ? `${selectedCompanyName} | 証券業界 変遷図`
-      : "証券業界 変遷図";
+      ? `${selectedCompanyName} | 銀行業界 変遷図`
+      : "銀行業界 変遷図";
 
     const shareData = {
       title,
       text: selectedCompanyName
         ? `${selectedCompanyName} の変遷を表示しています。`
-        : "証券会社の設立・商号変更・合併・廃業をたどる変遷図です。",
+        : "銀行の設立・商号変更・合併・一部営業譲渡・廃業をたどる変遷図です。",
       url
     };
 
