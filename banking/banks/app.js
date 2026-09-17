@@ -1,0 +1,746 @@
+"use strict";
+
+const GROUP_ORDER = ["ア", "カ", "サ", "タ", "ナ", "ハ", "マ", "ヤ", "ラ", "ワ", "英数字", "その他"];
+const GROUP_LABEL = {
+  "ア": "ア行", "カ": "カ行", "サ": "サ行", "タ": "タ行", "ナ": "ナ行",
+  "ハ": "ハ行", "マ": "マ行", "ヤ": "ヤ行", "ラ": "ラ行", "ワ": "ワ行",
+  "英数字": "英数字", "その他": "その他"
+};
+
+let companyIndexData = null;
+let historyData = null;
+let historyCompanyMap = new Map();
+let selectedCompanyName = "";
+let allCompanies = [];
+let companyIndexMap = new Map();
+let activeStatusFilter = "all";
+let forwardGraph = new Map();
+let reverseGraph = new Map();
+
+function readingMeta(company) {
+  let reading = String(company?.reading || "").trim();
+  let uncertain = Boolean(company?.reading_uncertain);
+
+  // v24で生成された旧JSONでも、読み末尾の " を推測フラグとして解釈する。
+  if (/["”＂]$/.test(reading)) {
+    uncertain = true;
+    reading = reading.slice(0, -1).trim();
+  }
+  return { reading, uncertain: Boolean(uncertain && reading) };
+}
+
+function normalizeForSearch(value) {
+  return String(value || "").normalize("NFKC").toLocaleLowerCase("ja").replace(/\s+/g, "").trim();
+}
+
+function compareCompanies(a, b) {
+  const ar = readingMeta(a).reading;
+  const br = readingMeta(b).reading;
+  if (ar && br) {
+    const c = ar.localeCompare(br, "ja");
+    if (c !== 0) return c;
+  } else if (ar) {
+    return -1;
+  } else if (br) {
+    return 1;
+  }
+  return a.name.localeCompare(b.name, "ja");
+}
+
+function matchesCompanySearch(company, query) {
+  const q = normalizeForSearch(query);
+  if (!q) return true;
+  const name = normalizeForSearch(company.name);
+  const reading = normalizeForSearch(readingMeta(company).reading);
+  return name.includes(q) || reading.includes(q);
+}
+
+function isTerminalUnknownCompany(company) {
+  if (typeof company?.is_terminal_unknown === "boolean") return company.is_terminal_unknown;
+  const historyCompany = historyCompanyMap.get(company?.name);
+  if (typeof historyCompany?.is_terminal_unknown === "boolean") return historyCompany.is_terminal_unknown;
+  return String(company?.status_note || historyCompany?.status_note || "").trim() === "終端不明";
+}
+
+function isCurrentCompany(company) {
+  if (isTerminalUnknownCompany(company)) return false;
+  if (typeof company?.is_current === "boolean") return company.is_current;
+  return Boolean(historyCompanyMap.get(company?.name)?.is_current);
+}
+
+function matchesStatusFilter(company, filter = activeStatusFilter) {
+  if (filter === "current") return isCurrentCompany(company);
+  if (filter === "historical") return !isCurrentCompany(company);
+  if (filter === "terminal-unknown") return isTerminalUnknownCompany(company);
+  return true;
+}
+
+function statusFilterLabel(filter = activeStatusFilter) {
+  if (filter === "current") return "現存";
+  if (filter === "historical") return "歴史上";
+  if (filter === "terminal-unknown") return "終端不明";
+  return "すべて";
+}
+
+function displayCompanyName(company) {
+  return `${company.name}${readingMeta(company).uncertain ? "*" : ""}`;
+}
+
+
+function el(tag, className, text) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text !== undefined) node.textContent = text;
+  return node;
+}
+
+function formatMonth(month, uncertain) {
+  const raw = String(month || "").padStart(6, "0");
+  if (raw.length !== 6) return String(month || "");
+  const year = raw.slice(0, 4);
+  const mon = raw.slice(4, 6);
+  if (uncertain) return `${year}年（月不明）`;
+  return `${year}年${Number(mon)}月`;
+}
+
+function eventSummary(event) {
+  const before = (event.before || "").trim();
+  const after = (event.after || "").trim();
+  const kind = (event.type || "").trim();
+
+  if (kind === "設立") return after && after !== "-" && after !== "－" ? `${after}を設立` : "設立";
+  if (kind === "廃業") return before && before !== "-" && before !== "－" ? `${before}が廃業` : "廃業";
+  if (before && after && before !== after) return `${before} → ${after}`;
+  if (after && after !== "-" && after !== "－") return after;
+  if (before && before !== "-" && before !== "－") return before;
+  return kind || "沿革イベント";
+}
+
+function eventSort(a, b) {
+  if ((a.month || 0) !== (b.month || 0)) return (a.month || 0) - (b.month || 0);
+  return (a.source_row || 0) - (b.source_row || 0);
+}
+
+function splitLegacySource(source) {
+  const text = String(source || "").trim();
+  if (!text) return { note: "", urls: [] };
+  const lines = text.split(/\r?\n/).map(v => v.trim()).filter(Boolean);
+  const urls = [];
+  const notes = [];
+  for (const line of lines) {
+    if (/^https?:\/\/\S+$/i.test(line)) urls.push(line);
+    else notes.push(line);
+  }
+  return { note: notes.join("\n"), urls };
+}
+
+function sourceParts(event) {
+  const note = typeof event.note === "string" ? event.note.trim() : "";
+  const urls = Array.isArray(event.urls)
+    ? event.urls.map(v => String(v || "").trim()).filter(Boolean)
+    : [];
+  if (note || urls.length) return { note, urls };
+  return splitLegacySource(event.source);
+}
+
+function appendLinkifiedText(parent, text) {
+  const value = String(text || "");
+  const regex = /(https?:\/\/[^\s]+)/g;
+  let last = 0;
+  let match;
+  while ((match = regex.exec(value)) !== null) {
+    if (match.index > last) parent.appendChild(document.createTextNode(value.slice(last, match.index)));
+    const a = document.createElement("a");
+    a.href = match[0];
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = match[0];
+    parent.appendChild(a);
+    last = regex.lastIndex;
+  }
+  if (last < value.length) parent.appendChild(document.createTextNode(value.slice(last)));
+}
+
+function uniqueEvents(events) {
+  const seen = new Set();
+  return events.filter(event => {
+    const key = event.id || `${event.source_row}|${event.month}|${event.before}|${event.after}|${event.type}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function eventsForCompany(name) {
+  if (!historyData) return [];
+
+  // 銀行一覧ページでは、選択した銀行名が実際にB列（before）または
+  // C列（after）に登場するイベントだけを表示する。
+  const events = (historyData.events || []).filter(event =>
+    event.before === name || event.after === name
+  );
+
+  return uniqueEvents(events).sort(eventSort);
+}
+
+function renderSource(event) {
+  const { note, urls } = sourceParts(event);
+  if (!note && !urls.length) return null;
+
+  const source = el("div", "event-source");
+  source.appendChild(el("h4", "event-source-title", "出典"));
+
+  if (note) {
+    const p = el("p", "event-note");
+    const noteLines = note.split(/\r?\n/);
+    noteLines.forEach((line, index) => {
+      if (index) p.appendChild(document.createElement("br"));
+      appendLinkifiedText(p, line);
+    });
+    source.appendChild(p);
+  }
+
+  for (const url of urls) {
+    const p = el("p", "event-url");
+    const a = document.createElement("a");
+    a.href = url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = url;
+    p.appendChild(a);
+    source.appendChild(p);
+  }
+  return source;
+}
+
+
+function ensureRelationNode(name) {
+  const value = String(name || "").trim();
+  if (!value) return;
+  if (!forwardGraph.has(value)) forwardGraph.set(value, new Set());
+  if (!reverseGraph.has(value)) reverseGraph.set(value, new Set());
+}
+
+function buildCompanyRelationGraph() {
+  forwardGraph = new Map();
+  reverseGraph = new Map();
+
+  for (const company of allCompanies) ensureRelationNode(company.name);
+  for (const company of historyData?.companies || []) ensureRelationNode(company.name);
+
+  for (const event of historyData?.events || []) {
+    if (!["商号変更", "合併"].includes(String(event.type || "").trim())) continue;
+
+    const before = String(event.before || "").trim();
+    const after = String(event.after || "").trim();
+    if (!before || !after || before === after || before === "-" || before === "－" || after === "-" || after === "－") continue;
+
+    ensureRelationNode(before);
+    ensureRelationNode(after);
+    forwardGraph.get(before).add(after);
+    reverseGraph.get(after).add(before);
+  }
+}
+
+function relationCompany(name) {
+  return companyIndexMap.get(name) || historyCompanyMap.get(name) || { name };
+}
+
+function sortCompanyNames(names) {
+  return [...new Set(names)].sort((a, b) => compareCompanies(relationCompany(a), relationCompany(b)));
+}
+
+function directRelatedNames(name, graph) {
+  return sortCompanyNames([...(graph.get(name) || [])]);
+}
+
+function currentDestinationNames(name) {
+  const startCompany = relationCompany(name);
+  if (isTerminalUnknownCompany(startCompany)) return [];
+  if (isCurrentCompany(startCompany)) return [name];
+
+  const currentNames = new Set();
+  const visited = new Set([name]);
+  const queue = [name];
+
+  while (queue.length) {
+    const current = queue.shift();
+    for (const next of forwardGraph.get(current) || []) {
+      if (visited.has(next)) continue;
+      visited.add(next);
+      const nextCompany = relationCompany(next);
+      if (isCurrentCompany(nextCompany)) {
+        currentNames.add(next);
+        continue;
+      }
+      queue.push(next);
+    }
+  }
+
+  return sortCompanyNames(currentNames);
+}
+
+function createRelationCompanyButton(name, selectedName) {
+  const company = relationCompany(name);
+  const button = el("button", "relation-company-button");
+  button.type = "button";
+  button.dataset.company = name;
+  button.setAttribute("aria-label", `${name}の沿革を見る`);
+
+  const label = displayCompanyName(company);
+  button.appendChild(document.createTextNode(label));
+  if (name === selectedName) {
+    button.classList.add("is-self");
+    const currentMark = el("span", "relation-self-label", "現在選択中");
+    button.appendChild(currentMark);
+  }
+
+  button.addEventListener("click", () => {
+    if (name !== selectedName) renderCompanyDetail(name);
+  });
+  return button;
+}
+
+function appendRelationRow(section, label, names, options = {}) {
+  const row = el("div", "relation-row");
+  row.appendChild(el("dt", "relation-label", label));
+  const dd = el("dd", "relation-value");
+
+  if (names.length) {
+    const list = el("div", "relation-company-list");
+    for (const name of names) list.appendChild(createRelationCompanyButton(name, options.selectedName || ""));
+    dd.appendChild(list);
+  } else {
+    dd.appendChild(el("span", `relation-empty${options.emphasis ? " is-emphasis" : ""}`, options.emptyText || "登録なし"));
+  }
+
+  row.appendChild(dd);
+  section.appendChild(row);
+}
+
+function renderCompanyRelations(name) {
+  const company = relationCompany(name);
+  const terminalUnknown = isTerminalUnknownCompany(company);
+  const current = isCurrentCompany(company);
+  const predecessors = directRelatedNames(name, reverseGraph);
+  const successors = directRelatedNames(name, forwardGraph);
+  const currentDestinations = currentDestinationNames(name);
+
+  const wrapper = el("section", "detail-relations");
+  const titleRow = el("div", "relation-title-row");
+  titleRow.appendChild(el("h3", "relation-title", "系譜"));
+  titleRow.appendChild(el("span", "relation-caption", "商号変更・合併の登録イベントを基に表示"));
+  wrapper.appendChild(titleRow);
+
+  const dl = el("dl", "relation-list");
+  appendRelationRow(dl, "直接の前身", predecessors, {
+    selectedName: name,
+    emptyText: "登録なし"
+  });
+
+  appendRelationRow(dl, "直接の後継", successors, {
+    selectedName: name,
+    emptyText: terminalUnknown ? "未確認" : (current ? "現存銀行のためなし" : "登録なし"),
+    emphasis: terminalUnknown
+  });
+
+  appendRelationRow(dl, "現在につながる銀行", currentDestinations, {
+    selectedName: name,
+    emptyText: terminalUnknown ? "不明" : "確認できる現存先なし",
+    emphasis: terminalUnknown
+  });
+
+  wrapper.appendChild(dl);
+  return wrapper;
+}
+
+
+function companyNameFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return String(params.get("company") || "").trim();
+}
+
+function updateCompanyUrl(name, { replace = false } = {}) {
+  const url = new URL(window.location.href);
+  const current = String(url.searchParams.get("company") || "").trim();
+  const next = String(name || "").trim();
+
+  if (next) url.searchParams.set("company", next);
+  else url.searchParams.delete("company");
+  // 五十音アンカーは共有URLには持ち越さず、銀行選択URLを簡潔に保つ。
+  url.hash = "";
+
+  // 同じ銀行を再選択した場合は履歴を無駄に増やさない。
+  if (current === next && !replace) return;
+
+  const state = { ...(history.state || {}), company: next || null };
+  if (replace) history.replaceState(state, "", url);
+  else history.pushState(state, "", url);
+}
+
+function renderEmptyCompanyDetail() {
+  selectedCompanyName = "";
+  document.querySelectorAll(".company-button.is-selected").forEach(node => node.classList.remove("is-selected"));
+
+  const detail = document.getElementById("company-detail");
+  if (!detail) return;
+  detail.replaceChildren();
+
+  const empty = el("div", "detail-empty");
+  empty.appendChild(el("p", "eyebrow", "COMPANY HISTORY"));
+  empty.appendChild(el("h2", "", "銀行の沿革"));
+  empty.appendChild(el("p", "", "左の一覧から銀行名を選択してください。"));
+  detail.appendChild(empty);
+}
+
+function applyCompanyFromUrl({ scrollMobile = false } = {}) {
+  const name = companyNameFromUrl();
+  if (!name) {
+    renderEmptyCompanyDetail();
+    return;
+  }
+
+  // URLに存在しない銀行名が指定されていても、一覧ページ自体は壊さない。
+  if (!companyIndexMap.has(name) && !historyCompanyMap.has(name)) {
+    renderEmptyCompanyDetail();
+    return;
+  }
+
+  renderCompanyDetail(name, { updateUrl: false, scrollMobile });
+}
+
+function renderCompanyDetail(name, { updateUrl = true, replaceUrl = false, scrollMobile = true } = {}) {
+  const detail = document.getElementById("company-detail");
+  const company = historyCompanyMap.get(name);
+  selectedCompanyName = name;
+
+  if (updateUrl) updateCompanyUrl(name, { replace: replaceUrl });
+
+  document.querySelectorAll(".company-button.is-selected").forEach(node => node.classList.remove("is-selected"));
+  document.querySelectorAll(".company-button").forEach(node => {
+    if (node.dataset.company === name) node.classList.add("is-selected");
+  });
+
+  detail.replaceChildren();
+
+  const header = el("div", "detail-header");
+  const headingWrap = el("div", "detail-heading-wrap");
+  headingWrap.appendChild(el("p", "eyebrow", "COMPANY HISTORY"));
+  const indexCompany = companyIndexMap.get(name);
+  headingWrap.appendChild(el("h2", "detail-company-name", indexCompany ? displayCompanyName(indexCompany) : name));
+  header.appendChild(headingWrap);
+
+  const terminalUnknown = isTerminalUnknownCompany(indexCompany || company);
+  const isCurrent = !terminalUnknown && Boolean(company?.is_current);
+  const badge = el(
+    "span",
+    `status-badge ${terminalUnknown ? "is-terminal-unknown" : (isCurrent ? "is-current" : "is-historical")}`,
+    terminalUnknown ? "終端不明" : (isCurrent ? "現存" : "歴史上の行名")
+  );
+  header.appendChild(badge);
+  detail.appendChild(header);
+  detail.appendChild(renderCompanyRelations(name));
+
+  const events = eventsForCompany(name);
+  if (!events.length) {
+    detail.appendChild(el("p", "detail-message", "この銀行名が登場する沿革イベントを取得できませんでした。"));
+  } else {
+    const intro = el("p", "detail-summary", `${events.length.toLocaleString("ja-JP")}件の、この銀行名が登場する沿革イベントを年代順に表示しています。`);
+    detail.appendChild(intro);
+
+    if (terminalUnknown) {
+      detail.appendChild(el(
+        "p",
+        "terminal-unknown-note",
+        "現在は存続していないことを確認していますが、消滅・合併・承継等の時期や経緯は確認できていません。"
+      ));
+    }
+
+    const timeline = el("ol", "history-list");
+    for (const event of events) {
+      const item = el("li", "history-item");
+      const date = el("time", "event-date", formatMonth(event.month, event.month_uncertain));
+      item.appendChild(date);
+
+      const body = el("div", "event-body");
+      const top = el("div", "event-topline");
+      top.appendChild(el("span", "event-type", event.type || "沿革"));
+      top.appendChild(el("strong", "event-summary", eventSummary(event)));
+      body.appendChild(top);
+
+      const source = renderSource(event);
+      if (source) body.appendChild(source);
+      item.appendChild(body);
+      timeline.appendChild(item);
+    }
+    detail.appendChild(timeline);
+  }
+
+  const actions = el("div", "detail-actions");
+  const diagram = el("a", "primary-link", "変遷図でこの銀行を見る");
+  diagram.href = `../?company=${encodeURIComponent(name)}`;
+  actions.appendChild(diagram);
+  detail.appendChild(actions);
+
+  if (scrollMobile && window.matchMedia("(max-width: 760px)").matches) {
+    detail.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+function renderReadingNotes(companies) {
+  const root = document.getElementById("reading-notes");
+  const missing = companies.filter(company => !readingMeta(company).reading).length;
+  const uncertain = companies.filter(company => readingMeta(company).uncertain).length;
+
+  root.replaceChildren();
+  if (!missing && !uncertain) {
+    root.hidden = true;
+    return;
+  }
+
+  root.hidden = false;
+  if (uncertain) {
+    const p = el("p", "reading-note");
+    const mark = el("strong", "reading-asterisk", "*");
+    p.appendChild(mark);
+    p.appendChild(document.createTextNode(" が付いている銀行名の読み仮名は、資料等で確認できず推測で入力しています。"));
+    root.appendChild(p);
+  }
+  if (missing) {
+    root.appendChild(el("p", "reading-note", `読み未登録の銀行が ${missing.toLocaleString("ja-JP")} 行あります。未登録分は「その他」に表示されます。`));
+  }
+}
+
+function renderCompanyList(companies, query = "") {
+  const groupsRoot = document.getElementById("company-groups");
+  const navRoot = document.getElementById("kana-nav");
+  const countNode = document.getElementById("company-count");
+  const statusNode = document.getElementById("search-result-status");
+
+  const grouped = Object.fromEntries(GROUP_ORDER.map(key => [key, []]));
+
+  for (const company of companies) {
+    const { reading } = readingMeta(company);
+    let group = company.kana_group || "その他";
+    if (!GROUP_ORDER.includes(group)) group = "その他";
+    // 旧JSONで読み末尾に推測記号が残っていても、kana_groupは既存値を利用できる。
+    // 読み未登録の場合のみ「その他」へ寄せる。
+    if (!reading) group = "その他";
+    grouped[group].push(company);
+  }
+
+  for (const key of GROUP_ORDER) grouped[key].sort(compareCompanies);
+
+  const trimmedQuery = String(query || "").trim();
+  const hasStatusFilter = activeStatusFilter !== "all";
+  const filteredLabel = statusFilterLabel();
+
+  countNode.textContent = (trimmedQuery || hasStatusFilter)
+    ? `${companies.length.toLocaleString("ja-JP")} / ${allCompanies.length.toLocaleString("ja-JP")}件`
+    : `${allCompanies.length.toLocaleString("ja-JP")}件`;
+
+  if (trimmedQuery && hasStatusFilter) {
+    statusNode.textContent = `「${trimmedQuery}」×「${filteredLabel}」：${companies.length.toLocaleString("ja-JP")}件`;
+  } else if (trimmedQuery) {
+    statusNode.textContent = `「${trimmedQuery}」の検索結果：${companies.length.toLocaleString("ja-JP")}件`;
+  } else if (hasStatusFilter) {
+    statusNode.textContent = `「${filteredLabel}」：${companies.length.toLocaleString("ja-JP")}件`;
+  } else {
+    statusNode.textContent = "";
+  }
+
+  navRoot.replaceChildren();
+  for (const key of GROUP_ORDER) {
+    const a = el("a", grouped[key].length ? "" : "is-empty", GROUP_LABEL[key]);
+    a.href = `#group-${encodeURIComponent(key)}`;
+    if (!grouped[key].length) a.setAttribute("aria-disabled", "true");
+    navRoot.appendChild(a);
+  }
+
+  groupsRoot.replaceChildren();
+  if (!companies.length) {
+    const empty = el("div", "search-empty");
+    empty.appendChild(el("strong", "", "該当する銀行名がありません。"));
+    empty.appendChild(el("p", "", "表記を短くする、または検索語を変えてお試しください。"));
+    groupsRoot.appendChild(empty);
+    return;
+  }
+
+  for (const key of GROUP_ORDER) {
+    if (!grouped[key].length) continue;
+    const section = el("section", "company-group");
+    section.id = `group-${key}`;
+    const h2 = el("h2", "group-title");
+    h2.appendChild(document.createTextNode(GROUP_LABEL[key]));
+    h2.appendChild(el("small", "", `${grouped[key].length}件`));
+    section.appendChild(h2);
+
+    const ul = el("ul", "company-list");
+    for (const company of grouped[key]) {
+      const meta = readingMeta(company);
+      const li = document.createElement("li");
+      const button = el("button", "company-button");
+      button.type = "button";
+      button.dataset.company = company.name;
+      if (company.name === selectedCompanyName) button.classList.add("is-selected");
+      button.setAttribute("aria-label", `${company.name}の沿革を見る${meta.uncertain ? "。読み仮名は推測です" : ""}`);
+      const nameSpan = el("span", "company-name", company.name);
+      if (meta.uncertain) {
+        const marker = el("span", "reading-asterisk", "*");
+        marker.setAttribute("aria-label", "読み仮名は推測");
+        nameSpan.appendChild(marker);
+      }
+      button.appendChild(nameSpan);
+
+      const terminalUnknown = isTerminalUnknownCompany(company);
+      const current = isCurrentCompany(company);
+      const listStatus = el(
+        "span",
+        `company-list-status ${terminalUnknown ? "is-terminal-unknown" : (current ? "is-current" : "is-historical")}`,
+        terminalUnknown ? "終端不明" : (current ? "現存" : "歴史上")
+      );
+      button.appendChild(listStatus);
+
+      if (meta.reading) button.appendChild(el("span", `company-reading${meta.uncertain ? " is-uncertain" : ""}`, meta.reading));
+      button.addEventListener("click", () => renderCompanyDetail(company.name));
+      li.appendChild(button);
+      ul.appendChild(li);
+    }
+    section.appendChild(ul);
+    groupsRoot.appendChild(section);
+  }
+}
+
+function applyCompanyFilters() {
+  const input = document.getElementById("company-search");
+  const clear = document.getElementById("company-search-clear");
+  const query = input ? input.value : "";
+
+  const filtered = allCompanies.filter(company =>
+    matchesCompanySearch(company, query) && matchesStatusFilter(company)
+  );
+
+  if (clear) clear.hidden = !query;
+  renderCompanyList(filtered, query);
+}
+
+function setupCompanySearch() {
+  const input = document.getElementById("company-search");
+  const clear = document.getElementById("company-search-clear");
+  if (!input || !clear) return;
+
+  input.addEventListener("input", applyCompanyFilters);
+  input.addEventListener("search", applyCompanyFilters);
+  clear.addEventListener("click", () => {
+    input.value = "";
+    applyCompanyFilters();
+    input.focus();
+  });
+}
+
+function setupStatusFilter() {
+  const buttons = [...document.querySelectorAll(".status-filter-button[data-status-filter]")];
+  if (!buttons.length) return;
+
+  const setFilter = (filter) => {
+    activeStatusFilter = ["all", "current", "historical", "terminal-unknown"].includes(filter) ? filter : "all";
+    for (const button of buttons) {
+      const active = button.dataset.statusFilter === activeStatusFilter;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
+    }
+    applyCompanyFilters();
+  };
+
+  for (const button of buttons) {
+    button.addEventListener("click", () => setFilter(button.dataset.statusFilter));
+  }
+}
+
+
+function setupStickyOffsets() {
+  const root = document.documentElement;
+  const header = document.querySelector(".site-header");
+  const indexSticky = document.querySelector(".index-sticky");
+  if (!header || !indexSticky) return;
+
+  let frame = 0;
+  const update = () => {
+    if (frame) cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(() => {
+      root.style.setProperty("--site-header-sticky-height", `${Math.ceil(header.getBoundingClientRect().height)}px`);
+      root.style.setProperty("--index-sticky-height", `${Math.ceil(indexSticky.getBoundingClientRect().height)}px`);
+      frame = 0;
+    });
+  };
+
+  update();
+  window.addEventListener("resize", update, { passive: true });
+
+  if ("ResizeObserver" in window) {
+    const observer = new ResizeObserver(update);
+    observer.observe(header);
+    observer.observe(indexSticky);
+  }
+}
+
+function setupBackToTop() {
+  const button = document.getElementById("back-to-top");
+  if (!button) return;
+
+  const updateVisibility = () => {
+    button.classList.toggle("is-visible", window.scrollY > 600);
+  };
+
+  button.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  window.addEventListener("scroll", updateVisibility, { passive: true });
+  updateVisibility();
+}
+
+async function init() {
+  const groupsRoot = document.getElementById("company-groups");
+  const countNode = document.getElementById("company-count");
+
+  try {
+    const [indexResponse, historyResponse] = await Promise.all([
+      fetch("../data/bank_index.json", { cache: "no-store" }),
+      fetch("../data/banking_history.json", { cache: "no-store" })
+    ]);
+    if (!indexResponse.ok) throw new Error(`bank_index.json: HTTP ${indexResponse.status}`);
+    if (!historyResponse.ok) throw new Error(`banking_history.json: HTTP ${historyResponse.status}`);
+
+    companyIndexData = await indexResponse.json();
+    historyData = await historyResponse.json();
+    historyCompanyMap = new Map((historyData.companies || []).map(company => [company.name, company]));
+
+    allCompanies = Array.isArray(companyIndexData.companies) ? [...companyIndexData.companies] : [];
+    companyIndexMap = new Map(allCompanies.map(company => [company.name, company]));
+    buildCompanyRelationGraph();
+    renderReadingNotes(allCompanies);
+    renderCompanyList(allCompanies);
+    setupCompanySearch();
+    setupStatusFilter();
+
+    // 直接URL（?company=銀行名）で開いた場合は、その銀行の詳細を初期表示する。
+    // 初回表示では履歴を増やさず、現在URLをそのまま基準にする。
+    applyCompanyFromUrl({ scrollMobile: true });
+
+    window.addEventListener("popstate", () => {
+      // ブラウザの「戻る／進む」では新しい履歴を作らず、URLの状態だけを復元する。
+      applyCompanyFromUrl({ scrollMobile: false });
+    });
+  } catch (error) {
+    console.error(error);
+    countNode.textContent = "読み込みエラー";
+    groupsRoot.innerHTML = '<p class="loading">銀行一覧または沿革データを読み込めませんでした。公開ファイルの配置を確認してください。</p>';
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setupStickyOffsets();
+  setupBackToTop();
+  init();
+});
