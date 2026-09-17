@@ -1,0 +1,1738 @@
+{
+  "schema_version": 3,
+  "generated_at": "2026-09-18T00:31:33+09:00",
+  "source_file": "input_bank.xlsx",
+  "reading_sheet": "読み",
+  "companies": [
+    {
+      "name": "あさひ信託銀行",
+      "reading": "あさひしんたくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "あさひ銀行",
+      "reading": "あさひぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "きらぼし銀行",
+      "reading": "きらぼしぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "さくら銀行",
+      "reading": "さくらぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "りそな信託銀行",
+      "reading": "りそなしんたくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ラ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "りそな銀行",
+      "reading": "りそなぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ラ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "イーバンク銀行",
+      "reading": "いーばんくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "ビー・エヌ・ピー・パリバ信託銀行",
+      "reading": "びいえぬぴいぱりばしんたくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "ビー・エヌ・ピー信託銀行",
+      "reading": "びいえぬぴいしんたくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "万成信託",
+      "reading": "まんせいしんたく",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "万成社",
+      "reading": "まんせいしゃ",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "不動貯金銀行",
+      "reading": "ふどうちょきんぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "久喜銀行",
+      "reading": "くきぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "五日市貯蓄銀行",
+      "reading": "いつかいちちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "五日市銀行",
+      "reading": "いつかいちぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "代々木信用組合",
+      "reading": "よよぎしんようくみあい",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "代々木信用金庫",
+      "reading": "よよぎしんようきんこ",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "伊予銀行",
+      "reading": "いよぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "保証責任町田町信用組合",
+      "reading": "ほしょうせきにんまちだまちしんようくみあい",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "児玉貯蓄銀行",
+      "reading": "こだまちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "入間銀行",
+      "reading": "いるまぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "八千代信用金庫",
+      "reading": "やちよしんようきんこ",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "八千代銀行",
+      "reading": "やちよぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "八王子倉庫銀行",
+      "reading": "はちおうじそうこぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "共精商業銀行",
+      "reading": "きょうせいしょうぎょうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "内国貯金銀行",
+      "reading": "ないこくちょきんぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "加島信託",
+      "reading": "かじましんたく",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "加島貯蓄銀行",
+      "reading": "かじまちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "加島銀行",
+      "reading": "かじまぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "加須銀行",
+      "reading": "かぞぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "勧業債券月報社",
+      "reading": "かんぎょうさいけんげっぽうしゃ",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "北越銀行",
+      "reading": "ほくえつぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "千葉銀行",
+      "reading": "ちばぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "協和埼玉銀行",
+      "reading": "きょうわさいたまぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "協和銀行",
+      "reading": "きょうわぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "国民相互銀行",
+      "reading": "こくみんそうごぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "国民銀行",
+      "reading": "こくみんぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "国神銀行",
+      "reading": "くみかみぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "坂戸銀行",
+      "reading": "さかどぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "埼玉りそな銀行",
+      "reading": "さいたまりそなぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "埼玉中央信用組合",
+      "reading": "さいたまちゅうおうしんようくみあい",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "埼玉貯蓄銀行",
+      "reading": "さいたまちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "埼玉銀行",
+      "reading": "さいたまぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "士盛銀行",
+      "reading": "しせいぎんこう",
+      "reading_uncertain": true,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "壬子銀行",
+      "reading": "じんしぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "多摩農業銀行",
+      "reading": "たまのうぎょうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "多摩銀行",
+      "reading": "たまぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "大五銀行",
+      "reading": "だいごぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "大和銀信託銀行",
+      "reading": "だいわぎんしんたくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "大和銀行",
+      "reading": "だいわぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "大垣共立銀行",
+      "reading": "おおがききょうりつぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "大宮商業銀行",
+      "reading": "おおみやしょうぎょうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "大宮貯金銀行",
+      "reading": "おおみやちょきんぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "大師銀行",
+      "reading": "だいしぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "大正信託",
+      "reading": "たいしょうしんたく",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "大正信託舎",
+      "reading": "たいしょうしんたくしゃ",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "大阪信託",
+      "reading": "おおさかしんたく",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "大阪貯蓄銀行",
+      "reading": "おおさかちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "大阪野村銀行",
+      "reading": "おおさかのむらぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "太陽神戸銀行",
+      "reading": "たいようこうべぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "奈良銀行",
+      "reading": "ならぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "安田貯蓄銀行",
+      "reading": "やすだちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "安田銀行",
+      "reading": "やすだぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "安藤銀行",
+      "reading": "あんどうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "富士銀行",
+      "reading": "ふじぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "富田林銀行",
+      "reading": "とんだばやしぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "富田林銀行〈合資〉",
+      "reading": "とんだばやしぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "富銀行〈合資〉",
+      "reading": "とみぎんこう",
+      "reading_uncertain": true,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "小川銀行",
+      "reading": "おがわぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "小笠銀行",
+      "reading": "おがさぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "小鹿野銀行",
+      "reading": "おがのぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "山口銀行",
+      "reading": "やまぐちぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ヤ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "川崎第百銀行",
+      "reading": "かわさきだいひゃくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "川越商業銀行",
+      "reading": "かわごえしょうぎょうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "川越渡辺銀行",
+      "reading": "かわごえわたなべぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "川越貯蓄銀行",
+      "reading": "かわごえちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "川越貯金銀行",
+      "reading": "かわごえちょきんぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "忍商業銀行",
+      "reading": "おししょうぎょうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "忍貯金銀行",
+      "reading": "おしちょきんぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "恩友信用組合",
+      "reading": "おんゆうしんようくみあい",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "成木銀行",
+      "reading": "なりきぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "所沢商業銀行",
+      "reading": "ところざわしょうぎょうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "扇町屋銀行",
+      "reading": "おうぎまちやぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "摂津貯蓄銀行",
+      "reading": "せっつちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "摂津銀行",
+      "reading": "せっつぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "新銀行東京",
+      "reading": "しんぎんこうとうきょう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "日の出信用組合",
+      "reading": "ひのでしんようくみあい",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "日本勧業信託",
+      "reading": "にほんかんぎょうしんたく",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "日本勧業銀行",
+      "reading": "にほんかんぎょうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "日本勧業銀行月報社",
+      "reading": "にほんかんぎょうぎんこうげっぽうしゃ",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "日本昼夜銀行",
+      "reading": "にほんちゅうやぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "日本相互貯蓄銀行",
+      "reading": "にほんそうごちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "日本貯蓄銀行〈1945〉",
+      "reading": "にほんちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "日本貯蓄銀行〈旧〉",
+      "reading": "にほんちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "日比谷銀行",
+      "reading": "ひびやぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "明治貯蓄銀行",
+      "reading": "めいじちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "星島銀行",
+      "reading": "ほしじまぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "昭和銀行",
+      "reading": "しょうわぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "有限責任住宅土地信用購買組合調節社",
+      "reading": "じゅうたくとちしんようこうばいくみあいちょうせつしゃ",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "有限責任信用組合調節社",
+      "reading": "しんようくみあいちょうせつしゃ",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "本庄商業銀行",
+      "reading": "ほんじょうしょうぎょうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "杉戸銀行",
+      "reading": "すぎとぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "東京殖産銀行",
+      "reading": "とうきょうしょくさんぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "東京貯蓄銀行",
+      "reading": "とうきょうちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "東京都民銀行",
+      "reading": "とうきょうとみんぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "東海銀行",
+      "reading": "とうかいぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "東神信用組合",
+      "reading": "とうしんしんようくみあい",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "東神信用金庫",
+      "reading": "とうしんしんようきんこ",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "東邦銀行",
+      "reading": "とうほうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "栗橋銀行",
+      "reading": "くりはしぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "株式質会社",
+      "reading": "かぶしきしちがいしゃ",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "桶川貯蓄銀行",
+      "reading": "おけがわちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "桶川銀行",
+      "reading": "おけがわぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "森岡銀行",
+      "reading": "もりおかぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "業平銀行",
+      "reading": "なりひらぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "武州貯蓄銀行",
+      "reading": "ぶしゅうちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "武州銀行",
+      "reading": "ぶしゅうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "武毛銀行",
+      "reading": "ぶもうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "武蔵銀行",
+      "reading": "むさしぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "武陽銀行",
+      "reading": "ぶようぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "殖産銀行",
+      "reading": "しょくさんぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "比企銀行",
+      "reading": "ひきぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "氷川銀行",
+      "reading": "ひかわぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "津保銀行",
+      "reading": "つぼぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "浦和商業銀行",
+      "reading": "うらわしょうぎょうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "深谷銀行",
+      "reading": "ふかやぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "熊谷貯蓄銀行",
+      "reading": "くまがやちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "熊谷銀行",
+      "reading": "くまがやぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "田無銀行",
+      "reading": "たなしぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "百五銀行",
+      "reading": "ひゃくごぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "的場銀行",
+      "reading": "まとばぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "マ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "相模原信用組合",
+      "reading": "さがみはらしんようくみあい",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "神戸銀行",
+      "reading": "こうべぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "福岡金融",
+      "reading": "ふくおかきんゆう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "福陵銀行",
+      "reading": "ふくりょうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "秩父銀行",
+      "reading": "ちちぶぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "積善銀行",
+      "reading": "せきぜんぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "第一合同銀行",
+      "reading": "だいいちごうどうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "第一相互貯蓄銀行",
+      "reading": "だいいちそうごちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "第三十六国立銀行",
+      "reading": "だいさんじゅうろくこくりつぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "第三十六銀行",
+      "reading": "だいさんじゅうろくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "第八十五国立銀行",
+      "reading": "だいはちじゅうごこくりつぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "第八十五銀行",
+      "reading": "だいはちじゅうごぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "第百銀行",
+      "reading": "だいひゃくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "粕壁銀行",
+      "reading": "かすかべぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "紀陽銀行",
+      "reading": "きようぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "紅屋銀行",
+      "reading": "べにやぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "羽村銀行",
+      "reading": "はむらぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "肥後銀行",
+      "reading": "ひごぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "茨木銀行",
+      "reading": "いばらきぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "菖蒲銀行",
+      "reading": "しょうぶぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "藤島合資会社",
+      "reading": "ふじしまごうしがいしゃ",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "西武信用組合",
+      "reading": "せいぶしんようくみあい",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "西武商工銀行",
+      "reading": "せいぶしょうこうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "西武銀行",
+      "reading": "せいぶぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "調布銀行",
+      "reading": "ちょうふぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "越生商業銀行",
+      "reading": "おごせしょうぎょうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "越生銀行",
+      "reading": "おごせぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "道源銀行",
+      "reading": "どうげんぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "野上銀行",
+      "reading": "のがみぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "野村信託",
+      "reading": "のむらしんたく",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "野村銀行",
+      "reading": "のむらぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ナ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "青梅商業銀行",
+      "reading": "おうめしょうぎょうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "青梅銀行",
+      "reading": "おうめぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ア",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "飯能貯蓄銀行",
+      "reading": "はんのうちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "飯能銀行〈1901〉",
+      "reading": "はんのうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "飯能銀行〈1937〉",
+      "reading": "はんのうぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "ハ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "駿河銀行",
+      "reading": "するがぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "サ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "騎西銀行",
+      "reading": "きさいぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "高槻貯蓄銀行",
+      "reading": "たかつきちょちくぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "高槻銀行",
+      "reading": "たかつきぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "タ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    },
+    {
+      "name": "鴻池銀行",
+      "reading": "こうのいけぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": true
+    },
+    {
+      "name": "黒須銀行",
+      "reading": "くろすぎんこう",
+      "reading_uncertain": false,
+      "kana_group": "カ",
+      "reading_registered": true,
+      "status_note": "",
+      "is_terminal_unknown": false,
+      "is_current": false
+    }
+  ]
+}
